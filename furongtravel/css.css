@@ -1,0 +1,1329 @@
+body { text-align: left; padding: 0; margin: 0; font: 14px arial, helvetica, clean, sans-serif; color: #333; font-family: "microsoft yahei"; background: #fff; }
+div, p, li { word-break: break-all; }
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p { padding: 0; margin: 0; }
+pre, code, form, fieldset, legend, input, textarea, p, blockquote, th { padding: 0; margin: 0; }
+fieldset { border-top-width: 0; border-left-width: 0; border-bottom-width: 0; border-right-width: 0; }
+a img { border: 0; padding: 0; margin: 0; }
+i { font-style: normal; }
+/*清除浮动*/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { *zoom: 1;
+}
+address, caption, cite, cite, code, dfn, em, th, var { font-weight: normal; font-style: normal; }
+li { list-style-type: none; }
+caption { text-align: left; }
+th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; font-size: 100%; }
+q:unknown {
+ content: '';
+}
+q:unknown {
+ content: '';
+}
+input, textarea, select { font-family: inherit; }
+input, textarea, select { font-size: 100%; }
+a:link { color: #333; text-decoration: none; }
+a:visited { color: #333; text-decoration: none; }
+a:hover { color: #58d18c; text-decoration: none; }
+.icon { background-image: url("icon.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/icon.png*/); display: inline-block; vertical-align: middle; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; font-size: 0; margin: 0; padding: 0; display: block; _height: 0; overflow: hidden; }
+/*网站公用样式表*/
+.w1200 { width: 1200px; margin: 0 auto; }
+.w1000 { width: 1000px; margin: 0 auto; }
+.head_main { height: 902px; position: relative; width: 100%; z-index: 10; }
+.head_main .che{position: absolute; left:50%; margin-left:-786px; top:511px;}
+.head_main .map { position: absolute; left: 50%; top: 103px; margin-left: -640.5px; width: 1281px; height: 936px; z-index: 11; background: url("map.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map.png*/) center top no-repeat; }
+.head_main .map a { display: block; position: absolute; background-repeat: no-repeat; transition: ease-in-out .2s; }
+.head_main .map .a1 { background: url("map1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map1.png*/) no-repeat; width: 38px; height: 54px; left: 194px; top: 380px; }
+.head_main .map .a1:hover { background: url("map_1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_1.png*/) no-repeat; width: 50px; height: 69px; top: 376px; }
+.head_main .map .a2 { background: url("map2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map2.png*/) no-repeat; width: 56px; height: 55px; left: 249px; top: 430px; }
+.head_main .map .a2:hover { background: url("map_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_2.png*/) no-repeat; width: 82px; height: 83px; top: 410px; }
+.head_main .map .a3 { background: url("map3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map3.png*/) no-repeat; width: 87px; height: 66px; left: 290px; top: 476px; }
+.head_main .map .a3:hover { background: url("map_3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_3.png*/) no-repeat; width: 105px; height: 77px; top: 466px; }
+.head_main .map .a4 { background: url("map4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map4.png*/) no-repeat; width: 37px; height: 70px; left: 382px; top: 544px; }
+.head_main .map .a4:hover { background: url("map_4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_4.png*/) no-repeat; width: 51px; height: 85px; top: 534px; }
+.head_main .map .a5 { background: url("map5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map5.png*/) no-repeat; width: 45px; height: 56px; left: 372px; top: 338px; }
+.head_main .map .a5:hover { background: url("map_5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_5.png*/) no-repeat; width: 54px; height: 74px; top: 328px; }
+.head_main .map .a6 { background: url("map6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map6.png*/) no-repeat; width: 68px; height: 65px; left: 450px; top: 231px; }
+.head_main .map .a6:hover { background: url("map_6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_6.png*/) no-repeat; width: 85px; height: 85px; top: 221px; }
+.head_main .map .a7 { background: url("map7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map7.png*/) no-repeat; width: 64px; height: 52px; left: 816px; top: 494px; }
+.head_main .map .a7:hover { background: url("map_7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_7.png*/) no-repeat; width: 77px; height: 68px; top: 484px; }
+.head_main .map .a8 { background: url("map8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map8.png*/) no-repeat; width: 63px; height: 78px; left: 481px; top: 125px; }
+.head_main .map .a8:hover { background: url("map_8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_8.png*/) no-repeat; width: 74px; height: 87px; top: 123px; }
+.head_main .map .a9 { background: url("map9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map9.png*/) no-repeat; width: 35px; height: 61px; right: 556px; top: 254px; }
+.head_main .map .a9:hover { background: url("map_9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_9.png*/) no-repeat; width: 56px; height: 65px; top: 254px; }
+.head_main .map .a10 { background: url("map10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map10.png*/) no-repeat; width: 50px; height: 67px; right: 298px; top: 409px; }
+.head_main .map .a10:hover { background: url("map_10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_10.png*/) no-repeat; width: 62px; height: 82px; }
+.head_main .map .a11 { background: url("map11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map11.png*/) no-repeat; width: 61px; height: 45px; right: 451px; top: 13px; }
+.head_main .map .a11:hover { background: url("map_11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_11.png*/) no-repeat; width: 73px; height: 58px; }
+.head_main .map .a12 { background: url("map12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map12.png*/) no-repeat; width: 38px; height: 54px; right: 271px; top: 189px; }
+.head_main .map .a12:hover { background: url("map_12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_12.png*/) no-repeat; width: 63px; height: 68px; top: 189px; }
+.head_main .map .a13 { background: url("map13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map13.png*/) no-repeat; width: 61px; height: 60px; right: 224px; top: 100px; }
+.head_main .map .a13:hover { background: url("map_13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_13.png*/) no-repeat; width: 76px; height: 73px; }
+.head_main .w1200 { z-index: 12; position: absolute; left: 50%; top: 0; margin-left: -600px; }
+.head_main .w1200 .left { padding-top: 8px; }
+.head_main .w1200 .nav { width: 660px; height: 84px; line-height: 84px; }
+.head_main .w1200 .nav li { width: 110px; float: left; text-align: center; }
+.head_main .w1200 .nav li a { color: #fff; display: block; width: 70px; height: 45px; line-height: 45px; margin-top: 20px; border-radius: 5px; transition: ease-in-out .2s; }
+.head_main .w1200 .nav li a:hover, .head_main .w1200 .nav li a.hover { background: #00ac82; }
+.head_ny { height: 85px; border-bottom: 1px solid #ccc;  position:fixed; left:0; top:0; background:#fff; z-index:100; }
+.head_ny .w1200 .nav li a { color: #6b6b6b; }
+.head_ny .w1200 .nav li a:hover, .head_ny .w1200 .nav li a.hover { color: #fff; background: #00ac82; }
+.index_tit { text-align: center; }
+.index_tit img { display: block; margin: 0 auto; }
+.floor_6_main {
+ background: url("floor6_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.jpg*/) center top no-repeat;
+ width: 100%;
+ height: 999px;
+}
+.floor_6_main .index_tit {
+ padding-top: 65px;
+}
+.floor_6_main .slideTxtBox1 {
+ width: 1200px;
+ text-align: left;
+ margin: 0 auto;
+}
+.floor_6_main .slideTxtBox1 .hdd {
+ height: 34px;
+ line-height: 34px;
+ position: relative;
+ width: 550px;
+ margin: 0 auto;
+ margin-top: 36px;
+ margin-bottom: 84px;
+}
+.floor_6_main .slideTxtBox1 .hdd .outul {
+ width: 115%;
+}
+.floor_6_main .slideTxtBox1 .hdd .outul .outli {
+ float: left;
+ text-align: center;
+ width: 88px;
+ border: 1px solid #00a88c;
+ cursor: pointer;
+ margin-right: 25px;
+}
+.floor_6_main .slideTxtBox1 .hdd .outul .outli a {
+ color: #00a88c;
+ transition: ease-in-out 0.2s;
+}
+.floor_6_main .slideTxtBox1 .hdd .outul .on {
+ background: #00a88c;
+}
+.floor_6_main .slideTxtBox1 .hdd .outul .on a {
+ color: #Fff;
+}
+.floor_6_main .slideTxtBox1 .bdd {
+ height: 517px;
+ overflow: hidden;
+ width: 1200px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli {
+ position: relative;
+ height: 517px;
+ overflow: hidden;
+ width: 1197px;
+ background: url("floor6_li_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_bg.png*/);
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content {
+ padding: 20px 24px  0 21px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox {
+ width: 424px;
+ height: 424px;
+ overflow: hidden;
+ position: relative;
+ border: 1px solid #ddd;
+ margin-right: 58px;
+ float: left;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .hd {
+ height: 10px;
+ position: absolute;
+ bottom: 30px;
+ left: 0;
+ z-index: 1;
+ line-height: normal;
+ padding: 0;
+ margin: 0;
+ width: 424px;
+ text-align: center;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .hd ul {
+ height: 10px;
+ zoom: 1;
+ float: left;
+ width: 424px ;
+ line-height: normal;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .hd ul li {
+ display: inline-block;
+ margin-right: 2px;
+ line-height: normal;
+ width: 10px;
+ height: 10px;
+ font-size: 0;
+ text-align: center;
+ background: #cccccc;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+ cursor: pointer;
+ filter: alpha(opacity=70);
+ /* IE */
+ -moz-opacity: 0.7;
+ /* FF 主要是为了兼容老版本的FF */
+ opacity: 0.7;
+ /* FF */
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .hd ul li.on {
+ background: #ccc;
+ color: #ccc;
+ filter: alpha(opacity=100);
+ /* IE */
+ -moz-opacity: 1;
+ /* FF 主要是为了兼容老版本的FF */
+ opacity: 1;
+ /* FF */
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .bd {
+ position: relative;
+ height: 100%;
+ z-index: 0;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .bd li {
+ zoom: 1;
+ width: 424px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .floor_6_slideBox .bd img {
+ width: 424px;
+ height: 424px;
+ display: block;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r h3 {
+ font-size: 22px;
+ font-weight: bold;
+ line-height: 22px;
+ padding-bottom: 10px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r h4 {
+ font-size: 30px;
+ color: #ff3300;
+ line-height: 60px;
+ font-weight: normal;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r h4 span {
+ font-size: 22px;
+ margin-left: 7px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r h5 {
+ font-size: 18px;
+ line-height: 30px;
+ font-weight: normal;
+ padding-bottom: 10px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r p {
+ line-height: 28px;
+ font-size: 14px;
+ color: #666666;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt {
+ position: absolute;
+ left: 503px;
+ bottom: 61px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt img {
+ width: 86px;
+ height: 83px;
+ display: block;
+ float: left;
+ margin-right: 12px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div1 {
+ margin-top: 14px;
+ float: left;
+ width: 188px;
+ border-right: 1px solid #cccccc;
+ height: 58px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div1 h4 {
+ font-size: 14px;
+ color: #666;
+ padding-top: 10px;
+ line-height: 14px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div1 h5 {
+ font-size: 18px;
+ color: #666;
+ line-height: 18px;
+ padding-top: 5px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div2 {
+ margin-top: 14px;
+ border-right: 1px solid #cccccc;
+ width: 154px;
+ height: 58px;
+ float: left;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div2 a i {
+ background: url("floor6_li_mes.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_mes.jpg*/);
+ width: 39px;
+ height: 38px;
+ display: block;
+ float: left;
+ margin-left: 16px;
+ margin-right: 13px;
+ margin-top: 11px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div2 a h4 {
+ font-size: 14px;
+ color: #666;
+ margin-top: 20px;
+ line-height: 14px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div3 {
+ margin-top: 14px;
+ width: 234px;
+ height: 58px;
+ float: left;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div3 i {
+ background: url("floor6_li_tel.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_tel.png*/);
+ width: 39px;
+ display: block;
+ float: left;
+ height: 38px;
+ margin-left: 16px;
+ margin-right: 9px;
+ margin-top: 11px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div3 h4 {
+ font-size: 14px;
+ color: #666;
+ padding-top: 10px;
+ padding-bottom: 5px;
+ line-height: 14px;
+}
+.floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div3 h5 {
+ font-size: 24px;
+ color: #ff6633;
+ line-height: 24px;
+ font-weight: bold;
+}
+
+/***----张家界必玩景点****/
+.floor_1_main { background: url("floor1_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor1_bg.jpg*/) center top no-repeat; width: 100%; height: 704px; }
+.floor_1_main .index_tit { padding-top: 79px; }
+.floor_1_main .slideTxtBox { width: 1200px; text-align: left; margin: 0 auto; }
+.floor_1_main .slideTxtBox .hd { height: 34px; line-height: 34px; position: relative; width: 550px; margin: 0 auto; margin-top: 36px; margin-bottom: 43px; }
+.floor_1_main .slideTxtBox .hd ul { width: 115%; }
+.floor_1_main .slideTxtBox .hd ul li { float: left; text-align: center; width: 88px; border: 1px solid #00a88c; cursor: pointer; margin-right: 25px; }
+.floor_1_main .slideTxtBox .hd ul li a { color: #00a88c; transition: ease-in-out .2s; }
+.floor_1_main .slideTxtBox .hd ul li.on { background: #00a88c; }
+.floor_1_main .slideTxtBox .hd ul li.on a { color: #Fff; }
+.floor_1_main .slideTxtBox .bd { height: 403px; width: 1200px; overflow: hidden; }
+.floor_1_main .slideTxtBox .bd ul { width: 115%; }
+.floor_1_main .slideTxtBox .bd ul .l2 .on { background: url("color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l3 .on { background: url("color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l4 .on { background: url("color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l5 .on { background: url("color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l6 .on { background: url("color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd li { height: 190px; width: 380px; position: relative; float: left; margin-right: 29px; margin-bottom: 23px; overflow: hidden; }
+.floor_1_main .slideTxtBox .bd li a { color: #fff; display: block; }
+.floor_1_main .slideTxtBox .bd li img { width: 380px; height: 190px; transition: ease-in-out .2s; }
+.floor_1_main .slideTxtBox .bd li .on { display: block; width: 160px; height: 190px; position: absolute; left: 0; top: 0; background: url("color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; cursor: pointer; }
+.floor_1_main .slideTxtBox .bd li .on h1 { width: 128px; margin: 0 auto; border: 1px solid #fff; border-left: none; border-right: none; height: 38px; line-height: 38px; margin-top: 55px; text-align: center; margin-bottom: 12px; transition: ease-in-out .2s; font-size:18px; font-weight:100 }
+.floor_1_main .slideTxtBox .bd li .on p { padding: 0 16px; padding-top:30px; line-height:24px; font-size:16px; }
+.floor_1_main .slideTxtBox .bd li a:hover img { transform: scale(1.05); -webkit-transform: scale(1.05); }
+
+/********芙蓉团队*******/
+.floor_2_main { background: url("floor2_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor2_bg.jpg*/) center top no-repeat; width: 100%; height: 969px; }
+.floor_2_main .index_tit { padding-top: 160px; }
+.floor_2_main .picScroll-left { position: relative; width: 1040px; margin: 52px auto 0; }
+.floor_2_main .picScroll-left .hd .prev, .floor_2_main .picScroll-left .hd .next { display: block; width: 26px; height: 50px; overflow: hidden; position: absolute; left: -80px; top: 213px; cursor: pointer; background-position: 0 0; transition: ease-in-out .2s; }
+.floor_2_main .picScroll-left .hd .next { background-position: -32px 0px; right: -80px; left: auto; }
+.floor_2_main .picScroll-left .hd .next:hover { right: -90px; }
+.floor_2_main .picScroll-left .hd .prev:hover { left: -90px; }
+.floor_2_main .picScroll-left .bd ul { overflow: hidden; zoom: 1; }
+.floor_2_main .picScroll-left .bd ul li {  width: 265px; float: left; _display: inline; position:relative; height:410px; }
+.floor_2_main .picScroll-left .bd ul .l1,.floor_2_main .picScroll-left .bd ul .l5{ margin-top:58px;}
+.floor_2_main .picScroll-left .bd ul .l3,.floor_2_main .picScroll-left .bd ul .l7{ margin-top:18px;}
+.floor_2_main .picScroll-left .bd ul .l4,.floor_2_main .picScroll-left .bd ul .l8{ margin-top:26px;}
+.floor_2_main .picScroll-left .bd ul li img { position:absolute; left:0; top:70px; }
+.floor_2_main .picScroll-left .bd ul .l2 img,.floor_2_main .picScroll-left .bd ul .l6 img{ left:26px; top:97px; }
+.floor_2_main .picScroll-left .bd ul .l3 img,.floor_2_main .picScroll-left .bd ul .l7 img{ left:-32px; top:74px;}
+.floor_2_main .picScroll-left .bd ul .l4 img,.floor_2_main .picScroll-left .bd ul .l8 img{ left:-70px; top:90px;}
+.floor_2_main .picScroll-left .bd ul li h1 { font-size: 25px; color: #6ad397; padding-bottom: 10px; }
+.floor_2_main .picScroll-left .bd ul li h2 { font-size: 22px; color: #2e3231; font-weight: 100; }
+.floor_2_main .picScroll-left .bd ul li h3 { color: #747c7e; }
+.floor_2_main .picScroll-left .bd ul li p { padding: 10px 0; color: #333; }
+.floor_2_main .picScroll-left .bd ul li a { display: block; transition: ease-in-out .2s; }
+.floor_2_main .picScroll-left .bd ul li a:hover { margin-top: 10px; }
+.floor_2_main .picScroll-left .bd ul li a:hover p { color: #333; }
+/*****客户感言****/
+.floor_3_main { background: url("floor3_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor3_bg.jpg*/) center top no-repeat; width: 100%; height: 777px; }
+.floor_3_main .index_tit { padding-top: 68px; }
+.floor_3_main .con{ overflow:hidden;}
+.floor_3_main .con li { position: relative; width: 600px; float: left; margin-bottom: 112px; }
+.floor_3_main .con li div { border: 3px solid #00ac82; width: 166px; height: 159px; padding-right: 25px; padding-left: 61px; margin-left: 202px; margin-top: 30px; }
+.floor_3_main .con li div h1 { padding-top: 15px; font-weight: 100; color: #00ac82; padding-bottom: 17px; }
+.floor_3_main .con li div p { font-size: 12px; color: #333; }
+.floor_3_main .con li img { position: absolute; left: 37px; top: 0; }
+.floor_3_main .con .l2 { margin-top: 35px; }
+.floor_3_main .con .l3 div { padding-left: 15px; padding-right: 61px; margin-top: 20px; }
+.floor_3_main .con .l3 img { right: 0; left: auto; top: auto; bottom: -23px; }
+.floor_3_main .con .l4 div { padding-left: 15px; padding-right: 61px; }
+.floor_3_main .con .l4 img { right: 0; left: auto; top: auto; bottom: -23px; }
+/***分销平台**/
+.floor_4_main { background: url("floor4_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor4_bg.jpg*/) center top no-repeat; width: 100%; height: 739px; }
+.floor_4_main .index_tit { padding-top: 135px; }
+.floor_4_main .con { padding-top: 95px; overflow: hidden; width: 1200px; padding-left: 15px; padding-right: 15px; margin: 0 auto; }
+.floor_4_main .con ul { width: 117%; }
+.floor_4_main .con li { margin-right: 13px; float: left; margin-bottom: 17px; }
+.floor_4_main .con li img { width: 288px; height: 143px; border: 1px solid #f1f1f1; display: block; }
+.floor_4_main .con li a { display: block; transition: ease-in-out .2s; }
+.floor_4_main .con li a:hover {  -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3); box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3);  }
+.floor_4_main .con li a:hover img{width: 286px; height: 141px;border:2px solid #58d18c}
+/****芙蓉攻略*******/
+.floor_5_main { background: url("floor5_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor5_bg.jpg*/) center top no-repeat; width: 100%; height: 857px; }
+.floor_5_main .index_tit { padding-top: 111px; }
+.floor_5_main .index_tit a { color: #1c69f3; line-height: 84px; transition: ease-in-out .2s; }
+.floor_5_main .index_tit a:hover { color: #00a88c; }
+.floor_5_main .con { overflow: hidden; }
+.floor_5_main .con ul { width: 115%; }
+.floor_5_main .con li { width: 230px; margin-right: 12px; float: left; text-align: center; }
+.floor_5_main .con li img { width: 230px; }
+.floor_5_main .con li h1 { height: 62px; line-height: 62px; color: #00a88c; }
+.floor_5_main .con li span { display: block; background: #999; width: 26px; height: 2px; margin: 0 auto; margin-bottom: 13px; transition: ease-in-out .2s; }
+.floor_5_main .con li p { font-size: 12px; padding: 0 10px; line-height: 22px; color: #333; }
+.floor_5_main .con li a:hover span { width: 100%; background: #00a88c; }
+/*******底部提交表单*****/
+.bottom_main { background: url("bottom_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/bottom_bg.jpg*/) no-repeat center top; width: 100%; height: 452px; }
+.bottom_main .bottom_nav { width: 972px; margin: 0 auto; padding-top: 30px; margin-bottom: 73px; }
+.bottom_main .bottom_nav li { float: left; text-align: center; width: 161px; height: 22px; line-height: 22px; border-left: 1px dotted #6b6e76; }
+.bottom_main .bottom_nav li a { color: #fff; transition: ease-in-out .2s; }
+.bottom_main .bottom_nav li a:hover { color: #00A88C; }
+.bottom_main .bottom_nav li:first-child { border: none; }
+.bottom_main .bott_left { width: 485px; }
+.bottom_main .bott_left img { width: 190px; height: 190px; }
+.bottom_main .bott_left p { font-size: 12px; color: #fff; text-align: center; line-height: 24px; }
+.bottom_main .bott_left a { display: block; border: 1px solid #00a88c; width: 108px; height: 28px; line-height: 28px; text-align: center; color: #00a88c; font-size: 18px; margin-top: 20px; transition: ease-in-out .2s; }
+.bottom_main .bott_left a:hover { width: 130px; }
+.bottom_main .bott_left h1 { font-size: 24px; color: #00a88c; font-weight: 100; }
+.bottom_main .bott_left h2 { font-size: 41px; color: #00a88c; font-family: impact; font-weight: 100; }
+.bottom_main .bott_left span { background: #00a88c; display: block; width: 41px; height: 2px; margin: 19px 0; }
+.bottom_main .bott_left .tel { margin-left: 21px; }
+.bottom_main .bott_left .tel p { text-align: left; line-height: 16px; }
+.bottom_main .bott_right { width: 667px; color: #00a88c; padding-top: 10px; }
+.bottom_main .bott_right input { background: url("color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 240px; height: 19px; line-height: 19px; padding: 11px 10px; margin-bottom: 25px; color: #00A88C; }
+.bottom_main .bott_right span { font-size: 18px; padding-right: 22px; }
+.bottom_main .bott_right textarea { background: url("color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 588px; height: 115px; padding: 10px; resize: none; overflow: hidden; color: #00A88C; }
+.bottom_main .bott_right .span { vertical-align: top; padding-top: 10px; }
+.bottom_main .bott_right .btn { width: 174px; height: 30px; line-height: 30px; text-align: center; padding: 0; font-size: 18px; color: #262933; background: #00a88c; margin-top: 17px; transition: ease-in-out .2s; }
+.bottom_main .bott_right .btn:hover { width: 250px; cursor: pointer; }
+/******底部版权*******/
+.bottom_copy { background: #15171d; height: 44px; line-height: 44px; color: #fff; overflow: hidden; }
+.bottom_copy a { color: #fff; transition: ease-in-out .2s; }
+.bottom_copy a:hover { color: #00a88c; }
+/*******芙蓉攻略******/
+.ny_title {
+ text-align: center;
+}
+.ny_title h1 {
+ font-size: 24px;
+ color: #666;
+ font-weight: 100;
+ padding-top: 60px;
+}
+.ny_title h2 {
+ color: #00ac82;
+ font-size: 41px;
+ font-family: impact;
+ text-transform: uppercase;
+ font-weight: 100;
+}
+.ny_title p {
+ color: #999;
+}
+.ny_title span {
+ display: block;
+ width: 41px;
+ height: 2px;
+ background: #666;
+ margin: 20px auto 127px;
+}
+
+.body { background: url("ny_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/ny_bg.jpg*/) center 86px no-repeat; padding-top:86px; }
+.body .con .con_left {
+ width: 850px;
+}
+.body .con .con_left .search {
+ position: relative;
+ width: 850px;
+ overflow: hidden;
+}
+.body .con .con_left .search .input {
+ width: 848px;
+ border: 1px solid #d2d2d2;
+ height: 48px;
+ line-height: 48px;
+ text-indent: 1em;
+ border-radius: 5px;
+ overflow: hidden;
+ font-size: 18px;
+ color: #999;
+}
+.body .con .con_left .search .btn {
+ background: #00ac82;
+ border: 1px solid #00ac82;
+ color: #fff;
+ width: 93px;
+ height: 48px;
+ font-size: 18px;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+ right: 0;
+ top: 1px;
+ *top: 2px;
+ cursor: pointer;
+}
+.body .con .con_left ul li {
+ position: relative;
+ border-bottom: 1px dotted #f1f1f1;
+ padding-bottom: 50px;
+ margin-top: 50px;
+}
+.body .con .con_left ul li .b {
+ position: absolute;
+ left: 363px;
+ bottom: 50px;
+}
+.body .con .con_left ul li .b div {
+ float: left;
+}
+.body .con .con_left ul li .b span {
+ font-size: 14px;
+ color: #999;
+ margin-right: 24px;
+}
+.body .con .con_left ul li .b .i1 {
+ background: url("frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
+ width: 15px;
+ height: 18px;
+ display: block;
+ float: left;
+ margin-right: 12px;
+ margin-top: 1px;
+}
+.body .con .con_left ul li .b .i2 {
+ background: url("frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
+ width: 20px;
+ height: 19px;
+ display: block;
+ float: left;
+ margin-right: 5px;
+ margin-top: 1px;
+}
+.body .con .con_left ul li .b .i3 {
+ background: url("frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
+ width: 22px;
+ height: 13px;
+ display: block;
+ float: left;
+ margin-right: 7px;
+ margin-top: 3px;
+}
+.body .con .con_left ul li .zan {
+ position: absolute;
+ right: 0;
+ bottom: 41px;
+}
+.body .con .con_left ul li .zan span {
+ font-size: 14px;
+ color: #999;
+ line-height: 36px;
+ margin-right: 2px;
+}
+.body .con .con_left ul li .zan i {
+ background: url("frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
+ width: 36px;
+ height: 36px;
+ float: right;
+ display: block;
+ margin-left: 4px;
+}
+.body .con .con_left ul li .left {
+ width: 320px;
+ height: 240px;
+ overflow: hidden;
+}
+.body .con .con_left ul li .left img {
+ width: 320px;
+ height: 240px;
+ transition: ease-in-out 0.2s;
+}
+.body .con .con_left ul li .right {
+ width: 488px;
+}
+.body .con .con_left ul li .right h1 {
+ font-size: 24px;
+ font-weight: 100;
+ color: #000;
+ padding-bottom: 10px;
+}
+.body .con .con_left ul li .right p {
+ color: #999;
+ line-height: 24px;
+}
+.body .con .con_left ul li a {
+ display: block;
+ cursor: pointer;
+}
+.body .con .con_left ul li a:hover .span {
+ width: 100%;
+}
+.body .con .con_left ul li a:hover img {
+ transform: scale(1.1);
+ -webkit-transform: scale(1.1);
+}
+.body .con .con_right {
+ width: 280px;
+}
+.body .con .con_right .tit {
+ border-bottom: 1px solid #d2d2d2;
+ height: 50px;
+ line-height: 50px;
+ font-size: 18px;
+ color: #000;
+ margin-bottom: 58px;
+}
+.body .con .con_right li {
+ margin-bottom: 23px;
+ position: relative;
+}
+.body .con .con_right li img {
+ width: 280px;
+ height: 280px;
+}
+.body .con .con_right li h1 {
+ position: absolute;
+ left: 15px;
+ top: 246px;
+ color: #fff;
+ font-weight: 100;
+ font-size: 18px;
+}
+.body .con .con_right li p {
+ font-size: 18px;
+ color: #f88621;
+ line-height: 40px;
+ transition: ease-in-out 0.4s;
+}
+.body .con .con_right li a {
+ display: block;
+ cursor: pointer;
+}
+.body .con .con_right li a:hover {
+ -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59);
+ -moz-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59);
+ box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59);
+}
+.body .con .con_right li a:hover p {
+ padding-left: 15px;
+}
+
+/*****分页*****/
+/****--.pager { display: block; padding: 34px 0 34px;  *padding-top: 30px;
+text-align: center; float: right; font-size: 12px; }
+.body .con .con_left .pager ul li{    border:none;
+    padding:0;
+    margin:0;}
+.body .con .con_left .pager ul li a{display: inline-block;}
+.pager span, .pager a { display: inline-block; border: 1px solid #ddd; color: #666; height: 20px; line-height: 20px; padding: 2px 10px 3px; text-decoration: none; margin: 0 2px; transition: ease-in-out .2s; }
+.pager a:hover { background: #00ac82; border-color: #00ac82; color: #fff; text-decoration: none; }
+.pager .cur { background: #00ac82; border-color: #00ac82; color: #fff; }
+.pager span.dot { background: #00ac82; border-color: #00ac82; color: #fff; }***/
+
+.pager { display: block; padding: 34px 0 34px; *padding-top: 30px;
+text-align: center; float: right; }
+.pager p { height: 30px; line-height: 30px; }
+.pager ul { margin-top: -30px; overflow: hidden; float: right; }
+.pager ul li { float: left; padding: 0 !important; height: auto !important; border: none !important; }
+.pager ul a { margin-left: 5px; padding: 0 10px; height: 28px; line-height: 28px; border: 1px solid #ccc; text-decoration: none; float: left; }
+.pager ul a.current { background-color: #00ac82; border-color: #00ac82; color: #fff; }
+.pager ul a.current:hover { background-color: #00ac82; border-color: #00ac82; color: #fff; }
+.pager ul a:hover { background-color: #00ac82; color: #fff; border-color: #00ac82; *background-color:#00ac82;
+*color: #fff;
+}
+/*******精彩芙蓉******/
+.about_tit { border-left: 2px solid #008251; height: 30px; line-height: 30px; color: #ccc; font-size: 18px; }
+.about_tit b { font-size: 24px; color: #000; font-weight: 100; padding-left: 11px; padding-right: 11px; }
+.about_tit p { color: #333; padding-top: 32px; }
+/*******精彩芙蓉*******/
+.about_1 { margin-bottom: 97px; }
+.about_1 .left { width: 645px; }
+.about_1 .left img { padding-top: 44px; padding-bottom: 36px; }
+.about_1 .left h1 { font-size: 18px; color: #00ac82; font-weight: 100; padding-bottom: 36px; }
+.about_1 .left p { line-height: 24px; }
+.about_1 .right { padding-top: 58px; }
+/******团队展示*****/
+.about_2 { overflow: hidden; }
+.about_2 .con{ overflow:hidden;}
+.about_2 ul { width: 115%; }
+.about_2 li { float: left; width: 100px; text-align: center; margin-right: 37px; margin-top: 44px; padding-bottom: 85px; height: 230px; overflow: hidden; }
+.about_2 li img { width: 100px; height: 160px; border-radius:80px; }
+.about_2 li h1 { font-size: 18px; color: #000; font-weight: 100; line-height: 40px; }
+.about_2 li p { color: #00ac82; }
+.about_2 li a { display: block; cursor: pointer; transition: ease-in-out .2s; cursor:default; }
+.about_2 li a:hover { padding-top: 10px; }
+/******发展历程*****/
+.about_3 { width: 100%; height: 499px; margin-bottom: 66px; padding-top: 61px; }
+.about_3 .about_tit { }
+/*****合作伙伴*****/
+.about_4 { overflow:hidden}
+.about_4 .con { padding-top: 95px; overflow: hidden; width: 1200px; padding-left: 15px; padding-right: 15px; margin: 0 auto; overflow:hidden }
+.about_4 .con ul { width: 117%; }
+.about_4 .con li { margin-right: 13px; float: left; margin-bottom: 17px; }
+.about_4 .con li img { width: 288px; height: 143px; border: 1px solid #f1f1f1; display: block; }
+.about_4 .con li a { display: block; transition: ease-in-out .2s; }
+.about_4 .con li a:hover { -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); -moz-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); }
+/*******客户感言*******/
+.about_5 { width: 100%; background: url("about_5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/about_5.jpg*/) center top no-repeat; height: 704px; margin-top: 29px; padding-top: 32px; overflow: hidden; }
+.about_5 .about_tit p { font-size: 12px; padding-top: 5px; }
+.about_5 .floor_3_main { background: none; margin-top: 58px; height: auto; }
+.about_5 .floor_3_main .con li div { margin-left: 160px; }
+.about_5 .floor_3_main .con li img { left: 0; }
+.about_5 .floor_3_main .con .l3 div { margin-left: 140px; }
+.about_5 .floor_3_main .con .l3 img { right: 55px; left: auto; }
+.about_5 .floor_3_main .con .l4 img { left: auto; right: 30px; }
+.about_6 { height: 584px; padding-top: 50px; overflow:hidden }
+.about_6 .about_tit p { font-size: 12px; padding-top: 10px; }
+.about_6 .poster-main { width: 832px; height: 321px; z-index: 200; transition: all 1.5s; position: relative; margin: 100px auto 120px; background: url("floor6_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.png*/) center bottom no-repeat; padding-bottom: 80px; }
+.about_6 .poster-main a, .about_6 .poster-main img { display: block; cursor:default; }
+.about_6 .poster-main .poster-list { width: 840px; height: 430px; }
+.about_6 .poster-main .poster-list .poster-item { position: absolute; left: 0; top: 0; }
+.about_6 .poster-main .poster-list .poster-item:first-child h1 { display: block; }
+.about_6 .poster-main .poster-btn { position: absolute; top: 0; margin-top: 0; width: 53px; height: 61px; z-index: 10; cursor: pointer; opacity: 0.8; }
+.about_6 .poster-main .poster-prev-btn { left: -122px; background: url("left.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/left.png*/) left center no-repeat; transition: ease-in-out .2s; }
+.about_6 .poster-main .poster-next-btn { right: -126px; background: url("right.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/right.png*/) right center no-repeat; transition: ease-in-out .2s; }
+.about_6 .poster-main .poster-prev-btn:hover { left: -132px; }
+.about_6 .poster-main .poster-next-btn:hover { right: -136px; }
+/*******芙蓉优品********/
+.yp_1 .floor_1_main { background: url("yp_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_bg.jpg*/) center bottom no-repeat; height: auto; min-height:665px; }
+.yp_list .floor_1_main .slideTxtBox .hd .on{background:none; }
+.yp_list .floor_1_main .slideTxtBox .hd .on a{color:#00a88c;}
+.yp_1 .floor_1_main .slideTxtBox .bd { height: auto; }
+.yp_1 .floor_1_main .slideTxtBox .bd .more { height: 162px; width: 100%; margin: 0; }
+.yp_1 .floor_1_main .slideTxtBox .bd .more a { background: #00a88c; width: 128px; height: 46px; line-height: 46px; text-align: center; margin: 26px 0 0 533px; transition: ease-in-out .5s; }
+.yp_1 .floor_1_main .slideTxtBox .bd .more a:hover { width: 180px; background: #d28428; }
+.yp_2{}
+.yp_2 .about_tit { margin: 38px 0; }
+.yp_2 .picScroll-left { position: relative; width: 1200px; margin: 52px auto 0; }
+.yp_2 .picScroll-left .hd .prev, .yp_2 .picScroll-left .hd .next { display: block; width: 37px; height: 73px; overflow: hidden; position: absolute; left: -60px; top: 184px; cursor: pointer; background-position: -64px 0; transition: ease-in-out .2s; }
+.yp_2 .picScroll-left .hd .next { background-position: -108px 0px; right: -60px; left: auto; }
+.yp_2 .picScroll-left .hd .next:hover { right: -70px; }
+.yp_2 .picScroll-left .hd .prev:hover { left: -70px; }
+.yp_2 .picScroll-left .bd { height: 555px; margin-bottom: 50px; }
+.yp_2 .picScroll-left .bd ul { overflow: hidden; zoom: 1; }
+.yp_2 .picScroll-left .bd ul li { margin-left: 17px; width: 282px; float: left; _display: inline; overflow: hidden; background: url("yp_2_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_bg.png*/) no-repeat center top; text-align: center; position: relative; transition: ease-in-out .2s; }
+.yp_2 .picScroll-left .bd ul li img { width: 282px; height: 400px; margin-top: 21px; border-radius: 5px; }
+.yp_2 .picScroll-left .bd ul li h1 { font-size: 18px; color: #fff; background: url("yp_2_h1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_h1.png*/) no-repeat center center; position: absolute; width: 100%; height: 25px; line-height: 25px; left: 0; top: 369px; }
+.yp_2 .picScroll-left .bd ul li h2 { color: #00ac82; font-weight: 100; padding: 10px 0 5px; }
+.yp_2 .picScroll-left .bd ul li h3 { color: #00ac82; font-weight: 100; }
+.yp_2 .picScroll-left .bd ul li p { padding: 10px 0; color: #333; }
+.yp_2 .picScroll-left .bd ul li p b { color: #ff9c00; font-weight: 100; font-size: 30px; font-family: impact; padding-right: 10px; }
+.yp_2 .picScroll-left .bd ul li a { display: block; }
+.yp_2 .picScroll-left .bd ul li span { color: #333; }
+.yp_2 .picScroll-left .bd ul li:hover { margin-top: 10px; }
+.yp_3 .con { margin-top: 43px; overflow: hidden; width: 1200px; }
+.yp_3 .con ul { width: 115%; }
+.yp_3 .con li { text-align: center; margin-right: 24px; margin-bottom: 16px; position: relative; width: 180px; float: left; }
+.yp_3 .con li img { width: 180px; height: 240px; }
+.yp_3 .con li h1 { color: #000; line-height: 31px; }
+.yp_3 .con li .on { background: url("color5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color5.png*/) repeat; width: 136px; height: 196px; position: absolute; left: -12px; top: 0; text-align: left; padding: 22px; color: #f1f1f1; display: block; transition: all ease-in-out .2s; opacity: 0; filter: alpha(opacity=0); }
+.yp_3 .con li a { display: block; cursor: pointer; }
+.yp_3 .con li a:hover .on { opacity: 1; left: 0px; filter: alpha(opacity=70); }
+.yp_3 .pager { padding: 10px 0 88px; *padding: 20px 0 88px;
+}
+.yp_list .floor_1_main .slideTxtBox { padding-bottom: 120px; }
+.yp_list .floor_1_main .slideTxtBox .hd ul li a { display: block; }
+.yp_list .floor_1_main .slideTxtBox .hd ul li .hover, .yp_list .floor_1_main .slideTxtBox .hd ul li :hover { background: #00a88c; color: #fff; }
+.yp_list .pager span, .yp_list .pager a { background: #fff; }
+.yp_list .pager .cur { background: #00ac82; }
+.yp_list .pager a:hover { background: #00ac82; }
+/*****联系我们****/
+.body_contact { background: #f7f7f7 url("contact_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/contact_bg.jpg*/) center top no-repeat; padding-bottom: 122px; margin-top:86px; }
+.body_contact .contact_left { width: 170px; }
+.body_contact .contact_left .tit { width: 100%; height: 50px; line-height: 50px; text-align: center; color: #fff; font-size: 18px; background: #00ac82; }
+.body_contact .contact_left ul { background: #fff; margin-bottom: 25px; overflow: hidden; }
+.body_contact .contact_left li { text-align: center; height: 40px; line-height: 40px; font-size: 18px; position: relative; z-index: 10; overflow: hidden; }
+.body_contact .contact_left li span { color: #000; display: block; position: absolute; left: 0; top: 0; z-index: 12; width: 170px; text-align: center; }
+.body_contact .contact_left li a { display: block; cursor: pointer; width: 170px; height: 40px; overflow: hidden; vertical-align: middle; }
+.body_contact .contact_left li i { position: absolute; height: 40px; width: 0; transition: ease-in-out .2s; background: #f1f1f1; left: 0; top: 0; }
+.body_contact .contact_left li a:hover i, .body_contact .contact_left li a.hover i { width: 168px; border-left: 2px solid #00ac82; z-index: 11; }
+.body_contact .contact_left dl dd { position: relative; width: 170px; }
+.body_contact .contact_left dl dd h1 { position: absolute; left: 0; top: 137px; background: url("color_6_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color_6_2.png*/) repeat; width: 100%; height: 33px; line-height: 33px; color: #fff; text-align: center; }
+.body_contact .contact_left dl dd img { width: 170px; height: 170px; }
+.body_contact .contact_left dl dd p { color: #000; text-transform: uppercase; text-align: center; }
+.body_contact .contact_left dl dd p b { color: #ff9c00; font-size: 24px; font-weight: 100; font-family: impact; padding-right: 8px; }
+.body_contact .contact_right { width: 800px; }
+.body_contact .contact_right .slideTxtBox { width: 800px; text-align: left; }
+.body_contact .contact_right .slideTxtBox .hd { height: 41px; background: #535d63; position: relative; padding-top: 9px; overflow: hidden; }
+.body_contact .contact_right .slideTxtBox .hd ul { height: 41px; line-height: 41px; padding-left: 28px; }
+.body_contact .contact_right .slideTxtBox .hd ul li { float: left; padding: 0 22px; cursor: pointer; color: #fff; font-size: 18px; }
+.body_contact .contact_right .slideTxtBox .hd ul li.on { height: 41px; background: #f5f5f5; color: #00ac82; font-weight: bold; }
+.body_contact .contact_right .slideTxtBox .bd .con { background: #fff; }
+.body_contact .contact_right .slideTxtBox .bd .con .tit { overflow: hidden; border-bottom: 1px solid #f1f1f1; height: 53px; }
+.body_contact .contact_right .slideTxtBox .bd .con .tit h1 { border-left: 2px solid #00ac82; height: 29px; line-height: 29px; font-size: 24px; color: #999; font-weight: 100; margin-left: 43px; margin-top: 14px; padding-left: 10px; }
+.body_contact .contact_right .slideTxtBox .bd .con2 { padding: 15px 45px 45px 45px; min-height:485px; }
+.body_contact .contact_right .slideTxtBox .bd .con2 h1 { font-size: 18px; color: #00ac82; font-weight: 100; }
+.body_contact .contact_right .slideTxtBox .bd .con2 p { color: #999; line-height: 24px; }
+.body_contact .contact_right .slideTxtBox .bd .map { width: 800px; height: 308px; overflow: hidden; background: #f5f3f0; }
+/******产品详情******/
+.des_main { background: #f1f1f3; padding-bottom: 64px;padding-top: 86px; }
+.des_main .local { height: 57px; line-height: 57px; font-size: 12px; color: #6b6b6b; }
+.des_main .local a { color: #6b6b6b; }
+.des_main .des_1 { border: 1px solid #bebebe; background: #fff; }
+.des_main .des_1 .tit { padding: 0 32px; margin-bottom: 23px; }
+.des_main .des_1 .tit h1 { font-size: 24px; color: #000; font-weight: 100; height: 67px; line-height: 67px; }
+.des_main .des_1 .tit li { background: #00ac82; color: #fff; text-align: center; margin-right: 8px; height: 30px; line-height: 30px; float: left; padding: 0 10px; border-radius: 5px; }
+.des_main .des_1 .des_1_left { padding-left: 32px; }
+.des_main .des_1 .des_1_left .photo { width: 450px; margin-bottom: 20px; }
+.des_main .des_1 .des_1_left .photo .jqzoom { border: 1px solid #ddd; width: 450px; height: 450px; position: relative; padding: 0px; cursor: pointer; }
+.des_main .des_1 .des_1_left div.zoomdiv { z-index: 999; position: absolute; top: 0px; left: 0px; width: 200px; height: 200px; background: #ffffff; border: 1px solid #CCCCCC; display: none; text-align: center; overflow: hidden; }
+.des_main .des_1 .des_1_left div.jqZoomPup { z-index: 999; visibility: hidden; position: absolute; top: 0px; left: 0px; width: 100px !important; height: 100px !important; border: 1px solid #aaa; background: #ffffff; opacity: 0.5; -moz-opacity: 0.5; -khtml-opacity: 0.5; filter: alpha(Opacity=50); }
+.des_main .des_1 .des_1_left .photo .img { width: 450px; height: 450px; display: block; }
+.des_main .des_1 .des_1_left .photoimg { width: 450px; height: 78px; padding: 10px 0; position: relative; border: 1px solid #eee; }
+.des_main .des_1 .des_1_left .photoimg .list { width: 410px; overflow: hidden; position: relative; margin-left: 22px; }
+.des_main .des_1 .des_1_left .photoimg .icon { width: 8px; height: 16px; position: absolute; top: 40px; cursor: pointer; }
+.des_main .des_1 .des_1_left .photoimg .btnleft { left: 8px; background-position: -149px 0px; }
+.des_main .des_1 .des_1_left .photoimg .btnright { right: 8px; background-position: -161px 0px; }
+.des_main .des_1 .des_1_left .photoimg .list .listcon { width: 300%; }
+.des_main .des_1 .des_1_left .photoimg a { width: 73px; height: 73px; display: block; float: left; margin-right: 7px; border: 1px solid #ddd; }
+.des_main .des_1 .des_1_left .photoimg a img { width: 73px; height: 73px; display: block; }
+.des_main .des_1 .des_1_left .photoimg a:hover { border: 1px solid #f35b07; }
+.des_main .des_1 .des_1_right { width: 715px; }
+.des_main .des_1 .des_1_right .t { background: #f1f1f1; height: 98px; padding: 7px 0; }
+.des_main .des_1 .des_1_right .t span { padding-left: 35px; color: #999; padding-right: 50px; border-right: 1px dashed #576167; height: 68px; display: block; padding-top: 30px; float: left; }
+.des_main .des_1 .des_1_right .t span b { color: #ff8a00; font-size: 40px; font-family: impact; }
+.des_main .des_1 .des_1_right .t span strong { color: #ff8a00; font-weight: 100; }
+.des_main .des_1 .des_1_right .t .span2 { border: none; }
+.des_main .des_1 .des_1_right .t a { float: right; padding-right: 40px; color: #00ac82; padding-top: 41px; }
+.des_main .des_1 .des_1_right .t a:hover { text-decoration: underline; }
+.des_main .des_1 .des_1_right .feng .left { padding-left: 35px; position: relative; }
+.des_main .des_1 .des_1_right .feng .left a{cursor:default;}
+.des_main .des_1 .des_1_right .feng .left img { width: 93px; height: 93px; border-radius: 100%; border: 2px solid #ff8a00; position: absolute; left: 35px; top: 44px; }
+.des_main .des_1 .des_1_right .feng .left h1 { width: 180px; height: 43px; line-height: 43px; text-align: center; font-size: 18px; color: #fff; background: #ff8a00; border-radius: 21px; margin-left: 70px; margin-top: 72px; font-weight: 100; }
+.des_main .des_1 .des_1_right .feng .right { padding-top: 83px; padding-right: 36px; }
+.des_main .des_1 .des_1_right .des { background: url("des_f.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_f.jpg*/) center top no-repeat; width: 552px; height: 57px; margin-left: 45px; margin-top: 53px; padding: 0 40px; color: #000; padding-top: 15px; }
+.des_main .des_1 .des_1_right .ul { margin-left: 37px; margin-top: 49px; }
+.des_main .des_1 .des_1_right .ul li { float: left; text-align: center; margin-right: 19px; }
+.des_main .des_1 .des_1_right .ul p { line-height: 50px; }
+.des_main .des_1 .des_1_right .ul a { display: block; }
+.des_main .des_1 .des_1_right .ul a:hover p { color: #9f0100; }
+.des_main .des_2 { margin-top: 17px; }
+.des_main .des_2 .ul { background: #535d63; height: 48px; }
+.des_main .des_2 .ul ul { padding-left: 28px; }
+.des_main .des_2 .ul li { float: left; width: 100px; padding-top: 7px; margin-right: 1px; }
+.des_main .des_2 .ul li a { height: 41px; line-height: 41px; font-size: 18px; display: block; text-align: center; color: #fff; width: 100%; }
+.des_main .des_2 .ul li a:hover, .des_main .des_2 .ul li .cur { background: #f5f5f5; color: #00ac82; }
+.des_main .des_2 .hover { width: 1200px; position: fixed; top:86px; z-index: 1111; margin: 0 auto; }
+.des_main .des_2 .box { border: 1px solid #dcdcdc; border-top: none; background: #fff; padding: 32px 53px 20px 28px; }
+.des_main .des_2 .box .left { background: url("des_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_bg.png*/) no-repeat; width: 68px; font-size: 31px; color: #fff; padding: 16px; line-height: 34px; }
+.des_main .des_2 .box .box_right { width: 1000px; }
+.des_main .des_2 .box .box_right .t { width: 1000px; height: 25px; background: #f1f1f1; padding-top: 5px; }
+.des_main .des_2 .box .box_right .t span { height: 20px; line-height: 20px; border-left: 2px solid #00ac82; font-size: 18px; color: #535d63; margin-left: 9px; display: block; padding-left: 9px; }
+.des_main .des_2 .box .box_right .con { padding: 15px 18px; }
+.des_main .des_2 .box .box_right .con img { max-width: 964px; }
+.des_main .des_2 .box .box_right .con2 { font-size: 18px; font-weight: bold; color: #535d63; }
+.des_main .des_2 .box .box_right .con3 { margin: 33px 0; }
+.des_main .des_2 .box .box_right .con3 li { float: left; width: 200px; margin-right: 41px; text-align: center; line-height: 38px; }
+.des_main .des_2 .box .box_right .con3 img { width: 200px; height: 200px; }
+.des_main .des_2 .box .box_right .con3 p { color: #333; }
+.des_main .des_2 .box .box_right .con4 { margin-bottom: 0; }
+.des_main .des_2 .box2 { margin-top: 26px; border-top: 1px solid #dcdcdc; line-height:30px; }
+/******定制旅游******/
+.dzly_main .ny_title span { margin-bottom: 75px; }
+.dzly_main .dzly_1 { text-align: center; }
+.dzly_main .dzly_1 h1 { font-size: 30px; color: #00ac82; margin-top: 50px; }
+.dzly_main .dzly_1 h2 { font-size: 18px; color: #000; margin-bottom: 17px; margin-top: 35px; }
+.dzly_main .dzly_1 p { font-size: 18px; color: #8b8b8b; }
+.dzly_main .dzly_2 { margin-top: 50px; margin-bottom: 64px; overflow:hidden}
+.dzly_main .dzly_2 li { width: 600px; float: left; }
+.dzly_main .dzly_2 li img { width: 300px; height: 300px; float: left; transition: ease-in-out .2s; }
+.dzly_main .dzly_2 li .text { color: #fff; padding: 0 17px 0 27px; display: block; float: left; background: #00AC82; width: 256px; height: 300px; }
+.dzly_main .dzly_2 li .text i { width: 39px; height: 10px; background-position: -177px 0; margin-top: 75px; margin-bottom: 26px; transition: ease-in-out .2s; }
+.dzly_main .dzly_2 li .text h1 { font-size: 18px; margin-bottom: 22px; }
+.dzly_main .dzly_2 li .text p { line-height: 24px;  }
+.dzly_main .dzly_2 li a { display: block; cursor: pointer; position: relative; }
+.dzly_main .dzly_2 li a:hover { -webkit-transform-origin: center top; -moz-transform-origin: center top; transform-origin: center top; -webkit-animation: error-swing infinite 2s ease-in-out alternate; -moz-animation: error-swing infinite 2s ease-in-out alternate; animation: error-swing infinite 2s ease-in-out alternate; }
+.dzly_main .dzly_2 .l2 img { float: right; }
+.dzly_main .dzly_2 .l2 p{padding-left:10px}
+.dzly_main .dzly_2 .l2 .text { padding: 0 22px 0 22px; }
+.dzly_main .dzly_2 .l2 .text i { background-position: -221px 0; margin-left: 207px; }
+.dzly_main .dzly_2 .l2 .text h1 { text-align: right; }
+.dzly_main .dzly_2 .l2 a:hover { -webkit-transform-origin: center top; -moz-transform-origin: center top; transform-origin: center top; -webkit-animation: error-swing infinite 2s ease-in-out alternate; -moz-animation: error-swing infinite 2s ease-in-out alternate; animation: error-swing infinite 2s ease-in-out alternate; }
+.dzly_3_main { background: url("dzly_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_bg.jpg*/) repeat; width: 100%; height: 454px; text-align: center; }
+.dzly_3_main h1 { color: #00ac82; font-size: 30px; padding-top: 47px; }
+.dzly_3_main .ul { margin-top: 70px; }
+.dzly_3_main .ul li { float: left; }
+.dzly_3_main .ul li .left { width: 160px; float: left; }
+.dzly_3_main .ul li .left p { padding-top: 22px; color: #3c3c3c; }
+.dzly_3_main .ul li .left img { width: 160px; height: 185px; overflow: hidden; }
+.dzly_3_main .ul li .left img:hover { transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -o-transform: rotate(360deg); -ms-transform: rotate(30deg); }
+.dzly_3_main .ul li .right { width: 48px; float: left; }
+.dzly_3_main .ul li .right i { width: 14px; height: 17px; background-position: -162px -28px; margin: 91px auto 0; }
+.dzly_4_main { background: url("dzly_from.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_from.jpg*/) no-repeat center top; width: 100%; height: 1615px; }
+.dzly_4_main .t { font-size: 30px; font-weight: bold; color: #fff; text-align: center; height: 133px; line-height: 133px; }
+.dzly_4_main .table { background: #fff; width: 1026px; height: 1380px; margin: 0 auto; }
+.dzly_4_main .title { height: 34px; line-height: 34px; font-size: 18px; font-weight: bold; color: #000; width: 100%; overflow: hidden; }
+.dzly_4_main .title i { width: 35px; height: 34px; background-position: 0 -90px; margin-right: 20px; margin-left: 25px; }
+.dzly_4_main .title .right { border-top: 1px solid #ccc; margin-top: 17px; width: 766px; margin-right: 83px; }
+.dzly_4_main .con { margin-top: 20px; }
+.dzly_4_main .con li { line-height: 36px; margin-bottom: 35px; }
+.dzly_4_main .con .span1 { width: 248px; padding-right: 5px; text-align: right; color: #000; display: block; float: left; }
+.dzly_4_main .con .span2 { width: 60px; text-align: center; display: block; float: left; }
+.dzly_4_main .con .span3 { width: 74px; text-align: left; display: block; float: left; }
+.dzly_4_main .con input { border: 1px solid #d2d2d2; height: 18px; padding: 6px 10px; width: 186px; float: left; }
+.dzly_4_main .con .checkbox { width: 12px; height: 12px; margin-right: 10px; margin-top: 13px; border: none; margin-left: 15px; padding: 0; }
+.dzly_4_main .con a { width: 92px; height: 34px; line-height: 34px; text-align: center; border: 1px solid #d2d2d2; margin-right: 20px; display: block; float: left; transition: ease-in-out .2s; }
+.dzly_4_main .con a:hover, .dzly_4_main .con a.hover { background: #00ac82; color: #fff; border: 1px solid #00ac82; }
+.dzly_4_main .box1 { padding-top: 40px; }
+.dzly_4_main .box2 { padding-top: 10px; }
+.dzly_4_main .box2 i { background-position: -35px -90px; }
+.dzly_4_main .box2 .right { width: 766px; }
+.dzly_4_main .box2 .con li { margin-bottom: 17px; }
+.dzly_4_main .box3 { padding-top: 30px; }
+.dzly_4_main .box3 i { background-position: -70px -90px; }
+.dzly_4_main .box3 .right { width: 711px; }
+.dzly_4_main .box3 .con li { margin-bottom: 17px; }
+.dzly_4_main .box3 .con textarea { width: 642px; height: 185px; line-height: 24px; padding: 10px; border: 1px solid #d2d2d2; resize: none; overflow: hidden; }
+.dzly_4_main .box4 { padding-top: 10px; }
+.dzly_4_main .box4 i { background-position: -105px -90px; }
+.dzly_4_main .box4 .right { width: 752px; }
+.dzly_4_main .box4 .span3 { width: 80px; text-align: right; }
+.dzly_4_main .box4 li { margin-bottom: 31px; }
+.dzly_4_main .box4 .btn { width: 511px; height: 54px; line-height: 54px; text-align: center; color: #fff; font-size: 18px; background: #00ac82; padding: 0; border: none; cursor: pointer; transition: ease-in-out .2s; }
+.dzly_4_main .box4 .btn:hover { width: 556px; }
+/******map*****/
+.map_right { width: 800px; background: #fff; }
+.map_right .tit { overflow: hidden; border: 1px solid #f1f1f1; line-height: 53px; height: 53px; }
+.map_right .tit .right { padding-right: 20px; }
+.map_right .tit h1 { border-left: 2px solid #00ac82; height: 29px; line-height: 29px; font-size: 24px; width: 250px; float: left; color: #999; font-weight: 100; margin-left: 20px; margin-top: 14px; padding-left: 10px; }
+.map_right .con { padding: 20px; min-height: 550px; line-height: 24px; }
+.map_right .con img { max-width: 740px; }
+
+/* map_ul  */
+.map_right .map_ul { list-style: outside none none; display: block; width: 100%; padding-top: 20px; }
+.map_right .map_ul li { display: block; width: 100%; padding: 0; margin-bottom: 15px; }
+.map_right .map_ul li a { width: 100%; height: 35px; line-height: 35px; font-weight: bold; display: block; background: #f6f6f6; text-indent: 15px; }
+.map_right .map_ul .list-inline { display: block; width: 86%; }
+.map_right .map_ul .list-inline li { height: 32px; display: inline-block; *display: inline;
+margin: 0px 5px 15px 0; *margin: 15px 5px 3px 0;
+zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; padding: 0px; }
+.map_right .map_ul .list-inline li a { text-indent: 0; font-weight: normal; display: block; line-height: 32px; height: 32px; display: inline-block; padding: 0px 10px; width: auto; border: 1px solid #ccc; text-align: center; }
+.map_right .map_ul .list-inline li a:hover { background: #00ac82; color: #fff; border: 1px solid #00ac82; }
+.news_main { background: #fff; padding: 20px; min-height:550px; line-height:30px; }
+.news_main li { margin-bottom: 15px; }
+.news_main li a { display: block; transition: ease-in-out .2s; height: 169px; cursor: pointer; border: 1px solid #e2e2e2; }
+.news_main li a .left { width: 176px; margin-left: 34px; margin-top: 19px; }
+.news_main li a .left img { width: 176px; height: 130px; }
+.news_main li a .right { width: 500px; padding-right: 20px; }
+.news_main li a .right h1 { font-size: 16px; margin: 19px 0; margin-bottom:5px; font-weight: 100; }
+.news_main li a .right p { color: #666; line-height: 24px; }
+.news_main .about_add{float:left; margin-top:20px;}
+.news_main .about_left h1{ margin:15px 0;}
+.news_main li a .right h2 { position: relative; transition: ease-in-out .2s; overflow: hidden; margin-top: 14px; display: block; width: 99px; height: 26px; line-height: 26px; text-align: center; border: 1px solid #a0a0a0; font-weight: 100; color: #666; }
+.news_main li a .right h2 b { display: block; font-weight: 100; color: #595959; transition: ease-in-out .2s; font-size: 13px; background: #fff; width: 13px; height: 13px; line-height: 11px; position: absolute; top: 8px; left: 145px; }
+.news_main li a:hover { -moz-box-shadow: 0px 0px 6px #dcd9d9; -webkit-box-shadow: 0px 0px 6px #dcd9d9; box-shadow: 0px 0px 6px #dcd9d9; }
+.news_main li a:hover h1 { color: #333; }
+.news_main li a:hover h2 { background: #00ac82; color: #fff; border: 1px solid #00ac82; width: 135px; padding-right: 10px; }
+.news_main li a:hover h2 b { left: 110px; }
+.map_right .pager li a{ height:28px;}
+.show_news { background: #fff; padding: 15px; }
+.show_news .t { border-bottom: 1px solid #f0f0f0; text-align: center; padding-top: 60px; margin-bottom: 34px; }
+.show_news .t h1 { font-size: 26px; padding-bottom: 18px; }
+.show_news .t p { padding-bottom: 16px; }
+.show_news .con2 { line-height: 25px; min-height: 330px; }
+.show_news .con2 img { max-width: 770px; }
+.show_news .page_main { padding: 90px 0; }
+.show_news #bdshare { margin-top: 30px; margin-bottom: 55px; }
+.show_news #bdshare span.bds_more, .show_news .bds_tools a { line-height: 14px; }
+.show_news .baiduShare { margin-bottom: 5px; }
+.show_news .reLink { line-height: 24px; color: #333; padding-bottom: 30px; }
+.show_news .reLink .prevLink { color: #333; float: left; }
+.show_news .reLink .nextLink { float: right; }
+/********.toolbar1*********/
+.toolbar1 { width: 50px; position: fixed; right: 0px; top:100px; z-index: 999; }
+.toolbar1 dd { width: 50px; height: 50px; background: #999; position: relative; margin-bottom: 3px; }
+.toolbar1 dd i { width: 50px; height: 50px; display: block; position: absolute; left: 0; top: 0; cursor: pointer; text-align: center; }
+.toolbar1 dd i span { width: 35px; height: 35px; display: block; margin: 7px 0 0 7px; *margin: 7px 0 0 0;
+background: url("rightFixIcon.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/rightFixIcon.png*/) no-repeat 0 0; }
+.toolbar1 .slide-tel { display: block; width: 0; height: 50px; line-height: 50px; font-size: 24px; font-weight: bold; font-family: arial; color: #FFF; position: absolute; padding: 0 0 0 50px; top: 0; right: 0; overflow: hidden; }
+.toolbar1 .pop { position: absolute; right: 90px; top: -65px; background: #00a88c; display: none; }
+.toolbar1 .wbc { top: -90px; }
+.toolbar1 .pop-code { width: 120px; padding: 10px 20px 0 10px; }
+.toolbar1 .pop-code img { width: 120px; height: 120px; display: block; padding: 5px; background: #fff; }
+.toolbar1 .pop-code h3 { height: 50px; line-height: 50px; text-align: center; color: #f2e8e1; font-size: 16px; font-weight: 400; white-space: nowrap; }
+.toolbar1 .qq span { background-position: 0 -47px; }
+.toolbar1 .qq a { width: 50px; height: 50px; cursor: pointer; display: block; }
+.toolbar1 .qq:hover { background: #00a88c; }
+.toolbar1 .tel span { background-position: 0 0; }
+.toolbar1 .tel:hover { background: #00a88c; }
+.toolbar1 .code span { background-position: 0 -95px; }
+.toolbar1 .wb span { background-position: 0 -185px; }
+.toolbar1 .code:hover { background: #00a88c; }
+.toolbar1 .top span { background-position: 0 -142px; }
+.toolbar1 .top:hover { background: #00a88c; }
+/* map_ul  */
+.map_ul { list-style: outside none none; display: block; width: 100%; padding-top: 20px; padding-bottom: 30px }
+.map_ul li { display: block; width: 100%; padding: 0; margin-bottom: 15px; }
+.map_ul li a { width: 100%; height: 35px; line-height: 35px; font-weight: bold; display: block; background: #f6f6f6; text-indent: 15px; }
+.map_ul .list-inline { display: block; width: 86%; }
+.map_ul .list-inline li { height: 32px; display: inline-block; *display: inline;
+margin: 0px 5px 15px 0; *margin:15px 5px 15px 0;
+zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; padding: 0px; }
+.map_ul .list-inline li a { text-indent: 0; font-weight: normal; display: block; line-height: 32px; height: 32px; display: inline-block; padding: 0px 10px; width: auto; border: 1px solid #ccc; text-align: center; }
+.map_ul .list-inline li a:hover { background: #33b371; color: #fff; border: 1px solid #33b371; }
+.sub_banner { height: 240px; width: 100%; }
+.local_main { height: 90px; line-height: 90px; border-bottom: 1px solid #ddd; }
+.local_main .left { font-size: 30px; position: relative; }
+.local_main .left i { transition: ease-in-out .2s; width: 30px; height: 5px; background: #33b371; position: absolute; bottom: 0; left: 0; }
+.local_main .left b { color: #33b371; font-weight: 100; }
+.wrapper .title { margin: 0 auto; text-align: center; padding-top: 110px; padding-bottom: 56px; }
+.wrapper .title h3 { font-size: 24px; font-weight: normal; background: url("line.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/line.png*/) no-repeat center center; height: 40px; line-height: 40px; display: block; }
+.wrapper .title h4 { font-size: 48px; font-weight: normal; font-family: impact; text-transform: uppercase; }
+.shownews { padding: 12px 0 30px; }
+.shownews .titlen { color: #444; font-size: 24px; line-height: 40px; margin-bottom: 5px; padding-top: 10px; text-align: center; }
+.shownews .mark { border-bottom: 1px dashed #ccc; padding-bottom: 6px; text-align: center; width: 100%; }
+.shownews .mark span { color: #666666; font-size: 12px; margin: 0 8px; }
+.shownews .showContxt { color: #333333; line-height: 28px; padding: 20px 0 30px; }
+.shownews .showContxt img { max-width: 100%; }
+.shownews .shareNew { padding-bottom: 20px; }
+.reLink { border-top: 1px solid #cbcbcb; height: 25px; padding-top: 12px; width: 100%; }
+.reLink .nextLink, .reLink .prevLink { color: #666; line-height: 25px; width: 50%; cursor: pointer; }
+.reLink .nextLink { text-align: right; }
+.reLink a { transition: all 500ms ease 0s; }
+.reLink a:hover { color: #df0010; }
+#nav{ display:none;}
+
+
+
+
+
+.frgl_detail {
+ background: #fff;
+
+
+}
+.frgl_detail .banner {
+ width: 100%;
+ height: 620px;
+}
+.frgl_detail .banner img {
+ width: 100%;
+ height: 620px;
+ display: block;
+}
+.frgl_detail .floor1_main {
+ height: 103px;
+ position: relative;
+ border-bottom: 1px solid #cccccc;
+}
+.frgl_detail .floor1_main .line {
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+ height: 2px;
+ background: #F2F2F2;
+ width: 100%;
+}
+.frgl_detail .floor1_main .floor1 .l h4 {
+ color: #000;
+ font-size: 20px;
+ font-weight: bold;
+ line-height: 20px;
+ padding-top: 24px;
+ padding-bottom: 20px;
+}
+.frgl_detail .floor1_main .floor1 .l .b div {
+ float: left;
+}
+.frgl_detail .floor1_main .floor1 .l .b span {
+ font-size: 14px;
+ color: #999;
+ margin-right: 24px;
+}
+.frgl_detail .floor1_main .floor1 .l .b .i1 {
+ background: url("frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
+ width: 15px;
+ height: 18px;
+ display: block;
+ float: left;
+ margin-right: 12px;
+ margin-top: 1px;
+}
+.frgl_detail .floor1_main .floor1 .l .b .i2 {
+ background: url("frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
+ width: 20px;
+ height: 19px;
+ display: block;
+ float: left;
+ margin-right: 5px;
+ margin-top: 1px;
+}
+.frgl_detail .floor1_main .floor1 .l .b .i3 {
+ background: url("frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
+ width: 22px;
+ height: 13px;
+ display: block;
+ float: left;
+ margin-right: 7px;
+ margin-top: 3px;
+}
+.frgl_detail .floor1_main .floor1 .r {
+ float: right;
+}
+.frgl_detail .floor1_main .floor1 .r div {
+ float: left;
+}
+.frgl_detail .floor1_main .floor1 .r div i {
+ display: inline-block;
+}
+.frgl_detail .floor1_main .floor1 .r div h4 {
+ font-size: 14px;
+ color: #999;
+ padding-top: 14px;
+ line-height: 14px;
+}
+.frgl_detail .floor1_main .floor1 .r .div1 {
+ border-left: 1px solid #E7E7E5;
+ border-right: 1px solid #E7E7E5;
+ width: 140px;
+ height: 103px;
+ text-align: center;
+}
+.frgl_detail .floor1_main .floor1 .r .div1 i {
+ background: url("frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
+ width: 36px;
+ margin-top: 24px;
+ height: 36px;
+}
+.frgl_detail .floor1_main .floor1 .r .div2 {
+ border-right: 1px solid #E7E7E5;
+ width: 140px;
+ height: 103px;
+ text-align: center;
+}
+.frgl_detail .floor1_main .floor1 .r .div2 i {
+ background: url("frgl_fl1_i4.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i4.jpg*/);
+ width: 37px;
+ height: 37px;
+ margin-top: 24px;
+
+}
+.frgl_detail .cont {
+ min-height: 500px;
+ position: relative;
+}
+.frgl_detail .cont .ml {
+ width: 850px;
+ padding-top: 38px;
+}
+.frgl_detail .cont .ml img {
+ /*display: block;*/
+}
+.frgl_detail .cont .mr {
+ float: right;
+ width: 281px;
+}
+.frgl_detail .cont .mr .title {
+ height: 81px;
+ padding-top: 23px;
+}
+.frgl_detail .cont .mr .title h4 {
+ font-size: 18px;
+ line-height: 50px;
+ border-bottom: 1px solid #D8D8D8;
+ text-align: left;
+}
+.frgl_detail .cont .mr .top {
+ display: block;
+ width: 281px;
+ height: 211px;
+ position: relative;
+}
+.frgl_detail .cont .mr .top img {
+ display: block;
+ width: 281px;
+ height: 211px;
+}
+.frgl_detail .cont .mr .top .ft {
+ position: absolute;
+ top: 11px;
+ left: 11px;
+}
+.frgl_detail .cont .mr .top .ft i {
+ margin-top: 4px;
+ background: url("frgl_r_ic1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_r_ic1.png*/);
+ width: 22px;
+ height: 13px;
+ margin-right: 3px;
+ display: block;
+ float: left;
+}
+.frgl_detail .cont .mr .top .ft span {
+ color: #fff;
+ font-size: 14px;
+}
+.frgl_detail .cont .mr .top .fb {
+ width: 100%;
+ text-align: center;
+ position: absolute;
+ bottom: 5px;
+ left: 0;
+ color: #fff;
+}
+.frgl_detail .cont .mr .top:hover div {
+ color: #01AC82;
+}
+.frgl_detail .cont .mr .bottom ul {
+ margin-top: 10px;
+}
+.frgl_detail .cont .mr .bottom ul li {
+ line-height: 36px;
+}
+.frgl_detail .cont .mr .bottom ul li a span {
+ margin-right: 7px;
+ line-height: 36px;
+ color: #cccccc;
+ font-size: 14px;
+}
+.frgl_detail .cont .mr .bottom ul li a p {
+ line-height: 36px;
+ display: inline;
+ color: #999;
+ font-size: 14px;
+}
+.frgl_detail .cont .mr .bottom ul li {
+ line-height: 36px;
+}
+.frgl_detail .cont .mr .bottom ul li a:hover span {
+ margin-right: 7px;
+ line-height: 36px;
+ color: #cccccc;
+ font-size: 14px;
+}
+.frgl_detail .cont .mr .bottom ul li a:hover p {
+ line-height: 36px;
+ display: inline;
+ color: #01AC82;
+ font-size: 14px;
+}
+.frgl_detail .con2 {
+ line-height: 25px;
+ min-height: 330px;
+}
+.frgl_detail .con2 img {
+ max-width: 770px;
+}
+.frgl_detail .page_main {
+ padding: 90px 0;
+}
+.frgl_detail #bdshare {
+ margin-top: 30px;
+ margin-bottom: 55px;
+}
+.frgl_detail #bdshare span .bds_more,
+.frgl_detail .bds_tools a {
+ line-height: 14px;
+}
+.frgl_detail .baiduShare {
+ margin-bottom: 5px;
+}
+.frgl_detail .reLink {
+ line-height: 24px;
+ color: #333;
+ padding-bottom: 30px;
+}
+.frgl_detail .reLink .prevLink {
+ color: #333;
+ float: left;
+}
+.frgl_detail .reLink .nextLink {
+ float: right;
+}
+
+@keyframes error-swing { 0% {
+ transform: rotate(1deg);
+}
+ 100% {
+ transform: rotate(-2deg);
+}
+}
+@-webkit-keyframes error-swing { 0% {
+ -webkit-transform: rotate(1deg);
+}
+ 100% {
+ -webkit-transform: rotate(-2deg);
+}
+}
+@-moz-keyframes error-swing { 0% {
+ -moz-transform: rotate(1deg);
+}
+ 100% {
+ -moz-transform: rotate(-2deg);
+}
+}
+/* Float Shadow */
+.hvr-float-shadow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-float-shadow:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 10px;
+	width: 90%;
+	opacity: 0;
+	background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	/* W3C */
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);/* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
