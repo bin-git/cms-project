@@ -34,34 +34,34 @@ a:hover { color: #58d18c; text-decoration: none; }
 .w1000 { width: 1000px; margin: 0 auto; }
 .head_main { height: 902px; position: relative; width: 100%; z-index: 10; }
 .head_main .che{position: absolute; left:50%; margin-left:-786px; top:511px;}
-.head_main .map { position: absolute; left: 50%; top: 103px; margin-left: -640.5px; width: 1281px; height: 936px; z-index: 11; background: url("map.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map.png*/) center top no-repeat; }
+.head_main .map { position: absolute; left: 50%; top: 103px; margin-left: -640.5px; width: 1281px; height: 936px; z-index: 11; background: url("../images/map.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map.png*/) center top no-repeat; }
 .head_main .map a { display: block; position: absolute; background-repeat: no-repeat; transition: ease-in-out .2s; }
-.head_main .map .a1 { background: url("map1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map1.png*/) no-repeat; width: 38px; height: 54px; left: 194px; top: 380px; }
-.head_main .map .a1:hover { background: url("map_1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_1.png*/) no-repeat; width: 50px; height: 69px; top: 376px; }
-.head_main .map .a2 { background: url("map2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map2.png*/) no-repeat; width: 56px; height: 55px; left: 249px; top: 430px; }
-.head_main .map .a2:hover { background: url("map_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_2.png*/) no-repeat; width: 82px; height: 83px; top: 410px; }
-.head_main .map .a3 { background: url("map3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map3.png*/) no-repeat; width: 87px; height: 66px; left: 290px; top: 476px; }
-.head_main .map .a3:hover { background: url("map_3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_3.png*/) no-repeat; width: 105px; height: 77px; top: 466px; }
-.head_main .map .a4 { background: url("map4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map4.png*/) no-repeat; width: 37px; height: 70px; left: 382px; top: 544px; }
-.head_main .map .a4:hover { background: url("map_4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_4.png*/) no-repeat; width: 51px; height: 85px; top: 534px; }
-.head_main .map .a5 { background: url("map5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map5.png*/) no-repeat; width: 45px; height: 56px; left: 372px; top: 338px; }
-.head_main .map .a5:hover { background: url("map_5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_5.png*/) no-repeat; width: 54px; height: 74px; top: 328px; }
-.head_main .map .a6 { background: url("map6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map6.png*/) no-repeat; width: 68px; height: 65px; left: 450px; top: 231px; }
-.head_main .map .a6:hover { background: url("map_6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_6.png*/) no-repeat; width: 85px; height: 85px; top: 221px; }
-.head_main .map .a7 { background: url("map7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map7.png*/) no-repeat; width: 64px; height: 52px; left: 816px; top: 494px; }
-.head_main .map .a7:hover { background: url("map_7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_7.png*/) no-repeat; width: 77px; height: 68px; top: 484px; }
-.head_main .map .a8 { background: url("map8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map8.png*/) no-repeat; width: 63px; height: 78px; left: 481px; top: 125px; }
-.head_main .map .a8:hover { background: url("map_8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_8.png*/) no-repeat; width: 74px; height: 87px; top: 123px; }
-.head_main .map .a9 { background: url("map9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map9.png*/) no-repeat; width: 35px; height: 61px; right: 556px; top: 254px; }
-.head_main .map .a9:hover { background: url("map_9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_9.png*/) no-repeat; width: 56px; height: 65px; top: 254px; }
-.head_main .map .a10 { background: url("map10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map10.png*/) no-repeat; width: 50px; height: 67px; right: 298px; top: 409px; }
-.head_main .map .a10:hover { background: url("map_10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_10.png*/) no-repeat; width: 62px; height: 82px; }
-.head_main .map .a11 { background: url("map11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map11.png*/) no-repeat; width: 61px; height: 45px; right: 451px; top: 13px; }
-.head_main .map .a11:hover { background: url("map_11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_11.png*/) no-repeat; width: 73px; height: 58px; }
-.head_main .map .a12 { background: url("map12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map12.png*/) no-repeat; width: 38px; height: 54px; right: 271px; top: 189px; }
-.head_main .map .a12:hover { background: url("map_12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_12.png*/) no-repeat; width: 63px; height: 68px; top: 189px; }
-.head_main .map .a13 { background: url("map13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map13.png*/) no-repeat; width: 61px; height: 60px; right: 224px; top: 100px; }
-.head_main .map .a13:hover { background: url("map_13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_13.png*/) no-repeat; width: 76px; height: 73px; }
+.head_main .map .a1 { background: url("../images/map1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map1.png*/) no-repeat; width: 38px; height: 54px; left: 194px; top: 380px; }
+.head_main .map .a1:hover { background: url("../images/map_1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_1.png*/) no-repeat; width: 50px; height: 69px; top: 376px; }
+.head_main .map .a2 { background: url("../images/map2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map2.png*/) no-repeat; width: 56px; height: 55px; left: 249px; top: 430px; }
+.head_main .map .a2:hover { background: url("../images/map_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_2.png*/) no-repeat; width: 82px; height: 83px; top: 410px; }
+.head_main .map .a3 { background: url("../images/map3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map3.png*/) no-repeat; width: 87px; height: 66px; left: 290px; top: 476px; }
+.head_main .map .a3:hover { background: url("../images/map_3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_3.png*/) no-repeat; width: 105px; height: 77px; top: 466px; }
+.head_main .map .a4 { background: url("../images/map4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map4.png*/) no-repeat; width: 37px; height: 70px; left: 382px; top: 544px; }
+.head_main .map .a4:hover { background: url("../images/map_4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_4.png*/) no-repeat; width: 51px; height: 85px; top: 534px; }
+.head_main .map .a5 { background: url("../images/map5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map5.png*/) no-repeat; width: 45px; height: 56px; left: 372px; top: 338px; }
+.head_main .map .a5:hover { background: url("../images/map_5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_5.png*/) no-repeat; width: 54px; height: 74px; top: 328px; }
+.head_main .map .a6 { background: url("../images/map6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map6.png*/) no-repeat; width: 68px; height: 65px; left: 450px; top: 231px; }
+.head_main .map .a6:hover { background: url("../images/map_6.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_6.png*/) no-repeat; width: 85px; height: 85px; top: 221px; }
+.head_main .map .a7 { background: url("../images/map7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map7.png*/) no-repeat; width: 64px; height: 52px; left: 816px; top: 494px; }
+.head_main .map .a7:hover { background: url("../images/map_7.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_7.png*/) no-repeat; width: 77px; height: 68px; top: 484px; }
+.head_main .map .a8 { background: url("../images/map8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map8.png*/) no-repeat; width: 63px; height: 78px; left: 481px; top: 125px; }
+.head_main .map .a8:hover { background: url("../images/map_8.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_8.png*/) no-repeat; width: 74px; height: 87px; top: 123px; }
+.head_main .map .a9 { background: url("../images/map9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map9.png*/) no-repeat; width: 35px; height: 61px; right: 556px; top: 254px; }
+.head_main .map .a9:hover { background: url("../images/map_9.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_9.png*/) no-repeat; width: 56px; height: 65px; top: 254px; }
+.head_main .map .a10 { background: url("../images/map10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map10.png*/) no-repeat; width: 50px; height: 67px; right: 298px; top: 409px; }
+.head_main .map .a10:hover { background: url("../images/map_10.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_10.png*/) no-repeat; width: 62px; height: 82px; }
+.head_main .map .a11 { background: url("../images/map11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map11.png*/) no-repeat; width: 61px; height: 45px; right: 451px; top: 13px; }
+.head_main .map .a11:hover { background: url("../images/map_11.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_11.png*/) no-repeat; width: 73px; height: 58px; }
+.head_main .map .a12 { background: url("../images/map12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map12.png*/) no-repeat; width: 38px; height: 54px; right: 271px; top: 189px; }
+.head_main .map .a12:hover { background: url("../images/map_12.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_12.png*/) no-repeat; width: 63px; height: 68px; top: 189px; }
+.head_main .map .a13 { background: url("../images/map13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map13.png*/) no-repeat; width: 61px; height: 60px; right: 224px; top: 100px; }
+.head_main .map .a13:hover { background: url("../images/map_13.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/map_13.png*/) no-repeat; width: 76px; height: 73px; }
 .head_main .w1200 { z-index: 12; position: absolute; left: 50%; top: 0; margin-left: -600px; }
 .head_main .w1200 .left { padding-top: 8px; }
 .head_main .w1200 .nav { width: 660px; height: 84px; line-height: 84px; }
@@ -74,7 +74,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .index_tit { text-align: center; }
 .index_tit img { display: block; margin: 0 auto; }
 .floor_6_main {
- background: url("floor6_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.jpg*/) center top no-repeat;
+ background: url("../images/floor6_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.jpg*/) center top no-repeat;
  width: 100%;
  height: 999px;
 }
@@ -126,7 +126,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  height: 517px;
  overflow: hidden;
  width: 1197px;
- background: url("floor6_li_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_bg.png*/);
+ background: url("../images/floor6_li_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_bg.png*/);
 }
 .floor_6_main .slideTxtBox1 .bdd .outli .content {
  padding: 20px 24px  0 21px;
@@ -269,7 +269,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  float: left;
 }
 .floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div2 a i {
- background: url("floor6_li_mes.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_mes.jpg*/);
+ background: url("../images/floor6_li_mes.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_mes.jpg*/);
  width: 39px;
  height: 38px;
  display: block;
@@ -291,7 +291,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  float: left;
 }
 .floor_6_main .slideTxtBox1 .bdd .outli .content .r .bt .div3 i {
- background: url("floor6_li_tel.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_tel.png*/);
+ background: url("../images/floor6_li_tel.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_li_tel.png*/);
  width: 39px;
  display: block;
  float: left;
@@ -315,7 +315,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 }
 
 /***----张家界必玩景点****/
-.floor_1_main { background: url("floor1_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor1_bg.jpg*/) center top no-repeat; width: 100%; height: 704px; }
+.floor_1_main { background: url("../images/floor1_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor1_bg.jpg*/) center top no-repeat; width: 100%; height: 704px; }
 .floor_1_main .index_tit { padding-top: 79px; }
 .floor_1_main .slideTxtBox { width: 1200px; text-align: left; margin: 0 auto; }
 .floor_1_main .slideTxtBox .hd { height: 34px; line-height: 34px; position: relative; width: 550px; margin: 0 auto; margin-top: 36px; margin-bottom: 43px; }
@@ -326,21 +326,21 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_1_main .slideTxtBox .hd ul li.on a { color: #Fff; }
 .floor_1_main .slideTxtBox .bd { height: 403px; width: 1200px; overflow: hidden; }
 .floor_1_main .slideTxtBox .bd ul { width: 115%; }
-.floor_1_main .slideTxtBox .bd ul .l2 .on { background: url("color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
-.floor_1_main .slideTxtBox .bd ul .l3 .on { background: url("color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
-.floor_1_main .slideTxtBox .bd ul .l4 .on { background: url("color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
-.floor_1_main .slideTxtBox .bd ul .l5 .on { background: url("color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
-.floor_1_main .slideTxtBox .bd ul .l6 .on { background: url("color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l2 .on { background: url("../images/color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l3 .on { background: url("../images/color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l4 .on { background: url("../images/color2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color2.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l5 .on { background: url("../images/color3.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color3.png*/) repeat; }
+.floor_1_main .slideTxtBox .bd ul .l6 .on { background: url("../images/color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; }
 .floor_1_main .slideTxtBox .bd li { height: 190px; width: 380px; position: relative; float: left; margin-right: 29px; margin-bottom: 23px; overflow: hidden; }
 .floor_1_main .slideTxtBox .bd li a { color: #fff; display: block; }
 .floor_1_main .slideTxtBox .bd li img { width: 380px; height: 190px; transition: ease-in-out .2s; }
-.floor_1_main .slideTxtBox .bd li .on { display: block; width: 160px; height: 190px; position: absolute; left: 0; top: 0; background: url("color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; cursor: pointer; }
+.floor_1_main .slideTxtBox .bd li .on { display: block; width: 160px; height: 190px; position: absolute; left: 0; top: 0; background: url("../images/color1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color1.png*/) repeat; cursor: pointer; }
 .floor_1_main .slideTxtBox .bd li .on h1 { width: 128px; margin: 0 auto; border: 1px solid #fff; border-left: none; border-right: none; height: 38px; line-height: 38px; margin-top: 55px; text-align: center; margin-bottom: 12px; transition: ease-in-out .2s; font-size:18px; font-weight:100 }
 .floor_1_main .slideTxtBox .bd li .on p { padding: 0 16px; padding-top:30px; line-height:24px; font-size:16px; }
 .floor_1_main .slideTxtBox .bd li a:hover img { transform: scale(1.05); -webkit-transform: scale(1.05); }
 
 /********芙蓉团队*******/
-.floor_2_main { background: url("floor2_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor2_bg.jpg*/) center top no-repeat; width: 100%; height: 969px; }
+.floor_2_main { background: url("../images/floor2_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor2_bg.jpg*/) center top no-repeat; width: 100%; height: 969px; }
 .floor_2_main .index_tit { padding-top: 160px; }
 .floor_2_main .picScroll-left { position: relative; width: 1040px; margin: 52px auto 0; }
 .floor_2_main .picScroll-left .hd .prev, .floor_2_main .picScroll-left .hd .next { display: block; width: 26px; height: 50px; overflow: hidden; position: absolute; left: -80px; top: 213px; cursor: pointer; background-position: 0 0; transition: ease-in-out .2s; }
@@ -364,7 +364,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_2_main .picScroll-left .bd ul li a:hover { margin-top: 10px; }
 .floor_2_main .picScroll-left .bd ul li a:hover p { color: #333; }
 /*****客户感言****/
-.floor_3_main { background: url("floor3_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor3_bg.jpg*/) center top no-repeat; width: 100%; height: 777px; }
+.floor_3_main { background: url("../images/floor3_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor3_bg.jpg*/) center top no-repeat; width: 100%; height: 777px; }
 .floor_3_main .index_tit { padding-top: 68px; }
 .floor_3_main .con{ overflow:hidden;}
 .floor_3_main .con li { position: relative; width: 600px; float: left; margin-bottom: 112px; }
@@ -378,7 +378,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_3_main .con .l4 div { padding-left: 15px; padding-right: 61px; }
 .floor_3_main .con .l4 img { right: 0; left: auto; top: auto; bottom: -23px; }
 /***分销平台**/
-.floor_4_main { background: url("floor4_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor4_bg.jpg*/) center top no-repeat; width: 100%; height: 739px; }
+.floor_4_main { background: url("../images/floor4_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor4_bg.jpg*/) center top no-repeat; width: 100%; height: 739px; }
 .floor_4_main .index_tit { padding-top: 135px; }
 .floor_4_main .con { padding-top: 95px; overflow: hidden; width: 1200px; padding-left: 15px; padding-right: 15px; margin: 0 auto; }
 .floor_4_main .con ul { width: 117%; }
@@ -388,7 +388,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_4_main .con li a:hover {  -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3); box-shadow: 0 2px 13px rgba(0, 0, 0, 0.3);  }
 .floor_4_main .con li a:hover img{width: 286px; height: 141px;border:2px solid #58d18c}
 /****芙蓉攻略*******/
-.floor_5_main { background: url("floor5_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor5_bg.jpg*/) center top no-repeat; width: 100%; height: 857px; }
+.floor_5_main { background: url("../images/floor5_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor5_bg.jpg*/) center top no-repeat; width: 100%; height: 857px; }
 .floor_5_main .index_tit { padding-top: 111px; }
 .floor_5_main .index_tit a { color: #1c69f3; line-height: 84px; transition: ease-in-out .2s; }
 .floor_5_main .index_tit a:hover { color: #00a88c; }
@@ -401,7 +401,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_5_main .con li p { font-size: 12px; padding: 0 10px; line-height: 22px; color: #333; }
 .floor_5_main .con li a:hover span { width: 100%; background: #00a88c; }
 /*******底部提交表单*****/
-.bottom_main { background: url("bottom_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/bottom_bg.jpg*/) no-repeat center top; width: 100%; height: 452px; }
+.bottom_main { background: url("../images/bottom_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/bottom_bg.jpg*/) no-repeat center top; width: 100%; height: 452px; }
 .bottom_main .bottom_nav { width: 972px; margin: 0 auto; padding-top: 30px; margin-bottom: 73px; }
 .bottom_main .bottom_nav li { float: left; text-align: center; width: 161px; height: 22px; line-height: 22px; border-left: 1px dotted #6b6e76; }
 .bottom_main .bottom_nav li a { color: #fff; transition: ease-in-out .2s; }
@@ -418,9 +418,9 @@ a:hover { color: #58d18c; text-decoration: none; }
 .bottom_main .bott_left .tel { margin-left: 21px; }
 .bottom_main .bott_left .tel p { text-align: left; line-height: 16px; }
 .bottom_main .bott_right { width: 667px; color: #00a88c; padding-top: 10px; }
-.bottom_main .bott_right input { background: url("color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 240px; height: 19px; line-height: 19px; padding: 11px 10px; margin-bottom: 25px; color: #00A88C; }
+.bottom_main .bott_right input { background: url("../images/color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 240px; height: 19px; line-height: 19px; padding: 11px 10px; margin-bottom: 25px; color: #00A88C; }
 .bottom_main .bott_right span { font-size: 18px; padding-right: 22px; }
-.bottom_main .bott_right textarea { background: url("color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 588px; height: 115px; padding: 10px; resize: none; overflow: hidden; color: #00A88C; }
+.bottom_main .bott_right textarea { background: url("../images/color4.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color4.png*/) repeat; border: none; width: 588px; height: 115px; padding: 10px; resize: none; overflow: hidden; color: #00A88C; }
 .bottom_main .bott_right .span { vertical-align: top; padding-top: 10px; }
 .bottom_main .bott_right .btn { width: 174px; height: 30px; line-height: 30px; text-align: center; padding: 0; font-size: 18px; color: #262933; background: #00a88c; margin-top: 17px; transition: ease-in-out .2s; }
 .bottom_main .bott_right .btn:hover { width: 250px; cursor: pointer; }
@@ -456,7 +456,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  margin: 20px auto 127px;
 }
 
-.body { background: url("ny_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/ny_bg.jpg*/) center 86px no-repeat; padding-top:86px; }
+.body { background: url("../images/ny_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/ny_bg.jpg*/) center 86px no-repeat; padding-top:86px; }
 .body .con .con_left {
  width: 850px;
 }
@@ -510,7 +510,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  margin-right: 24px;
 }
 .body .con .con_left ul li .b .i1 {
- background: url("frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
+ background: url("../images/frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
  width: 15px;
  height: 18px;
  display: block;
@@ -519,7 +519,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  margin-top: 1px;
 }
 .body .con .con_left ul li .b .i2 {
- background: url("frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
+ background: url("../images/frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
  width: 20px;
  height: 19px;
  display: block;
@@ -528,7 +528,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  margin-top: 1px;
 }
 .body .con .con_left ul li .b .i3 {
- background: url("frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
+ background: url("../images/frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
  width: 22px;
  height: 13px;
  display: block;
@@ -548,7 +548,7 @@ a:hover { color: #58d18c; text-decoration: none; }
  margin-right: 2px;
 }
 .body .con .con_left ul li .zan i {
- background: url("frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
+ background: url("../images/frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
  width: 36px;
  height: 36px;
  float: right;
@@ -691,7 +691,7 @@ text-align: center; float: right; }
 .about_4 .con li a { display: block; transition: ease-in-out .2s; }
 .about_4 .con li a:hover { -webkit-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); -moz-box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); box-shadow: 0 2px 13px rgba(0, 0, 0, 0.59); }
 /*******客户感言*******/
-.about_5 { width: 100%; background: url("about_5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/about_5.jpg*/) center top no-repeat; height: 704px; margin-top: 29px; padding-top: 32px; overflow: hidden; }
+.about_5 { width: 100%; background: url("../images/about_5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/about_5.jpg*/) center top no-repeat; height: 704px; margin-top: 29px; padding-top: 32px; overflow: hidden; }
 .about_5 .about_tit p { font-size: 12px; padding-top: 5px; }
 .about_5 .floor_3_main { background: none; margin-top: 58px; height: auto; }
 .about_5 .floor_3_main .con li div { margin-left: 160px; }
@@ -701,18 +701,18 @@ text-align: center; float: right; }
 .about_5 .floor_3_main .con .l4 img { left: auto; right: 30px; }
 .about_6 { height: 584px; padding-top: 50px; overflow:hidden }
 .about_6 .about_tit p { font-size: 12px; padding-top: 10px; }
-.about_6 .poster-main { width: 832px; height: 321px; z-index: 200; transition: all 1.5s; position: relative; margin: 100px auto 120px; background: url("floor6_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.png*/) center bottom no-repeat; padding-bottom: 80px; }
+.about_6 .poster-main { width: 832px; height: 321px; z-index: 200; transition: all 1.5s; position: relative; margin: 100px auto 120px; background: url("../images/floor6_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/floor6_bg.png*/) center bottom no-repeat; padding-bottom: 80px; }
 .about_6 .poster-main a, .about_6 .poster-main img { display: block; cursor:default; }
 .about_6 .poster-main .poster-list { width: 840px; height: 430px; }
 .about_6 .poster-main .poster-list .poster-item { position: absolute; left: 0; top: 0; }
 .about_6 .poster-main .poster-list .poster-item:first-child h1 { display: block; }
 .about_6 .poster-main .poster-btn { position: absolute; top: 0; margin-top: 0; width: 53px; height: 61px; z-index: 10; cursor: pointer; opacity: 0.8; }
-.about_6 .poster-main .poster-prev-btn { left: -122px; background: url("left.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/left.png*/) left center no-repeat; transition: ease-in-out .2s; }
-.about_6 .poster-main .poster-next-btn { right: -126px; background: url("right.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/right.png*/) right center no-repeat; transition: ease-in-out .2s; }
+.about_6 .poster-main .poster-prev-btn { left: -122px; background: url("../images/left.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/left.png*/) left center no-repeat; transition: ease-in-out .2s; }
+.about_6 .poster-main .poster-next-btn { right: -126px; background: url("../images/right.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/right.png*/) right center no-repeat; transition: ease-in-out .2s; }
 .about_6 .poster-main .poster-prev-btn:hover { left: -132px; }
 .about_6 .poster-main .poster-next-btn:hover { right: -136px; }
 /*******芙蓉优品********/
-.yp_1 .floor_1_main { background: url("yp_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_bg.jpg*/) center bottom no-repeat; height: auto; min-height:665px; }
+.yp_1 .floor_1_main { background: url("../images/yp_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_bg.jpg*/) center bottom no-repeat; height: auto; min-height:665px; }
 .yp_list .floor_1_main .slideTxtBox .hd .on{background:none; }
 .yp_list .floor_1_main .slideTxtBox .hd .on a{color:#00a88c;}
 .yp_1 .floor_1_main .slideTxtBox .bd { height: auto; }
@@ -728,9 +728,9 @@ text-align: center; float: right; }
 .yp_2 .picScroll-left .hd .prev:hover { left: -70px; }
 .yp_2 .picScroll-left .bd { height: 555px; margin-bottom: 50px; }
 .yp_2 .picScroll-left .bd ul { overflow: hidden; zoom: 1; }
-.yp_2 .picScroll-left .bd ul li { margin-left: 17px; width: 282px; float: left; _display: inline; overflow: hidden; background: url("yp_2_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_bg.png*/) no-repeat center top; text-align: center; position: relative; transition: ease-in-out .2s; }
+.yp_2 .picScroll-left .bd ul li { margin-left: 17px; width: 282px; float: left; _display: inline; overflow: hidden; background: url("../images/yp_2_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_bg.png*/) no-repeat center top; text-align: center; position: relative; transition: ease-in-out .2s; }
 .yp_2 .picScroll-left .bd ul li img { width: 282px; height: 400px; margin-top: 21px; border-radius: 5px; }
-.yp_2 .picScroll-left .bd ul li h1 { font-size: 18px; color: #fff; background: url("yp_2_h1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_h1.png*/) no-repeat center center; position: absolute; width: 100%; height: 25px; line-height: 25px; left: 0; top: 369px; }
+.yp_2 .picScroll-left .bd ul li h1 { font-size: 18px; color: #fff; background: url("../images/yp_2_h1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/yp_2_h1.png*/) no-repeat center center; position: absolute; width: 100%; height: 25px; line-height: 25px; left: 0; top: 369px; }
 .yp_2 .picScroll-left .bd ul li h2 { color: #00ac82; font-weight: 100; padding: 10px 0 5px; }
 .yp_2 .picScroll-left .bd ul li h3 { color: #00ac82; font-weight: 100; }
 .yp_2 .picScroll-left .bd ul li p { padding: 10px 0; color: #333; }
@@ -743,7 +743,7 @@ text-align: center; float: right; }
 .yp_3 .con li { text-align: center; margin-right: 24px; margin-bottom: 16px; position: relative; width: 180px; float: left; }
 .yp_3 .con li img { width: 180px; height: 240px; }
 .yp_3 .con li h1 { color: #000; line-height: 31px; }
-.yp_3 .con li .on { background: url("color5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color5.png*/) repeat; width: 136px; height: 196px; position: absolute; left: -12px; top: 0; text-align: left; padding: 22px; color: #f1f1f1; display: block; transition: all ease-in-out .2s; opacity: 0; filter: alpha(opacity=0); }
+.yp_3 .con li .on { background: url("../images/color5.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color5.png*/) repeat; width: 136px; height: 196px; position: absolute; left: -12px; top: 0; text-align: left; padding: 22px; color: #f1f1f1; display: block; transition: all ease-in-out .2s; opacity: 0; filter: alpha(opacity=0); }
 .yp_3 .con li a { display: block; cursor: pointer; }
 .yp_3 .con li a:hover .on { opacity: 1; left: 0px; filter: alpha(opacity=70); }
 .yp_3 .pager { padding: 10px 0 88px; *padding: 20px 0 88px;
@@ -765,7 +765,7 @@ text-align: center; float: right; }
 .body_contact .contact_left li i { position: absolute; height: 40px; width: 0; transition: ease-in-out .2s; background: #f1f1f1; left: 0; top: 0; }
 .body_contact .contact_left li a:hover i, .body_contact .contact_left li a.hover i { width: 168px; border-left: 2px solid #00ac82; z-index: 11; }
 .body_contact .contact_left dl dd { position: relative; width: 170px; }
-.body_contact .contact_left dl dd h1 { position: absolute; left: 0; top: 137px; background: url("color_6_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color_6_2.png*/) repeat; width: 100%; height: 33px; line-height: 33px; color: #fff; text-align: center; }
+.body_contact .contact_left dl dd h1 { position: absolute; left: 0; top: 137px; background: url("../images/color_6_2.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/color_6_2.png*/) repeat; width: 100%; height: 33px; line-height: 33px; color: #fff; text-align: center; }
 .body_contact .contact_left dl dd img { width: 170px; height: 170px; }
 .body_contact .contact_left dl dd p { color: #000; text-transform: uppercase; text-align: center; }
 .body_contact .contact_left dl dd p b { color: #ff9c00; font-size: 24px; font-weight: 100; font-family: impact; padding-right: 8px; }
@@ -818,7 +818,7 @@ text-align: center; float: right; }
 .des_main .des_1 .des_1_right .feng .left img { width: 93px; height: 93px; border-radius: 100%; border: 2px solid #ff8a00; position: absolute; left: 35px; top: 44px; }
 .des_main .des_1 .des_1_right .feng .left h1 { width: 180px; height: 43px; line-height: 43px; text-align: center; font-size: 18px; color: #fff; background: #ff8a00; border-radius: 21px; margin-left: 70px; margin-top: 72px; font-weight: 100; }
 .des_main .des_1 .des_1_right .feng .right { padding-top: 83px; padding-right: 36px; }
-.des_main .des_1 .des_1_right .des { background: url("des_f.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_f.jpg*/) center top no-repeat; width: 552px; height: 57px; margin-left: 45px; margin-top: 53px; padding: 0 40px; color: #000; padding-top: 15px; }
+.des_main .des_1 .des_1_right .des { background: url("../images/des_f.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_f.jpg*/) center top no-repeat; width: 552px; height: 57px; margin-left: 45px; margin-top: 53px; padding: 0 40px; color: #000; padding-top: 15px; }
 .des_main .des_1 .des_1_right .ul { margin-left: 37px; margin-top: 49px; }
 .des_main .des_1 .des_1_right .ul li { float: left; text-align: center; margin-right: 19px; }
 .des_main .des_1 .des_1_right .ul p { line-height: 50px; }
@@ -832,7 +832,7 @@ text-align: center; float: right; }
 .des_main .des_2 .ul li a:hover, .des_main .des_2 .ul li .cur { background: #f5f5f5; color: #00ac82; }
 .des_main .des_2 .hover { width: 1200px; position: fixed; top:86px; z-index: 1111; margin: 0 auto; }
 .des_main .des_2 .box { border: 1px solid #dcdcdc; border-top: none; background: #fff; padding: 32px 53px 20px 28px; }
-.des_main .des_2 .box .left { background: url("des_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_bg.png*/) no-repeat; width: 68px; font-size: 31px; color: #fff; padding: 16px; line-height: 34px; }
+.des_main .des_2 .box .left { background: url("../images/des_bg.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/des_bg.png*/) no-repeat; width: 68px; font-size: 31px; color: #fff; padding: 16px; line-height: 34px; }
 .des_main .des_2 .box .box_right { width: 1000px; }
 .des_main .des_2 .box .box_right .t { width: 1000px; height: 25px; background: #f1f1f1; padding-top: 5px; }
 .des_main .des_2 .box .box_right .t span { height: 20px; line-height: 20px; border-left: 2px solid #00ac82; font-size: 18px; color: #535d63; margin-left: 9px; display: block; padding-left: 9px; }
@@ -866,7 +866,7 @@ text-align: center; float: right; }
 .dzly_main .dzly_2 .l2 .text i { background-position: -221px 0; margin-left: 207px; }
 .dzly_main .dzly_2 .l2 .text h1 { text-align: right; }
 .dzly_main .dzly_2 .l2 a:hover { -webkit-transform-origin: center top; -moz-transform-origin: center top; transform-origin: center top; -webkit-animation: error-swing infinite 2s ease-in-out alternate; -moz-animation: error-swing infinite 2s ease-in-out alternate; animation: error-swing infinite 2s ease-in-out alternate; }
-.dzly_3_main { background: url("dzly_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_bg.jpg*/) repeat; width: 100%; height: 454px; text-align: center; }
+.dzly_3_main { background: url("../images/dzly_bg.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_bg.jpg*/) repeat; width: 100%; height: 454px; text-align: center; }
 .dzly_3_main h1 { color: #00ac82; font-size: 30px; padding-top: 47px; }
 .dzly_3_main .ul { margin-top: 70px; }
 .dzly_3_main .ul li { float: left; }
@@ -876,7 +876,7 @@ text-align: center; float: right; }
 .dzly_3_main .ul li .left img:hover { transition: All 0.4s ease-in-out; -webkit-transition: All 0.4s ease-in-out; -moz-transition: All 0.4s ease-in-out; -o-transition: All 0.4s ease-in-out; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -o-transform: rotate(360deg); -ms-transform: rotate(30deg); }
 .dzly_3_main .ul li .right { width: 48px; float: left; }
 .dzly_3_main .ul li .right i { width: 14px; height: 17px; background-position: -162px -28px; margin: 91px auto 0; }
-.dzly_4_main { background: url("dzly_from.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_from.jpg*/) no-repeat center top; width: 100%; height: 1615px; }
+.dzly_4_main { background: url("../images/dzly_from.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/dzly_from.jpg*/) no-repeat center top; width: 100%; height: 1615px; }
 .dzly_4_main .t { font-size: 30px; font-weight: bold; color: #fff; text-align: center; height: 133px; line-height: 133px; }
 .dzly_4_main .table { background: #fff; width: 1026px; height: 1380px; margin: 0 auto; }
 .dzly_4_main .title { height: 34px; line-height: 34px; font-size: 18px; font-weight: bold; color: #000; width: 100%; overflow: hidden; }
@@ -961,7 +961,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 .toolbar1 dd { width: 50px; height: 50px; background: #999; position: relative; margin-bottom: 3px; }
 .toolbar1 dd i { width: 50px; height: 50px; display: block; position: absolute; left: 0; top: 0; cursor: pointer; text-align: center; }
 .toolbar1 dd i span { width: 35px; height: 35px; display: block; margin: 7px 0 0 7px; *margin: 7px 0 0 0;
-background: url("rightFixIcon.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/rightFixIcon.png*/) no-repeat 0 0; }
+background: url("../images/rightFixIcon.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/rightFixIcon.png*/) no-repeat 0 0; }
 .toolbar1 .slide-tel { display: block; width: 0; height: 50px; line-height: 50px; font-size: 24px; font-weight: bold; font-family: arial; color: #FFF; position: absolute; padding: 0 0 0 50px; top: 0; right: 0; overflow: hidden; }
 .toolbar1 .pop { position: absolute; right: 90px; top: -65px; background: #00a88c; display: none; }
 .toolbar1 .wbc { top: -90px; }
@@ -994,7 +994,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 .local_main .left i { transition: ease-in-out .2s; width: 30px; height: 5px; background: #33b371; position: absolute; bottom: 0; left: 0; }
 .local_main .left b { color: #33b371; font-weight: 100; }
 .wrapper .title { margin: 0 auto; text-align: center; padding-top: 110px; padding-bottom: 56px; }
-.wrapper .title h3 { font-size: 24px; font-weight: normal; background: url("line.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/line.png*/) no-repeat center center; height: 40px; line-height: 40px; display: block; }
+.wrapper .title h3 { font-size: 24px; font-weight: normal; background: url("../images/line.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/line.png*/) no-repeat center center; height: 40px; line-height: 40px; display: block; }
 .wrapper .title h4 { font-size: 48px; font-weight: normal; font-family: impact; text-transform: uppercase; }
 .shownews { padding: 12px 0 30px; }
 .shownews .titlen { color: #444; font-size: 24px; line-height: 40px; margin-bottom: 5px; padding-top: 10px; text-align: center; }
@@ -1058,7 +1058,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
  margin-right: 24px;
 }
 .frgl_detail .floor1_main .floor1 .l .b .i1 {
- background: url("frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
+ background: url("../images/frgl_fl1_i1.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i1.jpg*/);
  width: 15px;
  height: 18px;
  display: block;
@@ -1067,7 +1067,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
  margin-top: 1px;
 }
 .frgl_detail .floor1_main .floor1 .l .b .i2 {
- background: url("frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
+ background: url("../images/frgl_fl1_i2.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i2.jpg*/);
  width: 20px;
  height: 19px;
  display: block;
@@ -1076,7 +1076,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
  margin-top: 1px;
 }
 .frgl_detail .floor1_main .floor1 .l .b .i3 {
- background: url("frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
+ background: url("../images/frgl_fl1_i3.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i3.jpg*/);
  width: 22px;
  height: 13px;
  display: block;
@@ -1107,7 +1107,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
  text-align: center;
 }
 .frgl_detail .floor1_main .floor1 .r .div1 i {
- background: url("frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
+ background: url("../images/frgl_fl1_i5.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i5.jpg*/);
  width: 36px;
  margin-top: 24px;
  height: 36px;
@@ -1119,7 +1119,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
  text-align: center;
 }
 .frgl_detail .floor1_main .floor1 .r .div2 i {
- background: url("frgl_fl1_i4.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i4.jpg*/);
+ background: url("../images/frgl_fl1_i4.jpg"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_fl1_i4.jpg*/);
  width: 37px;
  height: 37px;
  margin-top: 24px;
@@ -1168,7 +1168,7 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 }
 .frgl_detail .cont .mr .top .ft i {
  margin-top: 4px;
- background: url("frgl_r_ic1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_r_ic1.png*/);
+ background: url("../images/frgl_r_ic1.png"/*tpa=http://www.furongtravel.com/plugins/template/frjq/pc/images/frgl_r_ic1.png*/);
  width: 22px;
  height: 13px;
  margin-right: 3px;
