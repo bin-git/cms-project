@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<about>
+<template name="默认模版"
+  author="企捷"
+  createdate = "2017-11-3"
+  version="5.0"
+  fordntver="V5.0版本" />
+</about>
