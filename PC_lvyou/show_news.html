@@ -1,73 +1,12 @@
+<%template src="_top.html"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>徒步张家界 - 张家界芙蓉假期国际旅行社有限公司</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="徒步张家界" name="keywords" />
-    <meta content="旅行是一种状态，我享受其中。旅行是一次期待，我爱在乐途。旅行是一份心情，我微笑前行。" name="description" />
-    <meta content="张家界芙蓉假期国际旅行社有限公司" name="copyright" />
-    <meta content="本站" name="author" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="./css/css.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="Shortcut Icon" href="./images/fb191504-8a71-4b30-9341-1d85acbb0b63.ico" type="image/x-icon">
-    <!--[if!IE]>-->
-	
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <!--<![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript" src="./js/jquery.1.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="./css/aos.js"></script>
-	   
-    
-    
-</head>
-<body>
-    <!--网站导航 start-->
-
-    <div class="head_main head_ny " >
-        <div class="w1200 clearfix">
-            <div class="left animated fadeInLeft">
-                <a href="/" title="张家界芙蓉假期国际旅行社有限公司">
-                        <img src="/plugins/template/frjq/pc/uploadfile/logo_ny.png" alt="张家界芙蓉假期国际旅行社有限公司" title="张家界芙蓉假期国际旅行社有限公司" />
-                </a>
-            </div>
-
-            <div class="right nav animated fadeInRight">
-                <ul>
-                    <li><a  href="/" title="首页">首页</a></li>
-                        <li>
-                            <a  href="/jbfr" title="精彩芙蓉">精彩芙蓉</a>
-                        </li>
-                        <li>
-                            <a  href="/fryp" title="芙蓉优品">芙蓉优品</a>
-                        </li>
-                        <li>
-                            <a  href="/frgl" title="芙蓉攻略">芙蓉攻略</a>
-                        </li>
-                        <li>
-                            <a  href="/dzly" title="定制旅游">定制旅游</a>
-                        </li>
-                        <li>
-                            <a  href="/lxfr" title="联系芙蓉">联系芙蓉</a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <!--网站导航 end-->
-    <!--主体内容 start-->
-    <div class="body">
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div class="body">
     <div class="frgl_detail ">
         <div class="banner" frgl>
-
-            <img src="/Upload/Template/frjq/RecommendPhoto/Original/201712/822911fe-89f3-4911-87d4-4eca59b2fb6f.jpg" alt="" title="" style="background: #333;" />
+            <%set DTcms.Model.article_category n2catemodel=get_category_model(306)%>
+            <img src="{n2catemodel.img_url}" alt="{n2catemodel.title}" title="{n2catemodel.title}" style="background: #333;" />
         </div>
         <div class="floor1_main">
             <div class="line"></div>
@@ -79,7 +18,8 @@
                             <input type="hidden" name="sid" id="sid" value="15" />
                             <input type="hidden" name="kid_15" id="kid_15" value="0" />
                             <i></i>
-                            <h4 id="zan">1147</h4>
+                            <h4 id="zan"><script type="text/javascript" 
+src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&channel_id={model.channel_id}&id={model.id}&click=1"></script></h4>
                         </a>
                     </div>
                     <div class="div2" style="position: relative;">
@@ -88,248 +28,116 @@
                             <i></i>
                             <h4>分享到</h4>
                         </a>
-                              
-                    <!-- Baidu Button BEGIN -->
-                    <div class="bdsharebuttonbox" data-tag="share_3" style="width: 100%;display:none;position: absolute;
-                    	top: 26px;left:17px;text-align: center; -webkit-transition: all 340ms ease-out;
--moz-transition: all 340ms ease-out;
--ms-transition: all 340ms ease-out;
--o-transition: all 340ms ease-out;
-transition: all 340ms ease-out;
 
- filter: Alpha(opacity=0); /* IE */ 
--moz-opacity:0; /* FF 主要是为了兼容老版本的FF */
-opacity:0; /* FF */
-                    	">
-                  
+                        <!-- Baidu Button BEGIN -->
+                        <div class="bdsharebuttonbox" data-tag="share_3" style="width: 100%;display:none;position: absolute;
+                        top: 26px;left:17px;text-align: center; -webkit-transition: all 340ms ease-out;
+                        -moz-transition: all 340ms ease-out;
+                        -ms-transition: all 340ms ease-out;
+                        -o-transition: all 340ms ease-out;
+                        transition: all 340ms ease-out;
+
+                        filter: Alpha(opacity=0); /* IE */ 
+                        -moz-opacity:0; /* FF 主要是为了兼容老版本的FF */
+                        opacity:0; /* FF */
+                        ">
+
                         <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
                         <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
                         <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
                         <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
                         <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-                 
-                    <!-- Baidu Button END -->
-                </div>
-                    </div>
-                    
-                    <script type="text/javascript">
-                    	  
-                    	   $("#fenxiangbtn").on("click",function(){
-  						 $(".bdsharebuttonbox").show();
-   						$(".bdsharebuttonbox").css({
-                    			"top":"-3px",
-                    			 "filter": "Alpha(opacity=100)",
-									"moz-opacity":1,  
-									"opacity":1 ,
-									 
-   						})
-   						
-   })
-                    	
-  					
-                    </script>
-                </div>
-                <div class="l">
-                    <h4>徒步张家界</h4>
-                    <div class="b">
-                        <div><i class="i1"></i><span>原创</span></div><div><i class="i2"></i><span>2017-02-23</span></div><div><i class="i3"></i><span>3019</span></div>
+
+                        <!-- Baidu Button END -->
                     </div>
                 </div>
+
+                <script type="text/javascript">
+
+                    $("#fenxiangbtn").on("click",function(){
+                     $(".bdsharebuttonbox").show();
+                     $(".bdsharebuttonbox").css({
+                       "top":"-3px",
+                       "filter": "Alpha(opacity=100)",
+                       "moz-opacity":1,  
+                       "opacity":1 ,
+
+                   })
+
+                 })
+
+
+             </script>
+         </div>
+         <div class="l">
+            <h4>{model.title}</h4>
+            <div class="b">
+                <div><i class="i1"></i><span><%=get_article_field(channel_id,model.id,"author") %></span></div><div><i class="i2"></i><span><%datetostr({model.add_time},yyyy-MM-dd)%></span>
             </div>
-        </div>
-
-        <div class="cont w1200 animated fadeInUp">
-            <div class="mr">
-                <div class="title">
-                    <h4>相关攻略</h4>
-                </div>
-                    <a class="top" title="" href="/detail/174">
-
-                        <div class="ft">
-                            <i></i><span>2580</span>
-                        </div>
-                        <div class="fb">桑植史上最大规模旅行团：芙蓉假期承接“健康中国，红色之旅”2600人大型团队</div>
-                        <img src="/Upload/Template/frjq/ContentPhoto/480-360/201712/b9edf18c-4be9-411b-b9f7-abfe14b7f683.jpg" alt="桑植史上最大规模旅行团：芙蓉假期承接“健康中国，红色之旅”2600人大型团队" title="桑植史上最大规模旅行团：芙蓉假期承接“健康中国，红色之旅”2600人大型团队" style="background: #333;" />
-
-                    </a>
-
-                <div class="bottom">
-                    <ul>
-
-                                <li><a href="/detail/15"><span>1/</span><p>徒步张家界</p></a></li>
-                                <li><a href="/detail/73"><span>2/</span><p>张家界式奇幻纯净之旅</p></a></li>
-                                <li><a href="/detail/74"><span>3/</span><p>慢游张家界“最”之旅</p></a></li>
-                                <li><a href="/detail/75"><span>4/</span><p>沉浸恬美，尽享幽林深邃</p></a></li>
-                                <li><a href="/detail/76"><span>5/</span><p>穿越宁静热闹的凤凰古城</p></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ml">
-
-                <div class="showContxt">　　张家界—中国森林公园、92年列入《世界自然遗产名录》、世界地质公园、国家首批AAAAA级景区。<br />
-<p>
-	　　张家界（zhāngjiājiè）市，地处北纬28°52′—29°48′、东经109°40′—111°20′之间，是湖南省西北部一个正在开发、建设，以发展<a href="" target="_blank" title="张家界旅游" style="color:#f00; text-decoration:underline">张家界旅游</a>业为特征的新兴省辖地级市。
-</p>
-<p style="text-align:center;">
-	<img src="/Upload/Template/frjq/attached/image/20170316/20170316085850_7356.jpg" alt="" /> 
-</p>
-　　张家界市所在地，原名大庸。1988年5月18日，国家批准建立了地级大庸市；因“大庸”之名远不及境<br />
-　　内所辖森林公园张家界的知名度高，1994年4月4日，国务院批准大庸市更名为张家界市。全市辖永定、武陵源两区和慈利、桑植两县。2008年总人口163.95万人，总面积9563平方公里。市府设永定区，距省会长沙390公里，距长江三峡300公里。<br />
-　　张家界，相传汉代留侯张良隐居于此而得名。本世纪50年代，当地政府在张家界建国营林场。70年代末，张家界罕见的石英砂岩峰林奇观被世人发现，得以开发。1982年9月25日，国家计委行文，将林场所属范围定名为“张家界森林公园”。<br />
-<p>
-	　　张家界国家森林公园，与一脉相连的索溪峪、天子山、杨家界三大自然保护区组成武陵源，是张家界的核心景区。武陵源地处武陵山脉中段；武陵山脉则横亘湖南、湖北、贵州、四川等省。唐诗人王维曾有诗云：“居人共住武陵源，还以物外起田园。”1984年，时任中共中央总书记的胡耀邦视察此地时将张家界、索溪峪、天子山三大风景区命名为“武陵源”。1988年成立大庸（现更名张家界）地级市时，特设武陵源县级行政区，方圆369平方公里。
-</p>
-<p style="text-align:center;">
-	<img src="/Upload/Template/frjq/attached/image/20170316/20170316085904_9143.jpg" alt="" /> 
-</p>
-　　武陵源境内岩溶地貌发达，石英砂岩峰林峡壳地貌发育更为世界罕见。1988年10月，国务院公布武陵源为国家级重点风景名胜区。1992年12月7日，联合国教科文组织世界遗产委员会批准将武陵源作为世界自然遗产列入《世界遗产名录》。国内外专家学者赞誉武陵源是“大自然的迷宫”和不可思议的“地球纪念物”。《国际自然与自然资源保护联盟技术评价报告》中指出：“武陵源在风景上可以和美国西部的几个国家森林公园及纪念物相比。武陵源具有不可否认的自然美。因她拥有壮丽而参差不齐的石峰、郁郁葱葱的植被以及清澈的湖泊、溪流。”<br />
-　　2004年，被联合国教科文组织列入世界地质公园。地质公园包容了砂石山峰林、方山台寨、天桥石门、障谷沟壑、岩溶峡谷、岩溶洞穴、泉水瀑布、溪流湖泊和沉积、构造、地层剖面、石生物化石等丰富多彩的地质遗迹。其千姿百态，变幻莫测的地貌景观，包存几乎没被扰动的原始自然状态的生态环境与生态系统。<br />
-　　除武陵源核心景区外，武陵源区有“人间瑶池”宝峰湖、国家激流回旋基地，慈利县有江垭温泉、万福温泉、<a href="" target="_blank" title="张家界大峡谷" style="color:#f00; text-decoration:underline">张家界大峡谷</a>、“小三峡”娄水漂 流、有“南五当”之称的道教对地五雷山，市区所在地永定区有“张家界新传奇”天门山国家森林公园、“百里画廊”茅岩河漂流、土家风情园、老院子、大庸府城、“江南名刹”普光禅寺，桑植县有九天洞、贺龙故居纪念馆、千年古镇苦竹寨(南接青安坪，北邻九天洞)、峰峦溪国家森林公园、八大公山自然保护区等新兴景区。张家界市还是土家族、白族、苗族等少数民族的聚居地，少数民族占全市总人口的69%。各种民俗风情，常令国内外游客兴趣盎然，遐思无限。环绕张家界市，还有桃花源、猛洞河等风景名胜。<br />
-　　【行程安排】<br />
-　　第一天：接站后直奔张家界森林公园。徒步腰子寨景区。沿途可观飞鹰堡、珙桐湾、百应谷、山顶环寨游、老鹰嘴、天桥、玉兔望月、凌空惊魂、排山倒海、指点江山梭镖岩等100多个景点。出水绕四门乘百龙天梯(自理56元/人)上袁家界。（此行程需8小时以上）<br />
-　　住袁家界农家乐<br />
-　　第二天：游览大观台、神鸡啄食。一步难行、仙人桥。天子座、老屋场、空中田园、神兵聚会（空中田园属张家界待开发景点，步行需4小时）。下午游览天子山景区的著名景点、神堂弯、点将台、西海石林、云青岩观景台、贺龙公园、仙女献花、御笔峰等（此行程需7小时以上）<br />
-　　住袁家界农家乐<br />
-　　第三天：游览杨家界精品景点<br />
-　　乌龙寨、三道鬼门关、土匪窝、天波府、五郎拜佛、一步登天、空中走廊等。下午游览浏览世界自然遗产的核心--袁家界、五女出征、双龙泉、连心桥、神龟问天、哈利路亚悬浮山原型—乾坤柱、后花园。住袁家界农家乐<br />
-<p>
-	　　第四天：沿沙刀沟（为一峡谷，树木参天、阴风飕飕，令你毛骨悚然......）、下至金鞭溪、游千里相会、紫草潭、文星岩、长寿泉、金鞭岩、猪八戒背媳妇、母子峰等。出张家界国家森林公园门票站，（此行程需5小时以上）返市区结束愉快的张家界之旅......
-</p>
-<p style="text-align:center;">
-	<img src="/Upload/Template/frjq/attached/image/20170316/20170316140610_2737.jpg" alt="" />
-</p></div>
-           
-
-                <!--文章TAG-->
-                <div style="padding:15px;">
-                    本文TAG:
-                    <!--循环文章标签-->
-                </div>
-                <div class="reLink clearfix" data-scroll-reveal="enter from the bottom">
-                    <div class="prevLink" style="float:left">上一篇：<a href="/detail/174" title="桑植史上最大规模旅行团：芙蓉假期承接“健康中国，红色之旅”2600人大型团队">桑植史上最大规模旅行团：芙蓉假期承接“健..</a></div>
-                    <div class="nextLink" style="float:right">下一篇：<a href="/detail/73" title="张家界式奇幻纯净之旅">张家界式奇幻纯净之旅</a></div>
-                </div>
-            </div>
-        </div><!--end cont-->
-
-
-    </div><!--end service-->
-</div><!--end wrapper-->
-
-    <!--主体内容 end-->
-    <!--网站底部 start-->
-    <!--网站底部 end-->
-
-    <div class="bottom_copy">
-        <div class="w1200 clearfix">
-            <div class="left">版权所有：张家界芙蓉假期国际旅行社有限公司    备案号： <a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备15015072号-2</a></div>
-            <div class="right"><a href="/map" title="网站地图">网站地图</a>&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a href="http://z.hnjing.com" target="_blank">竞网智赢</a>  <script src="https://s22.cnzz.com/z_stat.php?id=1275100114&web_id=1275100114" language="JavaScript"></script>  </div>
+            <div><i class="i3"></i><span>
+                <script type="text/javascript" 
+                src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&channel_id={model.channel_id}&id={model.id}&click=1"></script>
+            </span>
         </div>
     </div>
+</div>
+</div>
+</div>
 
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
-    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
-    <script>
-        jQuery(".floor_1_main .slideTxtBox").slide({ delayTime: 200 });//张家界必玩景点
-        jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", autoPlay: true, scroll: 4, vis: 4 });//芙蓉团队
-    </script>
-    <script>
-        if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0") {
-        }
-        else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0") {
-        } else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE8.0") {
-        } else {
-            AOS.init({
-                easing: 'ease-out-back',
-                duration: 1000
-            });
-        }
-    </script>
-    <!--客服 start-->
-    <!--请不要手动修改此文件-->
-<dl class="toolbar1" id="toolbar">
-        <dd>
-            <i class="qq">
-                <a title="在线QQ" id="BizQQWPA">
-                    <span class="icon"></span>
-                </a>
-            </i>
-        </dd>
-        <dd>
-            <a class="slide tel slide-tel" href="javascritp:void(0);" style="width: 0px;"><i><span class="icon"></span></i>4000-555-667</a>
-        </dd>
+<div class="cont w1200 animated fadeInUp">
+    <div class="mr">
+        <div class="title">
+            <h4>相关攻略</h4>
+        </div>
+        <%set DataTable ipro_list33=get_article_list("content",{category_id}, 1, "status=0 and is_recycle=0 and is_red=1")%>
 
-        <dd>
-            <i class="code"><span class="icon"></span></i>
-            <ul class="pop pop-code" style="right: 90px; display: none;">
-                <li>
-                    <img title="微信二维码" alt="微信二维码" src="./images/cb55ea11-2391-4dc4-83a6-14096572a1b3.jpg">
-                    <h3>
-                        微信二维码
-                    </h3>
+        <%foreach(DataRow dr in ipro_list33.Rows)%>  
+        <a class="top" title="" href="<%linkurl("show_news",{dr[id]})%>">
+            <div class="ft">
+                <i></i><span>{dr[click]}</span>
+            </div>
+            <div class="fb">{dr[title]}</div>
+           <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}"/>
+        </a>
+        <%/foreach%>
+
+        <div class="bottom">
+            <ul>
+            <%set DataTable ipro_list34=get_article_list("content",{category_id}, 6, "status=0 and is_recycle=0 and is_red=1")%>
+                <%set int ipro_list34_num=1 %>
+                <%foreach(DataRow dr in ipro_list34.Rows)%>  
+                <li><a href="<%linkurl("show_news",{dr[id]})%>"><span>{ipro_list34_num++}/</span><p>{dr[title]}</p></a>
                 </li>
+              <%/foreach%>
             </ul>
-        </dd>
-        <!--<dd>
-            <i class="code wb"><span class="icon"></span></i>
-            <ul class="pop pop-code wbc" style="right: 90px; display: none;">
-                <li>
-                    <a href="http://www.weibo.com/maojiahotel?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1" target="_blank">
-                        <img title="微博二维码" alt="微信二维码" src="./images/6068efe1-2291-4778-b472-896d12b477b4.jpg">
-                        <h3>
-                            微博二维码
-                        </h3>
-                    </a>
-                </li>
-            </ul>
-        </dd>-->
-        <dd>
-            <i id="top" class="top"><span class="icon"></span></i>
-        </dd>
-    </dl>
-    <!--客服 end-->
-    
-    <script>
-        function CheckZan() {
-            var id = $('#sid').val(),
-                _kid = 'kid_' + id,
-                kid = $('#' + _kid).val();
-            $.ajax({
-                url: '/ZanAjax/' + id + "/" + kid,
-                data: {
-                    id: id,
-                    kid: kid
-                },
-                type: 'POST',
-                dataType: 'JSON',
-                success: function (data) {
-                    if (data.data == 0) {
-                        // 失败
-                        alert('点赞失败啦 请稍后再尝试');
-                    } else if (data.data == 1) {
-                        // 成功
-                        $("#" + _kid).val(1);
-                        var _zan = parseInt($("#zan").html());
-                        $("#zan").html(_zan + 1);
-                        alert('点赞成功');
-                    } else if (data.data == 2) {
-                        // 已点赞
-                        alert('您已经赞过咯');
-                    } else {
-                        console.log('意外错误');
-                    }
-                },
-                error: function () {
-                    console.log('更新数据错误');
-                }
-            });
-        }
-    </script>
+        </div>
+    </div>
+    <div class="ml">
 
-    
-	
+        <div class="showContxt">
+            　{model.content}
+        </div>
 
 
-</body>
-</html>
+        <!--文章TAG-->
+        <div style="padding:15px;">
+            本文TAG:{model.tags}
+            <!--循环文章标签-->
+        </div>
+        <div class="reLink clearfix" data-scroll-reveal="enter from the bottom">
+            <div class="prevLink" style="float:left">上一篇：<%=get_prevandnext_article("show_news", -1, "没有了!", 0)%></div>
+            <div class="nextLink" style="float:right">下一篇：<%=get_prevandnext_article("show_news", 1, "没有了!", 0)%></div>
+        </div>
+
+    </div>
+</div><!--end cont-->
+
+
+</div><!--end service-->
+</div><!--end wrapper-->
+
+<!--主体内容 end-->
+<!--网站底部 start-->
+<!--网站底部 end-->
+
+<%template src="_bottom.html"%>

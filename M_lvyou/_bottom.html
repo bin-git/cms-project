@@ -1,0 +1,35 @@
+
+<script type="text/javascript" src="<%templateskin%>/js/touchslide.1.1.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/app.js"></script>
+<script type="text/javascript" src="<%templateskin%>/js/swiper.min.js"></script>
+
+
+ 
+ <script>
+
+        var inis = $(".swiper-wrapper .swiper-slide.curr").index();
+        if (inis >= 4)
+        {
+            var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 5,
+            initialSlide: inis,
+            paginationClickable: true,
+            spaceBetween: 0
+        });
+        }else{
+        	var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 5,
+            paginationClickable: true,
+            spaceBetween: 0
+        });
+        }
+
+        
+
+
+    </script>
+
+</body>
+</html>

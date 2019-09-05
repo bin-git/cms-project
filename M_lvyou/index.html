@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>{site.seo_title}</title>
+    <meta name="Keywords" content="{site.seo_keyword}" />
+    <meta name="Description" content="{site.seo_description}" />
+    <script type="text/javascript" src="<%templateskin%>/js/jquery-1.8.3.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script type="text/javascript" src="<%templateskin%>/js/autofontsize.min.js"></script>
+    <link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+
+    <div id="logo_main">
+        <div id="logo" class="animated fadeInUp">
+          <a href="<%linkurl("index")%>" title="{site.company}">
+              <img src="{site.logo}" alt="{site.company}" title="{site.company}" /></a>
+          </div>
+
+          <div id="WebTel">
+            导航<i class="icon"></i>
+        </div>
+    </div>
+
+    <div id="ShowChannel">
+        <div class="t"><i class="icon"></i></div>
+        <ul>
+            <li>
+                <a href="<%linkurl("index")%>"><i class="icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+            </li>
+            <%set DataTable category_list1=get_category_child_list("content",0)%>
+            <%foreach(DataRow cdr in category_list1.Rows)%>
+            <li>
+                <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}"><i class="icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;{cdr[title]}&nbsp;&nbsp;</a>
+            </li>
+            <%/foreach%>
+
+        </ul>
+    </div>
+
+
+    <!--网站导航 start-->
+    <div class="gray"></div>
+    <div id="tool">
+        <ul>
+            <li >
+                <a href="<%linkurl("index")%>" title="">
+                    <div><i class="icon"></i></div>
+                    返回首页
+                </a>
+            </li>
+            <li>
+                <a href="<%linkurl("nav_list3",274)%>" title="">
+                    <div><i class="icon"></i></div>
+                    线路推荐
+                </a>
+            </li>
+            <li class="">
+                <a href="tel:{site.mobile}" title="">
+                    <div><i class="icon"></i></div>
+                    拨打电话
+                </a>
+            </li>
+            <li class="">
+                <a href="<%linkurl("contact",293)%>" title="联系我们">
+                    <div><i class="icon"></i></div>
+                    联系我们
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--网站导航 end-->
+    <!--主体内容 start-->
+    <div id="banner_main">
+        <div id="banner">
+            <div class="hd"><ul></ul></div>
+            <div class="bd">
+                <ul>
+                    <%set DataTable bannerlist=new DTcms.Web.Plugin.Advert.BLL.advert_banner().GetList(5, "is_lock=0 and aid=17","sort_id asc,id desc").Tables[0]%>
+                    <%foreach(DataRow dr in bannerlist.Rows)%>
+                    <li><a href="javascript:;" title="{dr[title]}"><img _src="{dr[file_path]}"  alt="{dr[title]}"></a></li>
+                    <%/foreach%>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--新增 菜单-->
+    <div id="nav">
+        <ul class="clearfix  ">
+            <%set DTcms.Model.article_category izhid1=get_category_model(272)%>
+            <li>
+                <a href="<%linkurl({izhid1.call_index},{izhid1.id})%>">
+                    <i class=" i1"></i>
+                    <h4>{izhid1.title}</h4>
+                </a>
+            </li>
+            <%set DTcms.Model.article_category izhid2=get_category_model(273)%>
+            <li>
+                <a href="<%linkurl({izhid2.call_index},{izhid2.id})%>">
+                    <i class=" i2"></i>
+                    <h4>{izhid2.title}</h4>
+                </a>
+            </li>
+            <%set DTcms.Model.article_category izhid3=get_category_model(274)%>
+            <li>
+                <a href="<%linkurl({izhid3.call_index},{izhid3.id})%>">
+                    <i class=" i3"></i>
+                    <h4>{izhid3.title}</h4>
+                </a>
+            </li>
+            <%set DTcms.Model.article_category izhid4=get_category_model(275)%>
+            <li>
+                <a href="<%linkurl({izhid4.call_index},{izhid4.id})%>">
+                    <i class=" i4"></i>
+                    <h4>{izhid4.title}</h4>
+                </a>
+            </li>
+            <%set DTcms.Model.article_category izhid5=get_category_model(293)%>
+            <li>
+                <a href="<%linkurl({izhid5.call_index},{izhid5.id})%>">
+                    <i class=" i5"></i>
+                    <h4>{izhid5.title}</h4>
+                </a>
+            </li>
+
+
+        </ul>
+
+        <div class="bt">
+           <%set DataTable ipro_list1=get_article_list("content", 274, 1, "status=0 and is_recycle=0")%>
+           <%foreach(DataRow dr in ipro_list1.Rows)%>   
+           <a href="<%linkurl("show_pro",{dr[id]})%>" title="{dr[title]}" nowrap><i class="i1"></i><i class="i2"></i><span>{dr[title]}</span></a>
+           <%/foreach%>
+           <%set DTcms.Model.article_category catemodel3=get_category_model(274)%>
+           <div class="right"><a href="<%linkurl({catemodel3.call_index},{catemodel3.id})%>"><img src="<%templateskin%>/images/nav_8.jpg" /></a></div>
+       </div>
+
+   </div>
+   <div class="line"></div>
+
+
+   <!--新增 -->
+   <div class="index_main_3">
+    <div class="index_tit">推荐套餐</div>
+    <ul>
+        <%set DataTable ipro_list2=get_article_list("content", 302, 13, "status=0 and is_recycle=0 and is_red=1")%>
+        <%foreach(DataRow dr in ipro_list2.Rows)%>   
+        <li>
+            <a href="<%linkurl("show_pro",{dr[id]})%>" title="{dr[title]}">
+                <span class="left">
+                    <div class="ft">{dr[tags]}</div>
+                    <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+                </span>
+
+                <h4>{dr[title]}</h4>
+
+                <ol>
+                </ol>
+                <div class="bt">促销价：{dr[sub_title]}</div>
+            </a>
+        </li>
+        <%/foreach%>
+    </ul>
+
+</div>
+<div class="line"></div>
+
+<div class="index_main_1">
+    <div class="index_tit">芙蓉团队</div>
+    <ul class="clearfix">
+        <%set DataTable ipro_list5=get_article_list("content",305, 3, "status=0 and is_recycle=0")%>
+        <%foreach(DataRow dr in ipro_list5.Rows)%> 
+        <li>
+         <a href="<%linkurl("show",{dr[id]})%>" tppabs="64" title="{dr[title]}">
+            <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+            <h1>{dr[title]}</h1>
+            <p>{dr[sub_title]}</p>
+        </a>
+    </li>
+    <%/foreach%>   
+</ul>
+<a href="<%linkurl("nav_list1",272)%>" style="display:none" class="more">查看全部 ></a>
+</div>
+<div class="line"></div>
+<div class="index_main_2">
+    <div class="index_tit">芙蓉攻略</div>
+    <ul>
+     <%set DataTable ipro_list6=get_article_list("content",274, 4, "status=0 and is_recycle=0")%>
+     <%set int ipro_list6_num=1 %>
+     <%foreach(DataRow dr in ipro_list6.Rows)%>  
+     <li>
+
+        <h1>
+            <a href="<%linkurl("show",{dr[id]})%>" nowrap>{dr[title]}</a></h1>
+            <a href="<%linkurl("show",{dr[id]})%>"><span class="left">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}"></span></a>
+                <a href="<%linkurl("show",{dr[id]})%>">
+                    <p class="right">
+                        <%cutstring({dr[zhaiyao]},60)%>
+                    </p>
+                </a>
+                <span class="clear"></span>
+                <div class="b">
+                    <div><i class="i1"></i><span>本站</span></div><div><i class="i2"></i><span><%datetostr({dr[add_time]},yyyy-MM-dd)%></span></div><div><i class="i3"></i><span>{dr[click]}</span></div>
+                </div>
+
+            </li>
+            <%/foreach%>   
+        </ul>
+
+    </div>
+
+    <!--主体内容 end-->
+    <!--网站底部 start-->
+    <!--网站底部 end-->
+    <!--客服 start-->
+    <!--客服 end-->
+<%template src="_bottom.html"%>

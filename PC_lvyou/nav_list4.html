@@ -1,428 +1,232 @@
+<%template src="_top.html"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>定制旅游 - 张家界芙蓉假期国际旅行社有限公司</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="定制旅游" name="keywords" />
-    <meta content="张家界芙蓉假期国际旅行社有限公司(4000-555-667),企业注册资本500万元，具有独立法人资格的旅游企业，主要经营：入境旅游业务、国内旅游业务；是经湖南省旅游局批准成立的张家界旅游企业之一。" name="description" />
-    <meta content="张家界芙蓉假期国际旅行社有限公司" name="copyright" />
-    <meta content="本站" name="author" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="./css/css.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="Shortcut Icon" href="./images/fb191504-8a71-4b30-9341-1d85acbb0b63.ico" type="image/x-icon">
-    <!--[if!IE]>-->
-	
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <!--<![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript" src="./js/jquery.1.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="./css/aos.js"></script>
-	   
-    
-    
-</head>
-<body>
-    <!--网站导航 start-->
-
-    <div class="head_main head_ny " >
-        <div class="w1200 clearfix">
-            <div class="left animated fadeInLeft">
-                <a href="/" title="张家界芙蓉假期国际旅行社有限公司">
-                        <img src="/plugins/template/frjq/pc/uploadfile/logo_ny.png" alt="张家界芙蓉假期国际旅行社有限公司" title="张家界芙蓉假期国际旅行社有限公司" />
-                </a>
-            </div>
-
-            <div class="right nav animated fadeInRight">
-                <ul>
-                    <li><a  href="/" title="首页">首页</a></li>
-                        <li>
-                            <a  href="/jbfr" title="精彩芙蓉">精彩芙蓉</a>
-                        </li>
-                        <li>
-                            <a  href="/fryp" title="芙蓉优品">芙蓉优品</a>
-                        </li>
-                        <li>
-                            <a  href="/frgl" title="芙蓉攻略">芙蓉攻略</a>
-                        </li>
-                        <li>
-                            <a   class="hover"                       href="/dzly" title="定制旅游">定制旅游</a>
-                        </li>
-                        <li>
-                            <a  href="/lxfr" title="联系芙蓉">联系芙蓉</a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <!--网站导航 end-->
-    <!--主体内容 start-->
-    <!----	芙蓉攻略---->
+<!--网站导航 end-->
+<!--主体内容 start-->
+<!----	芙蓉攻略---->
 <div class="body w1200 dzly_main">
     <div class="ny_title  animated fadeInUp">
-        <h1>定制旅游</h1>
-        <h2>Custom travel</h2>
-        <p>您只需决定出发，剩下的交给芙蓉就好</p>
+        <h1>{catemodel.title}</h1>
+        <h2>{catemodel.etitle}</h2>
+        <p>{catemodel.des}</p>
         <span></span>
     </div>
     <div class="dzly_1 w1200">
-        <h1>什么是定制旅游</h1>
-        <h2>全新旅游方式</h2>
-        <p>不跟团，不用导游，没有固定线路</p>
-        <h2>量身设计线路</h2>
-        <p>旅行顾问根据您的需求为您量身设计线路</p>
-        <h2>不费吹灰之力</h2>
-        <p>帮您解决所有麻烦事情，像纯自由行一样的自由</p>
-        <h1 aos="zoom-in">为什么要定制旅游</h1>
+        <%set DTcms.Model.article_category catemodel30=get_category_model(307)%>
+        <h1>{catemodel30.title}</h1>
+
+
+
+        <%set DataTable ipro_list35=get_article_list("content",307,0, "status=0 and is_recycle=0")%>
+        <%foreach(DataRow dr in ipro_list35.Rows)%>  
+        <h2>{dr[title]}</h2>
+        <p>{dr[sub_title]}</p>
+        <%/foreach%>
+
+
+        <%set DTcms.Model.article_category catemodel31=get_category_model(290)%>
+        <h1 aos="zoom-in">{catemodel31.title}</h1>
     </div>
     <div class="dzly_2">
         <ul class="clearfix">
-                <li  aos="fade-right" >
+            <%set DataTable ipro_list37=get_article_list("content", 290,4, "status=0 and is_recycle=0")%>
+            <%set int ipro_list37_num=1 %>
+            <%foreach(DataRow dr in ipro_list37.Rows)%> 
+            <%if({ipro_list37_num++}>2)%>
+            <li  aos="fade-right" class="l2">
+                <%else%>
+                <li  aos="fade-right">
+                    <%/if%>
+                    <a href="<%linkurl("cpzsxq",{dr[id]})%>">
 
-                    <a href="/detail/36" title="结合了跟团游和自由行的优点" target="_blank">
-
-                        <img src="/Upload/Template/frjq/ContentPhoto/400-400/201703/73c9a12c-9994-42f9-856d-ecf8d12f36ec.jpg" alt="结合了跟团游和自由行的优点" title="结合了跟团游和自由行的优点">
-
-                        <span class="text">
-                            <i class="icon"></i>
-                            <h1>结合了跟团游和自由行的优点</h1>
-                            <p>
-                                <p>
-	不愿意跟团却又没时间自己做攻略？<br />
-那就试试定制旅行吧！<br />
-千般感受，尽在因人而异的品读中，<br />
-万种情愫，皆出自这难得一遇的心灵之旅
-</p>
-                            </p>
-                        </span>
-                    </a>
-                </li>
-                <li  aos="fade-right" >
-
-                    <a href="/detail/35" title="专业的定制旅行专家" target="_blank">
-
-                        <img src="/Upload/Template/frjq/ContentPhoto/400-400/201703/fa929b1a-0dec-4e96-9706-7bd6e9820d52.jpg" alt="专业的定制旅行专家" title="专业的定制旅行专家">
+                        <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
 
                         <span class="text">
                             <i class="icon"></i>
-                            <h1>专业的定制旅行专家</h1>
+                            <h1> <%cutstring({dr[title]},60)%></h1>
                             <p>
-                                <p>
-	我们有优秀的旅行顾问<br />
-了解您的各种需求<br />
-初稿不满意可无条件全额退款
-</p>
-                            </p>
-                        </span>
-                    </a>
-                </li>
-                <li   class="l2"  aos="fade-left" >
+                              {dr[content]}
+                          </p>
+                      </span>
+                  </a>
+              </li>
+              <%/foreach%>
 
-                    <a href="/detail/34" title="帮您设计独一无二的行程" target="_blank">
-
-                        <img src="/Upload/Template/frjq/ContentPhoto/400-400/201703/bb557790-389b-4cc0-ad08-953663457c8a.jpg" alt="帮您设计独一无二的行程" title="帮您设计独一无二的行程">
-
-                        <span class="text">
-                            <i class="icon"></i>
-                            <h1>帮您设计独一无二的行程</h1>
-                            <p>
-                                <p>
-	每个人的旅行，应该是不一样的，<br />
-我们为您定制旅行的唯一原则是旅<br />
-行中每一个细节都是您想要的
-</p>
-                            </p>
-                        </span>
-                    </a>
-                </li>
-                <li   class="l2"  aos="fade-left" >
-
-                    <a href="/detail/33" title="帮您节省每一分的花费" target="_blank">
-
-                        <img src="/Upload/Template/frjq/ContentPhoto/400-400/201703/95bd8706-1d9d-4cfd-b09a-ade2eaf23cb2.jpg" alt="帮您节省每一分的花费" title="帮您节省每一分的花费">
-
-                        <span class="text">
-                            <i class="icon"></i>
-                            <h1>帮您节省每一分的花费</h1>
-                            <p>
-                                <p>
-	谁说非要土豪才能享受定制旅行？<br />
-我们坚决反对浪费不必要的开销，<br />
-希望能够给您最有性价比的旅行
-</p>
-                            </p>
-                        </span>
-                    </a>
-                </li>
+          </ul>
+      </div>
 
 
-        </ul>
-    </div>
-
-
-</div>
-<div class="dzly_3_main">
-    <h1 aos="zoom-in" class="w1200">定制旅游的流程是什么</h1>
-    <div class="ul w1200">
+  </div>
+  <div class="dzly_3_main">
+     <%set DTcms.Model.article_category catemodel34=get_category_model(291)%>
+     <h1 aos="zoom-in" class="w1200">{catemodel34.title}</h1>
+     <div class="ul w1200">
         <ul>
+            <%set DataTable ipro_list41=get_article_list("content", 291, 6, "status=0 and is_recycle=0")%>
+            <%foreach(DataRow dr in ipro_list41.Rows)%>  
             <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_1.png" title="免费咨询" alt="免费咨询"><p>免费咨询</p></div>
-                <div class="right"><i class="icon"></i></div>
-            </li>
-            <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_2.png" title="沟通契合路线" alt="沟通契合路线"><p>沟通契合路线</p></div>
-                <div class="right"><i class="icon"></i></div>
-            </li>
-            <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_3.png" title="天猫拍单付款 发送旅游攻略" alt="天猫拍单付款发送旅游攻略"><p>天猫拍单付款<br />发送旅游攻略</p></div>
-                <div class="right"><i class="icon"></i></div>
-            </li>
-            <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_4.png" title="细节微调踏上旅途" alt="细节微调踏上旅途"><p>细节微调<br />踏上旅途</p></div>
-                <div class="right"><i class="icon"></i></div>
-            </li>
-            <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_5.png" title="24小时微服务" alt="24小时微服务"><p>24小时微服务</p></div>
-                <div class="right"><i class="icon"></i></div>
-            </li>
-            <li class="clearfix">
-                <div class="left"><img src="/plugins/template/frjq/pc/images/dzly_6.png" title="结束愉快之旅" alt="结束愉快之旅"><p>结束愉快之旅</p></div>
-
-            </li>
-        </ul>
+                <div class="left">
+                    <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+                    <p>{dr[title]}</p></div>
+                    <div class="right"><i class="icon"></i></div>
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="dzly_4_main">
-    <div class="t w1200" aos="zoom-in">定制旅游订单</div>
-    <div class="table">
-        <form id="fmMessage">
-            <div class="box1">
-                <div class="title clearfix">
-                    <div class="left"><i class="icon"></i>基本信息</div>
-                    <div class="right"></div>
-                </div>
-                <div class="con">
-                    <ul>
-                        <li class="clearfix">
-                            <span class="span1">出发地：</span>
-                            <input type="text" value="" name="field_Place">
-                            <input type="hidden" name="field_Place_name" value="出发地" />
-                            <span class="span2">&nbsp;</span><span class="span3">目的地：</span>
-                            <input type="text" value="" name="field_destination">
-                            <input type="hidden" name="field_destination_name" value="目的地" />
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">出发日期：</span>
+    <div class="dzly_4_main">
+        <div class="t w1200" aos="zoom-in">定制旅游订单</div>
+        <div class="table">
+            <form id="fmMessage">
+                <div class="box1">
+                    <div class="title clearfix">
+                        <div class="left"><i class="icon"></i>基本信息</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="con">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="span1">出发地：</span>
+                                <input type="text" value="" name="field_Place">
+                                <input type="hidden" name="field_Place_name" value="出发地" />
+                                <span class="span2">&nbsp;</span><span class="span3">目的地：</span>
+                                <input type="text" value="" name="field_destination">
+                                <input type="hidden" name="field_destination_name" value="目的地" />
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">出发日期：</span>
 
-                            <input type="text" placeholder="最早出发" name="field_firstDate" id="d1">
-                            <input type="hidden" name="field_firstDate_name" value="最早出发" />
-                            <span class="span2">~</span>
-                            <input type="text" name="field_lastDate" placeholder="最晚出发" id="d2">
-                            <input type="hidden" name="field_lastDate_name" value="最晚出发" />
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">游玩天数：</span>
-                            <input type="text" name="field_datecount">
-                            <input type="hidden" name="field_datecount_name" value="游玩天数" />
-                            <span class="span2">天</span>
-                            <input type="checkbox" name="field_chexk" class="checkbox">可适当增减天数
-                            <input type="hidden" name="field_chexk_name" value="可适当增减天数" />
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">出行人数：</span>
-                            <input type="text" name="field_adult">
-                            <input type="hidden" name="field_adult_name" value="成人" />
-                            <span class="span2">成人</span>
-                            <input type="text" value="" name="field_chiled">&nbsp;&nbsp;儿童
-                            <input type="hidden" name="field_chiled_name" value="儿童" />
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">人均预算：</span>
-                            <input type="text" placeholder="无明确预算可不填" value="" name="field_budget">
-                            <input type="hidden" name="field_budget_name" value="人均预算" />
+                                <input type="text" placeholder="最早出发" name="field_firstDate" id="d1">
+                                <input type="hidden" name="field_firstDate_name" value="最早出发" />
+                                <span class="span2">~</span>
+                                <input type="text" name="field_lastDate" placeholder="最晚出发" id="d2">
+                                <input type="hidden" name="field_lastDate_name" value="最晚出发" />
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">游玩天数：</span>
+                                <input type="text" name="field_datecount">
+                                <input type="hidden" name="field_datecount_name" value="游玩天数" />
+                                <span class="span2">天</span>
+                                <input type="checkbox" name="field_chexk" class="checkbox">可适当增减天数
+                                <input type="hidden" name="field_chexk_name" value="可适当增减天数" />
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">出行人数：</span>
+                                <input type="text" name="field_adult">
+                                <input type="hidden" name="field_adult_name" value="成人" />
+                                <span class="span2">成人</span>
+                                <input type="text" value="" name="field_chiled">&nbsp;&nbsp;儿童
+                                <input type="hidden" name="field_chiled_name" value="儿童" />
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">人均预算：</span>
+                                <input type="text" placeholder="无明确预算可不填" value="" name="field_budget">
+                                <input type="hidden" name="field_budget_name" value="人均预算" />
 
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="box2">
-                <div class="title clearfix">
-                    <div class="left"><i class="icon"></i>定制师</div>
-                    <div class="right"></div>
+                <div class="box2">
+                    <div class="title clearfix">
+                        <div class="left"><i class="icon"></i>定制师</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="con">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="span1">需要提供什么（多选）：</span>
+                                <a href="javascript:void(0);" data-value="线路设计">线路设计</a>
+                                <a href="javascript:void(0);" data-value="机票">机票</a>
+                                <a href="javascript:void(0);" data-value="用车">用车</a>
+                                <a href="javascript:void(0);" data-value="导游">导游</a>
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">&nbsp;</span>
+                                <a href="javascript:void(0);" data-value="酒店">酒店</a>
+                                <a href="javascript:void(0);" data-value="签证">签证</a>
+                                <a href="javascript:void(0);" data-value="门票">门票</a>
+                                <a href="javascript:void(0);" data-value="用餐">用餐</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="con">
-                    <ul>
-                        <li class="clearfix">
-                            <span class="span1">需要提供什么（多选）：</span>
-                            <a href="javascript:void(0);" data-value="线路设计">线路设计</a>
-                            <a href="javascript:void(0);" data-value="机票">机票</a>
-                            <a href="javascript:void(0);" data-value="用车">用车</a>
-                            <a href="javascript:void(0);" data-value="导游">导游</a>
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">&nbsp;</span>
-                            <a href="javascript:void(0);" data-value="酒店">酒店</a>
-                            <a href="javascript:void(0);" data-value="签证">签证</a>
-                            <a href="javascript:void(0);" data-value="门票">门票</a>
-                            <a href="javascript:void(0);" data-value="用餐">用餐</a>
-                        </li>
-                    </ul>
+                <div class="box3">
+                    <div class="title clearfix">
+                        <div class="left"><i class="icon"></i>特色定制（选填）</div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="con">
+                        <ul>
+                            <li class="clearfix" id="jdxj">
+                                <span class="span1" >酒店星级：</span>
+                                <a href="javascript:void(0);" data-value="三星/舒适">三星/舒适</a>
+                                <a href="javascript:void(0);" data-value="四星/高档">四星/高档</a>
+                                <a href="javascript:void(0);" data-value="五星/豪华">五星/豪华</a>
+                                <a href="javascript:void(0);" data-value="连锁">连锁</a>
+                                <a href="javascript:void(0);" data-value="特色客栈">特色客栈</a>
+                                <a href="javascript:void(0);" data-value="不限">不限</a>
+                            </li>
+                            <li class="clearfix" id="ycyq">
+                                <span class="span1">用餐要求：</span>
+                                <a href="javascript:void(0);" data-value="当地特色">当地特色</a>
+                                <a href="javascript:void(0);" data-value="定制师推荐">定制师推荐</a>
+                                <a href="javascript:void(0);" data-value="自理">自理</a>
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">其他需求：</span>
+                                <textarea placeholder="选填，请输入其他需求，如：希望定制师何时联系您，房间数，导游要求等。" name="field_demand"></textarea>
+                                <input type="hidden" name="field_demand_name" value="其他需求" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="box3">
-                <div class="title clearfix">
-                    <div class="left"><i class="icon"></i>特色定制（选填）</div>
-                    <div class="right"></div>
-                </div>
-                <div class="con">
-                    <ul>
-                        <li class="clearfix" id="jdxj">
-                            <span class="span1" >酒店星级：</span>
-                            <a href="javascript:void(0);" data-value="三星/舒适">三星/舒适</a>
-                            <a href="javascript:void(0);" data-value="四星/高档">四星/高档</a>
-                            <a href="javascript:void(0);" data-value="五星/豪华">五星/豪华</a>
-                            <a href="javascript:void(0);" data-value="连锁">连锁</a>
-                            <a href="javascript:void(0);" data-value="特色客栈">特色客栈</a>
-                            <a href="javascript:void(0);" data-value="不限">不限</a>
-                        </li>
-                        <li class="clearfix" id="ycyq">
-                            <span class="span1">用餐要求：</span>
-                            <a href="javascript:void(0);" data-value="当地特色">当地特色</a>
-                            <a href="javascript:void(0);" data-value="定制师推荐">定制师推荐</a>
-                            <a href="javascript:void(0);" data-value="自理">自理</a>
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">其他需求：</span>
-                            <textarea placeholder="选填，请输入其他需求，如：希望定制师何时联系您，房间数，导游要求等。" name="field_demand"></textarea>
-                            <input type="hidden" name="field_demand_name" value="其他需求" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box4">
-                <div class="title clearfix">
-                    <div class="left"><i class="icon"></i>联系人信息</div>
-                    <div class="right"></div>
-                </div>
+                <div class="box4">
+                    <div class="title clearfix">
+                        <div class="left"><i class="icon"></i>联系人信息</div>
+                        <div class="right"></div>
+                    </div>
 
-                <div class="con">
-                    <ul>
-                        <li class="clearfix">
-                            <span class="span1">姓名：</span>
-                            <input id="username" name="username" type="text">
-                            <span class="span2">&nbsp;</span>
-                            <span class="span3">性别：</span>
-                            <a class="hover" href="javascript:void(0);" data-value="先生">先生</a>
-                            <a href="javascript:void(0);" data-value="女士">女士</a>
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">联系电话：</span><input type="text" name="tel" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')">
-                            <span class="span2">&nbsp;</span><span class="span3">邮箱：</span><input type="text" name="email">
-                        </li>
-                        <li class="clearfix">
-                            <span class="span1">&nbsp;</span>
-                            <input class="btn" type="submit" value="提交订单">
-                        </li>
-                    </ul>
+                    <div class="con">
+                        <ul>
+                            <li class="clearfix">
+                                <span class="span1">姓名：</span>
+                                <input id="username" name="username" type="text">
+                                <span class="span2">&nbsp;</span>
+                                <span class="span3">性别：</span>
+                                <a class="hover" href="javascript:void(0);" data-value="先生">先生</a>
+                                <a href="javascript:void(0);" data-value="女士">女士</a>
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">联系电话：</span><input type="text" name="tel" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')">
+                                <span class="span2">&nbsp;</span><span class="span3">邮箱：</span><input type="text" name="email">
+                            </li>
+                            <li class="clearfix">
+                                <span class="span1">&nbsp;</span>
+                                <input class="btn" type="submit" value="提交订单">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <input type="hidden" name="field_styledemand" id="field_styledemand" value="" />
-            <input type="hidden" name="field_styledemand_name" value="需要提供什么" />
+                <input type="hidden" name="field_styledemand" id="field_styledemand" value="" />
+                <input type="hidden" name="field_styledemand_name" value="需要提供什么" />
 
-            <input type="hidden" name="field_stylehotelstar" id="field_stylehotelstar" value="" />
-            <input type="hidden" name="field_stylehotelstar_name" value="酒店星级" />
+                <input type="hidden" name="field_stylehotelstar" id="field_stylehotelstar" value="" />
+                <input type="hidden" name="field_stylehotelstar_name" value="酒店星级" />
 
-            <input type="hidden" name="field_stylerequirement" id="field_stylerequirement" value="" />
-            <input type="hidden" name="field_stylerequirement_name" value="用餐要求" />
+                <input type="hidden" name="field_stylerequirement" id="field_stylerequirement" value="" />
+                <input type="hidden" name="field_stylerequirement_name" value="用餐要求" />
 
-            <input type="hidden" name="field_stylesex" id="field_stylesex" value="" />
-            <input type="hidden" name="field_stylesex_name" value="性别" />
-        </form>
+                <input type="hidden" name="field_stylesex" id="field_stylesex" value="" />
+                <input type="hidden" name="field_stylesex_name" value="性别" />
+            </form>
+        </div>
     </div>
-</div>
 
     <!--主体内容 end-->
     <!--网站底部 start-->
     <!--网站底部 end-->
-
-    <div class="bottom_copy">
-        <div class="w1200 clearfix">
-            <div class="left">版权所有：张家界芙蓉假期国际旅行社有限公司    备案号： <a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备15015072号-2</a></div>
-            <div class="right"><a href="/map" title="网站地图">网站地图</a>&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a href="http://z.hnjing.com" target="_blank">竞网智赢</a>  <script src="https://s22.cnzz.com/z_stat.php?id=1275100114&web_id=1275100114" language="JavaScript"></script>  </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
-    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
-    <script>
-        jQuery(".floor_1_main .slideTxtBox").slide({ delayTime: 200 });//张家界必玩景点
-        jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", autoPlay: true, scroll: 4, vis: 4 });//芙蓉团队
-    </script>
-    <script>
-        if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0") {
-        }
-        else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0") {
-        } else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE8.0") {
-        } else {
-            AOS.init({
-                easing: 'ease-out-back',
-                duration: 1000
-            });
-        }
-    </script>
-    <!--客服 start-->
-    <!--请不要手动修改此文件-->
-<dl class="toolbar1" id="toolbar">
-        <dd>
-            <i class="qq">
-                <a title="在线QQ" id="BizQQWPA">
-                    <span class="icon"></span>
-                </a>
-            </i>
-        </dd>
-        <dd>
-            <a class="slide tel slide-tel" href="javascritp:void(0);" style="width: 0px;"><i><span class="icon"></span></i>4000-555-667</a>
-        </dd>
-
-        <dd>
-            <i class="code"><span class="icon"></span></i>
-            <ul class="pop pop-code" style="right: 90px; display: none;">
-                <li>
-                    <img title="微信二维码" alt="微信二维码" src="./images/cb55ea11-2391-4dc4-83a6-14096572a1b3.jpg">
-                    <h3>
-                        微信二维码
-                    </h3>
-                </li>
-            </ul>
-        </dd>
-        <!--<dd>
-            <i class="code wb"><span class="icon"></span></i>
-            <ul class="pop pop-code wbc" style="right: 90px; display: none;">
-                <li>
-                    <a href="http://www.weibo.com/maojiahotel?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1" target="_blank">
-                        <img title="微博二维码" alt="微信二维码" src="./images/6068efe1-2291-4778-b472-896d12b477b4.jpg">
-                        <h3>
-                            微博二维码
-                        </h3>
-                    </a>
-                </li>
-            </ul>
-        </dd>-->
-        <dd>
-            <i id="top" class="top"><span class="icon"></span></i>
-        </dd>
-    </dl>
-    <!--客服 end-->
-    
-    <script type="text/javascript" src="./js/jquery.validator.js"></script>
-    <script type="text/javascript" src="./js/zh-CN.js"></script>
+        <script type="text/javascript" src="<%templateskin%>/js/jquery.validator.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zh-CN.js"></script>
     <script>
         var style_demand, style_hotelstar, style_requirement, style_sex;
 
@@ -482,7 +286,7 @@
 
                 var me = this;
                 me.holdSubmit();
-
+                
                 $.ajax({
                     url: '/ajax/message/send',
                     type: 'POST',
@@ -505,16 +309,13 @@
         });
 
     </script>
-    <link rel="stylesheet" href="/Administration/Content/static/css/pikaday.css" />
-    <script type="text/javascript" src="/Administration/Content/static/js/pikaday.min.js"></script>
+    <link rel="stylesheet" href="<%templateskin%>/css/pikaday.css" />
+    <script type="text/javascript" src="<%templateskin%>/js/pikaday.min.js"></script>
     <script>
         var picker = new Pikaday({ field: document.getElementById('d1') });
         var picker2 = new Pikaday({ field: document.getElementById('d2') });
     </script>
 
-    
-	
 
 
-</body>
-</html>
+    <%template src="_bottom.html"%>

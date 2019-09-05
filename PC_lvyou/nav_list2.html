@@ -1,326 +1,125 @@
 <%template src="_top.html"%>
 
-    <!--网站导航 end-->
-    <!--主体内容 start-->
-        <!----	芙蓉攻略---->
+<!--网站导航 end-->
+<!--主体内容 start-->
+<!----	芙蓉攻略---->
 <div class="body ">
     <div class="ny_title w1200  animated fadeInUp">
-        <h1>芙蓉优品</h1>
-        <h2>FURONG superior</h2>
-        <p>有人情味的旅行</p>
-        <span></span>
+     <h1>{catemodel.title}</h1>
+     <h2>{catemodel.etitle}</h2>
+     <p>{catemodel.des}</p>
+     <span></span>
+ </div>
+ <!--芙蓉出品-->
+ <div class="yp_1">
+    <%set DTcms.Model.article_category catemodel2=get_category_model(283)%>
+    <div class="about_tit w1200" aos="fade-right">
+     <b>{catemodel2.title}</b>{catemodel2.etitle}
+ </div>
+ <div class="floor_1_main">
+    <div class="slideTxtBox clearfix">
+        <div class="hd">
+            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+            <span class="arrow"><a class="next"></a><a class="prev"></a></span>
+            <ul>
+                <%set DataTable category_list3=get_category_child_list("content",283)%>
+                <%foreach(DataRow cdr in category_list3.Rows)%>
+                <li>
+                    <a href="javascript:;" title="{cdr[title]}">{cdr[title]} </a>
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
+        <div class="bd">
+           <%set DataTable ipro5=get_category_child_list("content",283)%>
+           <%foreach(DataRow cdr in ipro5.Rows)%>
+           <ul>
+            <%set DataTable ipro_list4=get_article_list("content", {strtoint({cdr[id]})}, 6, "status=0 and is_recycle=0")%>
+            <%set int ipro_list4_num=1 %>
+            <%foreach(DataRow dr in ipro_list4.Rows)%>  
+            <li class="l{ipro_list4_num++}">
+               <a href="<%linkurl("show_pro",{dr[id]})%>">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+                <span class="on">
+                    <p>{dr[title]}</p>
+                </span>
+            </a>
+        </li>
+        <%/foreach%>   
+        <li class="more"><a href="tencent://message/?uin={site.qq}&amp;Menu=yes" title="立即咨询">立即咨询</a></li>
+    </ul>
+    <%/foreach%>   
+
+
+</div>
+</div>
+</div>
+</div>
+<!--金牌导游  -->
+<div class="yp_2 w1200">
+ <%set DTcms.Model.article_category catemodel5=get_category_model(284)%>
+ <div class="about_tit w1200" aos="fade-right">
+     <b>{catemodel5.title}</b>{catemodel5.etitle}
+ </div>
+ <div class="picScroll-left">
+    <div class="hd">
+        <a class="next icon"></a>
+        <a class="prev icon"></a>
     </div>
-    <!----芙蓉出品--->
-    <div class="yp_1">
-        <div class="about_tit w1200" aos="fade-right">
-            <b>芙蓉出品</b>Furong produced
-        </div>
-        <div class="floor_1_main">
-            <div class="slideTxtBox clearfix">
-                <div class="hd">
-                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-                    <span class="arrow"><a class="next"></a><a class="prev"></a></span>
-                    <ul>
-                            <li>
-                                <a href="/xxyry" title="门票">
-                                    门票
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/ssery" title="线路">
-                                    线路
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/cjsry" title="酒店">
-                                    酒店
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/jj" title="酒+景">
-                                    酒+景
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/hhwry" title="租车">
-                                    租车
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-                <div class="bd">
-                        <ul>
-                                <li class="l1">
-                                    <a href="/detail/26" title="张家界天门山门票" target="_blank">
-                                        <img src="/201703/211a46a4-39de-4d16-925a-1e194cb0cca2.jpg" alt="张家界天门山门票" title="张家界天门山门票">
-                                        <span class="on">                                            
-                                            <p>张家界天门山门票</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l2">
-                                    <a href="/detail/105" title="张家界魅力湘西晚会门票" target="_blank">
-                                        <img src="/201703/fb923561-8e3f-4838-bd5e-b6aba9abba3e.jpg" alt="张家界魅力湘西晚会门票" title="张家界魅力湘西晚会门票">
-                                        <span class="on">                                            
-                                            <p>张家界魅力湘西晚会门票</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l3">
-                                    <a href="/detail/102" title="猛洞河漂流" target="_blank">
-                                        <img src="/201703/bc9f10fc-8f80-4c3d-b258-fe1f6c67a5f5.jpg" alt="猛洞河漂流" title="猛洞河漂流">
-                                        <span class="on">                                            
-                                            <p>猛洞河漂流</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l4">
-                                    <a href="/detail/29" title="张家界宝峰湖门票" target="_blank">
-                                        <img src="/201703/8c585294-1dd5-40e5-9ff0-5cfecdad079f.jpg" alt="张家界宝峰湖门票" title="张家界宝峰湖门票">
-                                        <span class="on">                                            
-                                            <p>张家界宝峰湖门票</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l5">
-                                    <a href="/detail/28" title="张家界黄龙洞门票" target="_blank">
-                                        <img src="/201703/ad173621-9044-493f-8091-db7dc5bac3d2.jpg" alt="张家界黄龙洞门票" title="张家界黄龙洞门票">
-                                        <span class="on">                                            
-                                            <p>张家界黄龙洞门票</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l6">
-                                    <a href="/detail/27" title="张家界国家森林公园门票" target="_blank">
-                                        <img src="/201703/628ff834-7788-4169-a101-558b178fd064.jpg" alt="张家界国家森林公园门票" title="张家界国家森林公园门票">
-                                        <span class="on">                                            
-                                            <p>张家界国家森林公园门票</p>
-                                        </span>
-                                    </a>
-                                </li>
-                            <li class="more"><a href="/xxyry" title="更多">更多</a></li>
-                        </ul>
-                        <ul>
-                                <li class="l1">
-                                    <a href="/detail/104" title="猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河一日游" target="_blank">
-                                        <img src="/201703/ae4e7019-dc03-4b99-921a-94c00252be9b.jpg" alt="猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河一日游" title="猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河一日游">
-                                        <span class="on">                                            
-                                            <p>猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河一日游</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l2">
-                                    <a href="/detail/103" title="猛洞河+芙蓉镇一日游" target="_blank">
-                                        <img src="/201703/98759d32-ccbd-4b47-8790-e3dc03b9482b.jpg" alt="猛洞河+芙蓉镇一日游" title="猛洞河+芙蓉镇一日游">
-                                        <span class="on">                                            
-                                            <p>猛洞河+芙蓉镇一日游</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l3">
-                                    <a href="/detail/101" title="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日" target="_blank">
-                                        <img src="/201703/b10608f8-cc97-46ef-a67d-9fc619ff910c.jpg" alt="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日" title="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日">
-                                        <span class="on">                                            
-                                            <p>长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞..</p>
-                                        </span>
-                                    </a>
-                                </li>
-                            <li class="more"><a href="/ssery" title="更多">更多</a></li>
-                        </ul>
-                        <ul>
-                                <li class="l1">
-                                    <a href="/detail/91" title="五公里汽车酒店" target="_blank">
-                                        <img src="/201703/2bc3746a-32b4-4916-b772-e047236e7fbe.jpg" alt="五公里汽车酒店" title="五公里汽车酒店">
-                                        <span class="on">                                            
-                                            <p>五公里汽车酒店</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l2">
-                                    <a href="/detail/86" title="芙蓉镇土王行宫八部堂" target="_blank">
-                                        <img src="/201703/e125a608-c87c-45de-b0b5-9e43cea53b5c.jpg" alt="芙蓉镇土王行宫八部堂" title="芙蓉镇土王行宫八部堂">
-                                        <span class="on">                                            
-                                            <p>芙蓉镇土王行宫八部堂</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l3">
-                                    <a href="/detail/92" title="" target="_blank">
-                                        <img src="/201703/47d31b2c-2a54-4dab-81fe-c4260fe57c01.jpg" alt="" title="">
-                                        <span class="on">                                            
-                                            <p></p>
-                                        </span>
-                                    </a>
-                                </li>
-                            <li class="more"><a href="/cjsry" title="更多">更多</a></li>
-                        </ul>
-                        <ul>
-                                <li class="l1">
-                                    <a href="/detail/108" title="长沙、韶山、张家界、大峡谷【玻璃桥】、凤凰古城、 韶山、芙蓉镇、双飞及双高5日  " target="_blank">
-                                        <img src="/201703/905c6da0-2860-4f3a-bcef-c9f55a71e11f.jpg" alt="长沙、韶山、张家界、大峡谷【玻璃桥】、凤凰古城、 韶山、芙蓉镇、双飞及双高5日  " title="长沙、韶山、张家界、大峡谷【玻璃桥】、凤凰古城、 韶山、芙蓉镇、双飞及双高5日  ">
-                                        <span class="on">                                            
-                                            <p>长沙、韶山、张家界、大峡谷【玻璃桥】、凤凰古城、 韶山、芙蓉镇、双飞及双高5日  </p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l2">
-                                    <a href="/detail/106" title=" 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游 分享 关注商品举报 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游" target="_blank">
-                                        <img src="/201703/9630b834-1d5c-4b0c-93b2-ba9ffac868d6.jpg" alt=" 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游 分享 关注商品举报 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游" title=" 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游 分享 关注商品举报 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游">
-                                        <span class="on">                                            
-                                            <p> 张家界旅游 猛洞河漂流 猛洞河门票 芙蓉镇门票 纯玩一日游 猛洞河+芙蓉镇一日游 分享 关注商品..</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="l3">
-                                    <a href="/detail/107" title="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日" target="_blank">
-                                        <img src="/201703/225048e3-69c8-45e5-b430-e44fb045441e.jpg" alt="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日" title="长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞高6日">
-                                        <span class="on">                                            
-                                            <p>长沙、韶山、张家界、袁家界、凤凰古城、张家界大峡谷、玻璃桥、 黄龙洞 宝峰湖、赠表演纯玩双高/双飞/飞..</p>
-                                        </span>
-                                    </a>
-                                </li>
-                            <li class="more"><a href="/jj" title="更多">更多</a></li>
-                        </ul>
-                        <ul>
-                                <li class="l1">
-                                    <a href="/detail/2" title="去哪儿租车" target="_blank">
-                                        <img src="/201703/c0825dea-7ac3-4e5c-8125-f07a9bd03e3b.jpg" alt="去哪儿租车" title="去哪儿租车">
-                                        <span class="on">                                            
-                                            <p>去哪儿租车</p>
-                                        </span>
-                                    </a>
-                                </li>
-                            <li class="more"><a href="/hhwry" title="更多">更多</a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--金牌导游  -->
-    <div class="yp_2 w1200">
-        <div class="about_tit" aos="fade-right">
-            <b>芙蓉导游</b>Furong guide
-        </div>
-        <div class="picScroll-left">
-            <div class="hd">
-                <a class="next icon"></a>
-                <a class="prev icon"></a>
-            </div>
-            <div class="bd">
-                <ul class="picList">
-                        <li>
-                            <a href="/detail/64" title="张林" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309134419_5807.jpg" title="张林" alt="张林">
-                                <h1>张林</h1>
-                                <h2>32岁 活泼时尚</h2>
-                                <h3>擅长路线：品质户外</h3>
-                                <p><b>5471</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/63" title="吴金叶" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309134528_9137.jpg" title="吴金叶" alt="吴金叶">
-                                <h1>吴金叶</h1>
-                                <h2>28岁 微笑少女</h2>
-                                <h3>擅长路线：凤凰古城</h3>
-                                <p><b>3043</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/177" title="覃梭" target="_blank">
-                                <img src="/Upload/Template/frjq/ContentPhoto/245-327/201712/dd071676-1ffc-4e00-9232-a2bc4255ea25.jpg" title="覃梭" alt="覃梭">
-                                <h1>覃梭</h1>
-                                <h2>24 活泼开朗</h2>
-                                <h3>擅长路线：张家界+凤凰</h3>
-                                <p><b>4855</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/60" title="孙灵芝" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309134941_8834.jpg" title="孙灵芝" alt="孙灵芝">
-                                <h1>孙灵芝</h1>
-                                <h2>26岁 土家阿妹</h2>
-                                <h3>擅长路线：</h3>
-                                <p><b>5245</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/175" title="伍贤东" target="_blank">
-                                <img src="/Upload/Template/frjq/ContentPhoto/245-327/201712/7b9f8516-3bed-4e90-844d-dfb87f0a65bc.jpg" title="伍贤东" alt="伍贤东">
-                                <h1>伍贤东</h1>
-                                <h2>26 专业</h2>
-                                <h3>擅长路线：高端品质</h3>
-                                <p><b>3258</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/62" title="王汝南" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309134628_9762.jpg" title="王汝南" alt="王汝南">
-                                <h1>王汝南</h1>
-                                <h2>32岁 成熟稳重</h2>
-                                <h3>擅长路线：休闲品质线</h3>
-                                <p><b>4065</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/61" title="唐煜媛" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309134842_5621.jpg" title="唐煜媛" alt="唐煜媛">
-                                <h1>唐煜媛</h1>
-                                <h2>27岁 恬静</h2>
-                                <h3>擅长路线：橘子洲</h3>
-                                <p><b>5643</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/detail/59" title="许丁" target="_blank">
-                                <img src="/Upload/Template/frjq/attached/image/20170309/20170309135051_3981.jpg" title="许丁" alt="许丁">
-                                <h1>许丁</h1>
-                                <h2>32岁 土家汉子</h2>
-                                <h3>擅长路线：高端品质</h3>
-                                <p><b>4532</b>人</p>
-                                <span>选择他/她</span>
-
-                            </a>
-                        </li>
-
-
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="bd">
+        <ul class="picList">
+            <%set DataTable ipro_list1=get_article_list("content", 284, 15, "status=0 and is_recycle=0")%>
+            <%foreach(DataRow dr in ipro_list1.Rows)%>     
+            <li>
+             <a href="<%linkurl("show",{dr[id]})%>">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+                <h1><%cutstring({dr[title]},20)%></h1>
+                <h2><%cutstring({dr[sub_title]},20)%></h2>
+                <h3>擅长路线：<%cutstring({dr[zhaiyao]},20)%></h3>
+                <p><b>{dr[huafei]}</b>人</p>
+                <span>选择他/她</span>
+            </a>
+        </li>
+        <%/foreach%>
+    </ul>
+</div>
+</div>
+</div>
 
 </div>
 <!---优秀导游---->
 <div class="yp_3 w1200 clearfix">
-    <div class="about_tit " aos="fade-right">
-        <b>芙蓉团队</b>Furong team
-    </div>
-    <div class="con">
-        <ul class="js-list">
-            
-
-        </ul>
-    </div>
-    <div class="clear"></div>
-    <div class="pager clearfix" id="pagers"></div>
+ <%set DTcms.Model.article_category catemodel7=get_category_model(285)%>
+ <div class="about_tit w1200" aos="fade-right">
+     <b>{catemodel7.title}</b>{catemodel7.etitle}
+ </div>
+ <div class="con">
+    <ul class="js-list">
+    <%set DataTable ipro_list22=get_article_list("content", 285, 5, "status=0 and is_recycle=0")%>
+            <%foreach(DataRow dr in ipro_list22.Rows)%>
+        <li>
+            <a href="<%linkurl("show",{dr[id]})%>">
+                 <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+                <h1><%cutstring({dr[title]},40)%></h1><span class="on">
+                <p>张家界大峡谷玻璃桥
+                <br><br>
+                {dr[title]}
+                <br>
+                {dr[tags]}
+                <br>
+                <br>[查看详情]</p>
+            </span>
+        </a>
+    </li> 
+     <%/foreach%>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="pager clearfix" id="pagers"></div>
 
 
 </div>
 
-    <!--主体内容 end-->
-    <!--网站底部 start-->
+<!--主体内容 end-->
+<!--网站底部 start-->
 <%template src="_bottom.html"%>

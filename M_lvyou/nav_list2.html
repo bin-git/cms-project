@@ -1,0 +1,85 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div id="banner_main">
+  <div id="banner">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+      <ul>
+        <%set DataTable bannerlist=new DTcms.Web.Plugin.Advert.BLL.advert_banner().GetList(5, "is_lock=0 and aid=17","sort_id asc,id desc").Tables[0]%>
+        <%foreach(DataRow dr in bannerlist.Rows)%>
+        <li><a href="javascript:;" title="{dr[title]}"><img _src="{dr[file_path]}"  alt="{dr[title]}"></a></li>
+        <%/foreach%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="fryp_main">
+
+  <div class="dl">
+    <dl>
+      <%set DataTable category_list3=get_category_child_list(channel,283)%>
+      <%foreach(DataRow cdr in category_list3.Rows)%>
+      <dd>
+        <%if({cdr[id]}==category_id.ToString())%>
+        <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}" class="hover">{cdr[title]}</a>
+        <%else%>
+        <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}">{cdr[title]}</a>
+        <%/if%>
+      </dd>
+      <%/foreach%>
+    </dl>
+  </div>
+
+  <div class="ul">
+    <ul data-category="2" id="listBox">
+     <%set DataTable page_list=get_article_list("content", category_id, pagesize, page, "status=0 and is_recycle=0", out totalcount, out pagelist, "nav_list1", category_id, "__id__")%>
+     <%foreach(DataRow dr in page_list.Rows)%>
+     <li>
+      <a href="<%linkurl("show_pro",{dr[id]})%>" title="{dr[title]}">
+        <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+        <span class="price">￥232 起</span>
+        <div class="text  clearfix">
+          <h1>{dr[title]}</h1>
+          <p duohang4>{dr[zhaiyao]}</p>
+          <span>{dr[tags]}</span>
+        </div>
+      </a>
+    </li>
+    <%/foreach%>
+  </ul>
+  <div class="pager right">{pagelist}</div>
+</div>
+</div>
+
+
+<div class="index_main_1">
+    <div class="index_tit">芙蓉团队</div>
+    <ul class="clearfix" id="listBox" data-category="1">
+        <%set DataTable page_list3=get_article_list("content", 282, pagesize, page, "status=0 and is_recycle=0", out totalcount, out pagelist, "nav_list1", category_id, "__id__")%>
+        <%foreach(DataRow dr in page_list3.Rows)%>
+        <li>
+         <a href="<%linkurl("show_news",{dr[id]})%>" title="{dr[title]}" >
+            <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+            <h1>{dr[title]}</h1>
+            <p>
+            </p>
+        </a>
+    </li>
+    <%/foreach%>
+</ul>
+</div>
+
+
+
+<!--主体内容 end-->
+
+<%template src="_bottom.html"%>

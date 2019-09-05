@@ -1,362 +1,141 @@
+<%template src="_top.html"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>精彩芙蓉 - 张家界芙蓉假期国际旅行社有限公司</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="精彩芙蓉" name="keywords" />
-    <meta content="张家界芙蓉假期国际旅行社有限公司(4000-555-667),企业注册资本500万元，具有独立法人资格的旅游企业，主要经营：入境旅游业务、国内旅游业务；是经湖南省旅游局批准成立的张家界旅游企业之一。" name="description" />
-    <meta content="张家界芙蓉假期国际旅行社有限公司" name="copyright" />
-    <meta content="本站" name="author" />
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="./css/css.css" />
-    <link rel="stylesheet" href="./dist/aos.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <!--[if!IE]>-->
-    
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <!--<![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript" src="./js/jquery.1.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="./dist/aos.js"></script>
-    
-    
-</head>
-<body>
-    <!--网站导航 start-->
-
-    <div class="head_main head_ny " >
-        <div class="w1200 clearfix">
-            <div class="left animated fadeInLeft">
-                <a href="/" title="张家界芙蓉假期国际旅行社有限公司">
-                        <img src="./images/logo_ny.png" alt="张家界芙蓉假期国际旅行社有限公司" title="张家界芙蓉假期国际旅行社有限公司" />
-                </a>
-            </div>
-
-            <div class="right nav animated fadeInRight">
-                <ul>
-                    <li><a  href="/" title="首页">首页</a></li>
-                        <li>
-                            <a   class="hover"                       href="/jbfr" title="精彩芙蓉">精彩芙蓉</a>
-                        </li>
-                        <li>
-                            <a  href="/fryp" title="芙蓉优品">芙蓉优品</a>
-                        </li>
-                        <li>
-                            <a  href="/frgl" title="芙蓉攻略">芙蓉攻略</a>
-                        </li>
-                        <li>
-                            <a  href="/dzly" title="定制旅游">定制旅游</a>
-                        </li>
-                        <li>
-                            <a  href="/lxfr" title="联系芙蓉">联系芙蓉</a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <!--网站导航 end-->
-    <!--主体内容 start-->
-    <!----  芙蓉攻略---->
+<!--网站导航 end-->
+<!--主体内容 start-->
+<!----  芙蓉攻略---->
 <div class="body w1200 ">
     <div class="ny_title  animated fadeInUp">
-        <h1>精彩芙蓉</h1>
-        <h2>Marvellous FURONG</h2>
-        <p>有人情味的旅行</p>
+        <h1>{catemodel.title}</h1>
+        <h2>{catemodel.etitle}</h2>
+        <p>{catemodel.des}</p>
         <span></span>
     </div>
-    <!----关于我们--->
+    <!--关于我们-->
     <div class="about_1">
+        <%set DTcms.Model.article_category catemodel2=get_category_model(292)%>
         <div class="about_tit">
-            <b>关于我们</b>About us
+            <b>{catemodel2.title}</b>{catemodel2.etitle}
         </div>
+        <%set DataTable nipro_list3=get_article_list("content", 292, 1, "status=0 and is_recycle=0")%>
+        <%foreach(DataRow dr in nipro_list3.Rows)%>   
         <div class="con clearfix">
             <div class="left">
-                <img src="./images/about.png"><h1>张家界芙蓉假期国际旅行社有限公司</h1><p>
-                    英文全称：Zhangjiajie Furong Jiaqi International Travel Service Co.,Ltd(简称：FITS)。企业注册资本
-                    500万元，具有独立法人资格的旅游企业，主要经营：入境旅游业务，国内旅游业务，是经湖南省旅游局
-                    批准成立的张家界旅游企业之一。
-                    <br /><br />
-                    面向上海、北京、江苏、浙江客源地市场，已组建完成了运作高效的团队，为公司实现做品质旅游，树芙
-                    蓉之旅形象提供了有力保障。张家界芙蓉假期国际旅行社有限公司全体员工一起勇于面对新的挑战，迎接
-                    新的未来，实现新的发展目标。
-                    <br /><br />
-                    （公司位于张家界市区澧水河畔古庸路480号。）
-                </p>
+                <img src="{dr[img_url1]}" title="{dr[title]}" alt="{dr[title]}"><h1>{dr[title]}</h1>
+                <div>
+                    {dr[cont1]}
+                </div>
             </div>
-            <div class="right"><img src="./images/about.jpg">
+            <div class="right"><img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
             </div>
-
         </div>
+        <%/foreach%>
     </div>
     <!--团队展示  -->
     <div class="about_2" >
-        <div class="about_tit">
-            <b>团队展示</b>About team
-        </div>
-        <div class="con">
-            <ul class="clearfix">
-                    <li aos="fade-up" aos-delay="100">
-                        <a href="javascript:void(0)" title="钟猛" target="_blank">
-                            <img src="./images/de0bbed8-ad0b-448f-853f-6f023cb9ad81.jpg" alt="钟猛" title="钟猛">
-                            <h1>钟猛</h1><p>董事长</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="200">
-                        <a href="javascript:void(0)" title="钟福琳" target="_blank">
-                            <img src="./images/a95c3543-55d1-4b3f-bb14-bf1086d6825d.jpg" alt="钟福琳" title="钟福琳">
-                            <h1>钟福琳</h1><p>总经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="300">
-                        <a href="javascript:void(0)" title="吴仁康" target="_blank">
-                            <img src="/Upload/Template/frjq/ContentPhoto/100-160/201804/99907d05-2672-4df2-bd96-2c378a491b61.jpg" alt="吴仁康" title="吴仁康">
-                            <h1>吴仁康</h1><p>执行总经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="400">
-                        <a href="javascript:void(0)" title="钟梅花" target="_blank">
-                            <img src="/Upload/Template/frjq/ContentPhoto/100-160/201711/1866948d-f54d-498a-b9be-7b56a471e9f0.jpg" alt="钟梅花" title="钟梅花">
-                            <h1>钟梅花</h1><p>办公室主任</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="500">
-                        <a href="javascript:void(0)" title="刘家菊" target="_blank">
-                            <img src="./images/cc3e0163-acd1-4b37-8954-64cbfd871b68.jpg" alt="刘家菊" title="刘家菊">
-                            <h1>刘家菊</h1><p>计调部经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="600">
-                        <a href="javascript:void(0)" title="覃洲海" target="_blank">
-                            <img src="/Upload/Template/frjq/ContentPhoto/100-160/201804/cf951089-1de7-449c-bb38-24b64d237cc7.jpg" alt="覃洲海" title="覃洲海">
-                            <h1>覃洲海</h1><p>散拼部经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="700">
-                        <a href="javascript:void(0)" title="蔡绍勇" target="_blank">
-                            <img src="./images/57a45c7e-a9d6-49e3-b2bf-fa0406b392a1.jpg" alt="蔡绍勇" title="蔡绍勇">
-                            <h1>蔡绍勇</h1><p>电商部经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="800">
-                        <a href="javascript:void(0)" title="李娟" target="_blank">
-                            <img src="./images/643608e0-29ff-49e9-b0cc-b25605c36a5f.jpg" alt="李娟" title="李娟">
-                            <h1>李娟</h1><p>质监部经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="900">
-                        <a href="javascript:void(0)" title="刘立正" target="_blank">
-                            <img src="./images/a5df8118-f3b8-46a8-bf72-49fd72521290.jpg" alt="刘立正" title="刘立正">
-                            <h1>刘立正</h1><p>上海业务经理</p>
-                        </a>
-                    </li>
-                    <li aos="fade-up" aos-delay="1000">
-                        <a href="javascript:void(0)" title="许丁" target="_blank">
-                            <img src="./images/b118143d-3727-4e38-8e9a-2e4f205600ac.jpg" alt="许丁" title="许丁">
-                            <h1>许丁</h1><p>明星导游</p>
-                        </a>
-                    </li>
-
-            </ul>
-        </div>
+     <%set DTcms.Model.article_category catemodel3=get_category_model(278)%>
+     <div class="about_tit">
+        <b>{catemodel3.title}</b>{catemodel3.etitle}
     </div>
+    <div class="con">
+        <ul class="clearfix">
+            <%set DataTable ipro_list4=get_article_list("content",278, 9, "status=0 and is_recycle=0")%>
+            <%set int ipro_list4_num=1 %>
+            <%foreach(DataRow dr in ipro_list4.Rows)%>   
+            <li aos="fade-up" aos-delay="{ipro_list4_num++}00">
+                <a href="javascript:void(0)" title="{dr[title]}" target="_blank">
+                    <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+                    <h1>{dr[title]}</h1><p>{dr[sub_title]}</p>
+                </a>
+            </li>
+            <%/foreach%>
+        </ul>
+    </div>
+</div>
 
 </div>
 <!---发展历程---->
 
-<div class="about_3" style="background: url(./images/63aa88c5-c137-42bd-9cf3-0faebee4d257.JPG) center top no-repeat;">
+<%set DTcms.Model.article_category catemodel5=get_category_model(279)%>
+<div class="about_3" style="background: url({catemodel5.img_url}) center top no-repeat;">
     <div class="about_tit w1200" aos="fade-right">
-        <b>发展历程</b>Development history
-        <p>
-            我们将创意与诚意融入一个个旅游服务中。 <br />
-为成为优秀品质旅游服务商不懈努力，良好的口碑、正劲的发展是必然亦是馈赠。
-        </p>
+        <b>{catemodel5.title}</b>{catemodel5.etitle}
+        <div class="miao">
+            {catemodel5.content}
+        </div>
     </div>
 </div>
 <!-----合作伙伴---------->
 <div class="about_4 ">
+    <%set DTcms.Model.article_category catemodel7=get_category_model(280)%>
     <div class="about_tit w1200"  aos="fade-left">
-        <b>合作伙伴</b>Cooperative Partner
-        <p>欲寻求商务合作请联系电话：4000-555-667</p>
+        <b>{catemodel7.title}</b>{catemodel7.etitle}
+        <p>{catemodel7.seo_description}</p>
     </div>
     <div class="con">
         <ul>
-                <li><a href="https://zjjfrjqly.alitrip.com/" title="飞猪" target="_blank"><img src="./images/0bb99146-bc50-4984-9e4a-7b22ac1c377a.jpg" title="飞猪" alt="飞猪"></a></li>
-                <li><a href="http://www.ctrip.com/" title="携程旅游网" target="_blank"><img src="./images/050231a7-f994-4a43-b673-fbf91ed5a0ee.jpg" title="携程旅游网" alt="携程旅游网"></a></li>
-                <li><a href="https://www.meituan.com/" title="美团" target="_blank"><img src="./images/c97b212e-8002-4ea1-a05b-a2a1dbccae13.jpg" title="美团" alt="美团"></a></li>
-                <li><a href="http://mall.jd.com/index-612979.html" title="京东" target="_blank"><img src="./images/e4b3ca23-4a8c-4ffa-8666-79b9ede73d3a.jpg" title="京东" alt="京东"></a></li>
-                <li><a href="http://www.lvmama.com/" title="驴妈妈旅游" target="_blank"><img src="./images/4c57efa4-e486-49b1-b8d7-17192bb0702a.jpg" title="驴妈妈旅游" alt="驴妈妈旅游"></a></li>
-                <li><a href="http://www.tuniu.com/" title="途牛旅游网" target="_blank"><img src="./images/56fa6a2c-5ee8-41bc-a090-40a83b4ded47.jpg" title="途牛旅游网" alt="途牛旅游网"></a></li>
-                <li><a href="https://www.qunar.com/" title="去哪儿旅游网" target="_blank"><img src="./images/d530b9c0-1a0d-4d51-9ff0-24a9a0732c28.jpg" title="去哪儿旅游网" alt="去哪儿旅游网"></a></li>
-                <li><a href="https://www.tmall.com/" title="天猫" target="_blank"><img src="./images/1996f2fc-24c5-4427-8b1e-99dfce9e1847.jpg" title="天猫" alt="天猫"></a></li>
 
-        </ul>
+           <%set DataTable ipro_list7=get_article_list("content",280, 8, "status=0 and is_recycle=0")%>
+           <%set int ipro_list7_num=1 %>
+           <%foreach(DataRow dr in ipro_list7.Rows)%>  
+           <li>
+            <a href="show" tppabs="18" title="{dr[title]}" target="_blank">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+            </a>
+        </li>
+        <%/foreach%>   
 
-    </div>
+    </ul>
+
+</div>
 </div>
 <div class="about_5">
+    <%set DTcms.Model.article_category catemodel8=get_category_model(281)%>
     <div class="about_tit w1200"  aos="fade-left">
-        <b>客户感言</b>Testimonial
-        <p>对待家人一般的对待每一位客户</p>
+        <b>{catemodel8.title}</b>{catemodel8.etitle}
+        <p>{catemodel8.seo_description}</p>
     </div>
     <div class="floor_3_main">
         <div class="con w1200">
             <ul class="clearfix">
-                    <li class="l1">
-                        <a href="/detail/14" title="张小姐" target="_blank">
-                            <img src="./images/1aa6d5d6-16fe-4b61-aa49-574468823a4c.jpg" title="张小姐" alt="张小姐">
-                            <div>
-                                <h1>张小姐：</h1><p>
-                                    邹杰导游非常不错哈，带给我们一段难忘的旅程，路上发生了一点意外，邹杰导游义不容辞的帮助我们。
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="l2">
-                        <a href="/detail/13" title="彭先生一家" target="_blank">
-                            <img src="/Upload/Template/frjq/ContentPhoto/210-280/201702/920a4a35-d84a-41c6-b022-fe6bde440747.jpg" title="彭先生一家" alt="彭先生一家">
-                            <div>
-                                <h1>彭先生一家：</h1><p>
-                                    和小许导游相处四天来，给我们的感觉是：热情、周到、仔细、知识面很广。这次旅途非常愉快，非常感谢！
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="l3">
-                        <a href="/detail/12" title="王小姐" target="_blank">
-                            <img src="./images/bfec505e-9fae-425d-a097-938e3d92352f.jpeg" title="王小姐" alt="王小姐">
-                            <div>
-                                <h1>王小姐：</h1><p>
-                                    天门山的那天，天气真的不怎么好，很多景看的都不清晰，还是很感谢导游，为了让我们早一些进去，五点不到就去排队了，看着很多别..
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="l4">
-                        <a href="/detail/11" title="苏州小姐妹" target="_blank">
-                            <img src="./images/26d24fb4-acdb-4e74-aebb-ec0e5f13b155.jpg" title="苏州小姐妹" alt="苏州小姐妹">
-                            <div>
-                                <h1>苏州小姐妹：</h1><p>
-                                    活泼可爱的小熊导游，带给我们一段难忘的美好的张家界之旅
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-            </ul>
-        </div>
+                <%set DataTable ipro_list6=get_article_list("content",281, 4, "status=0 and is_recycle=0")%>
+                <%set int ipro_list6_num=1 %>
+                <%foreach(DataRow dr in ipro_list6.Rows)%>  
+                <li class="l{ipro_list6_num++}"   aos="fade-right" aos-delay="{ipro_list6_num}00">
+                    <a href="show" tppabs="14" title="{dr[title]}" target="_blank">
+                        <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" >
+                        <div>
+                            <h1>{dr[title]}</h1><p><%cutstring({dr[content]},120)%>
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <%/foreach%> 
+        </ul>
     </div>
+</div>
 </div>
 <div class="about_6 w1200">
-    <div class="about_tit"  aos="fade-right">
-        <b>载誉前行</b>Honor
-        <p>这一份份的奖状，是荣耀，也是让我们保持品质的动力</p>
-    </div>
-    <div class="J_Poster poster-main animate">
-        <div class="poster-btn poster-prev-btn"></div>
-        <ul class="poster-list">
-                <li class="poster-item"><a href="javascript:void(0)" title="神秘湘西，魅力导游"><img src="/Upload/Template/frjq/attached/image/20170512/20170512114554_1523.png" title="神秘湘西，魅力导游" alt="神秘湘西，魅力导游" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="对待游客似亲人，服务周到情意真"><img src="/Upload/Template/frjq/attached/image/20170512/20170512114700_4697.png" title="对待游客似亲人，服务周到情意真" alt="对待游客似亲人，服务周到情意真" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="服务周到，待客热情"><img src="/Upload/Template/frjq/attached/image/20170512/20170512114931_6621.png" title="服务周到，待客热情" alt="服务周到，待客热情" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="情系游客服务周到，热情讲解详细精辟"><img src="/Upload/Template/frjq/attached/image/20170512/20170512115110_7246.png" title="情系游客服务周到，热情讲解详细精辟" alt="情系游客服务周到，热情讲解详细精辟" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="热情细致有耐心，不是亲人胜亲人"><img src="/Upload/Template/frjq/attached/image/20170512/20170512135826_5722.png" title="热情细致有耐心，不是亲人胜亲人" alt="热情细致有耐心，不是亲人胜亲人" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="关爱老人，热情服务"><img src="/Upload/Template/frjq/attached/image/20170512/20170512115434_4277.png" title="关爱老人，热情服务" alt="关爱老人，热情服务" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="导游之情谊，游客之亲人"><img src="/Upload/Template/frjq/attached/image/20170512/20170512115613_3144.png" title="导游之情谊，游客之亲人" alt="导游之情谊，游客之亲人" width="100%" height="100%"></a></li>
-                <li class="poster-item"><a href="javascript:void(0)" title="服务认真，救助游客"><img src="/Upload/Template/frjq/attached/image/20170512/20170512135443_6445.png" title="服务认真，救助游客" alt="服务认真，救助游客" width="100%" height="100%"></a></li>
-        </ul>
-        <div class="poster-btn poster-next-btn"></div>
-    </div>
-
+ <%set DTcms.Model.article_category catemodel9=get_category_model(282)%>
+ <div class="about_tit w1200"  aos="fade-left">
+    <b>{catemodel9.title}</b>{catemodel9.etitle}
+    <p>{catemodel9.seo_description}</p>
 </div>
+<div class="J_Poster poster-main animate">
+    <div class="poster-btn poster-prev-btn"></div>
+    <ul class="poster-list">
+    <%set DataTable ipro_list9=get_article_list("content",282, 10, "status=0 and is_recycle=0")%>
+        <%foreach(DataRow dr in ipro_list9.Rows)%>  
+        <li class="poster-item">
+            <a href="javascript:void(0)" title="{dr[title]}">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}" width="100%" height="100%"></a></li>
+                <%/foreach%> 
+            </ul>
+            <div class="poster-btn poster-next-btn"></div>
+        </div>
+
+    </div>
 
     <!--主体内容 end-->
     <!--网站底部 start-->
     <!--网站底部 end-->
-
-    <div class="bottom_copy">
-        <div class="w1200 clearfix">
-            <div class="left">版权所有：张家界芙蓉假期国际旅行社有限公司    备案号： <a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备15015072号-2</a></div>
-            <div class="right"><a href="/map" title="网站地图">网站地图</a>&nbsp;&nbsp;&nbsp;&nbsp;技术支持：<a href="http://z.hnjing.com" target="_blank">竞网智赢</a>  <script src="https://s22.cnzz.com/z_stat.php?id=1275100114&web_id=1275100114" language="JavaScript"></script>  </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
-    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
-    <script>
-        jQuery(".floor_1_main .slideTxtBox").slide({ delayTime: 200 });//张家界必玩景点
-        jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "left", autoPlay: true, scroll: 4, vis: 4 });//芙蓉团队
-    </script>
-    <script>
-        if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0") {
-        }
-        else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0") {
-        } else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE8.0") {
-        } else {
-            AOS.init({
-                easing: 'ease-out-back',
-                duration: 1000
-            });
-        }
-    </script>
-    <!--客服 start-->
-    <!--请不要手动修改此文件-->
-<dl class="toolbar1" id="toolbar">
-        <dd>
-            <i class="qq">
-                <a title="在线QQ" id="BizQQWPA">
-                    <span class="icon"></span>
-                </a>
-            </i>
-        </dd>
-        <dd>
-            <a class="slide tel slide-tel" href="javascritp:void(0);" style="width: 0px;"><i><span class="icon"></span></i>4000-555-667</a>
-        </dd>
-
-        <dd>
-            <i class="code"><span class="icon"></span></i>
-            <ul class="pop pop-code" style="right: 90px; display: none;">
-                <li>
-                    <img title="微信二维码" alt="微信二维码" src="./images/cb55ea11-2391-4dc4-83a6-14096572a1b3.jpg">
-                    <h3>
-                        微信二维码
-                    </h3>
-                </li>
-            </ul>
-        </dd>
-        <!--<dd>
-            <i class="code wb"><span class="icon"></span></i>
-            <ul class="pop pop-code wbc" style="right: 90px; display: none;">
-                <li>
-                    <a href="http://www.weibo.com/maojiahotel?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1" target="_blank">
-                        <img title="微博二维码" alt="微信二维码" src="./images/6068efe1-2291-4778-b472-896d12b477b4.jpg">
-                        <h3>
-                            微博二维码
-                        </h3>
-                    </a>
-                </li>
-            </ul>
-        </dd>-->
-        <dd>
-            <i id="top" class="top"><span class="icon"></span></i>
-        </dd>
-    </dl>
-    <!--客服 end-->
-    
-    <script type="text/javascript" src="./js/carousel.js"></script>
-    <script>
-        $(document).ready(function () {  //荣誉资质
-            Carousel.init($(".J_Poster"));
-        });
-
-    </script>
-
-    
-    
-
-
-</body>
-</html>
+    <%template src="_bottom.html"%>

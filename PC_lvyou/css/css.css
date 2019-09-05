@@ -371,7 +371,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_3_main .con li div { border: 3px solid #00ac82; width: 166px; height: 159px; padding-right: 25px; padding-left: 61px; margin-left: 202px; margin-top: 30px; }
 .floor_3_main .con li div h1 { padding-top: 15px; font-weight: 100; color: #00ac82; padding-bottom: 17px; }
 .floor_3_main .con li div p { font-size: 12px; color: #333; }
-.floor_3_main .con li img { position: absolute; left: 37px; top: 0; }
+.floor_3_main .con li img { position: absolute; left: 37px; top: 0;width: 210px;max-height:300px; }
 .floor_3_main .con .l2 { margin-top: 35px; }
 .floor_3_main .con .l3 div { padding-left: 15px; padding-right: 61px; margin-top: 20px; }
 .floor_3_main .con .l3 img { right: 0; left: auto; top: auto; bottom: -23px; }
@@ -396,7 +396,7 @@ a:hover { color: #58d18c; text-decoration: none; }
 .floor_5_main .con ul { width: 115%; }
 .floor_5_main .con li { width: 230px; margin-right: 12px; float: left; text-align: center; }
 .floor_5_main .con li img { width: 230px; }
-.floor_5_main .con li h1 { height: 62px; line-height: 62px; color: #00a88c; }
+.floor_5_main .con li h1 { height: 62px; line-height: 62px; color: #00a88c; overflow: hidden; }
 .floor_5_main .con li span { display: block; background: #999; width: 26px; height: 2px; margin: 0 auto; margin-bottom: 13px; transition: ease-in-out .2s; }
 .floor_5_main .con li p { font-size: 12px; padding: 0 10px; line-height: 22px; color: #333; }
 .floor_5_main .con li a:hover span { width: 100%; background: #00a88c; }
@@ -661,7 +661,7 @@ text-align: center; float: right; }
 /*******精彩芙蓉******/
 .about_tit { border-left: 2px solid #008251; height: 30px; line-height: 30px; color: #ccc; font-size: 18px; }
 .about_tit b { font-size: 24px; color: #000; font-weight: 100; padding-left: 11px; padding-right: 11px; }
-.about_tit p { color: #333; padding-top: 32px; }
+.about_tit .miao { color: #333; padding-top: 32px; line-height: 2;}
 /*******精彩芙蓉*******/
 .about_1 { margin-bottom: 97px; }
 .about_1 .left { width: 645px; }
@@ -755,7 +755,7 @@ text-align: center; float: right; }
 .yp_list .pager .cur { background: #00ac82; }
 .yp_list .pager a:hover { background: #00ac82; }
 /*****联系我们****/
-.body_contact { background: #f7f7f7 url("contact_bg.jpg") center top no-repeat; padding-bottom: 122px; margin-top:86px; }
+.body_contact { background: #f7f7f7 url("../images/contact_bg.jpg") center top no-repeat; padding-bottom: 122px; margin-top:86px; }
 .body_contact .contact_left { width: 170px; }
 .body_contact .contact_left .tit { width: 100%; height: 50px; line-height: 50px; text-align: center; color: #fff; font-size: 18px; background: #00ac82; }
 .body_contact .contact_left ul { background: #fff; margin-bottom: 25px; overflow: hidden; }
@@ -763,7 +763,7 @@ text-align: center; float: right; }
 .body_contact .contact_left li span { color: #000; display: block; position: absolute; left: 0; top: 0; z-index: 12; width: 170px; text-align: center; }
 .body_contact .contact_left li a { display: block; cursor: pointer; width: 170px; height: 40px; overflow: hidden; vertical-align: middle; }
 .body_contact .contact_left li i { position: absolute; height: 40px; width: 0; transition: ease-in-out .2s; background: #f1f1f1; left: 0; top: 0; }
-.body_contact .contact_left li a:hover i, .body_contact .contact_left li a.hover i { width: 168px; border-left: 2px solid #00ac82; z-index: 11; }
+.body_contact .contact_left li a:hover i, .body_contact .contact_left li.curr a i { width: 168px; border-left: 2px solid #00ac82; z-index: 11; }
 .body_contact .contact_left dl dd { position: relative; width: 170px; }
 .body_contact .contact_left dl dd h1 { position: absolute; left: 0; top: 137px; background: url("../images/color_6_2.png") repeat; width: 100%; height: 33px; line-height: 33px; color: #fff; text-align: center; }
 .body_contact .contact_left dl dd img { width: 170px; height: 170px; }
@@ -870,6 +870,7 @@ text-align: center; float: right; }
 .dzly_3_main h1 { color: #00ac82; font-size: 30px; padding-top: 47px; }
 .dzly_3_main .ul { margin-top: 70px; }
 .dzly_3_main .ul li { float: left; }
+.dzly_3_main .ul li:last-child .right{ display: none; }
 .dzly_3_main .ul li .left { width: 160px; float: left; }
 .dzly_3_main .ul li .left p { padding-top: 22px; color: #3c3c3c; }
 .dzly_3_main .ul li .left img { width: 160px; height: 185px; overflow: hidden; }
@@ -954,8 +955,8 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 .show_news #bdshare span.bds_more, .show_news .bds_tools a { line-height: 14px; }
 .show_news .baiduShare { margin-bottom: 5px; }
 .show_news .reLink { line-height: 24px; color: #333; padding-bottom: 30px; }
-.show_news .reLink .prevLink { color: #333; float: left; }
-.show_news .reLink .nextLink { float: right; }
+.show_news .reLink .prevLink { color: #333; float: left; width: 45%;}
+.show_news .reLink .nextLink { float: right;  width: 45%;}
 /********.toolbar1*********/
 .toolbar1 { width: 50px; position: fixed; right: 0px; top:100px; z-index: 999; }
 .toolbar1 dd { width: 50px; height: 50px; background: #999; position: relative; margin-bottom: 3px; }
@@ -1196,6 +1197,9 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 .frgl_detail .cont .mr .bottom ul li {
  line-height: 36px;
 }
+.frgl_detail .cont .mr .bottom ul li:first-child{
+	display: none;
+}
 .frgl_detail .cont .mr .bottom ul li a span {
  margin-right: 7px;
  line-height: 36px;
@@ -1252,9 +1256,11 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 .frgl_detail .reLink .prevLink {
  color: #333;
  float: left;
+  overflow: hidden;text-overflow: ellipsis;white-space: nowrap; word-break: break-all; 
 }
 .frgl_detail .reLink .nextLink {
  float: right;
+  overflow: hidden;text-overflow: ellipsis;white-space: nowrap; word-break: break-all; 
 }
 
 @keyframes error-swing { 0% {
@@ -1327,3 +1333,22 @@ zoom: 1; line-height: 32px; border-bottom: 0; text-align: center; width: auto; p
 	transform: translateY(5px);
 	/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
+
+
+
+.sousuos{  padding-top: 30px; }
+.sousuos .search-tit{  padding-top:5px;  padding-bottom: 15px; line-height: 2;font-size: 18px;}
+.sousuos dl *{transition:all .3s;}
+.sousuos dl a{ line-height: 2.1;font-size: 17px; display: block; margin-bottom: 14px;}
+.sousuos dl dd{ border-left: 2px #00AC82 solid;  padding-left: 15px; background: #eee;}
+.sousuos dl dd:hover,.sousuos dl dd:hover a{ background: #00AC82;color: #fff; }
+
+/*翻页*/
+ .pager {width:100%;height:30px;margin-bottom:20px;text-align:center;}
+.pager > * {display:inline-block;height:30px;line-height:30px;padding:0 20px;background:#FFF;border:1px solid #ddd;margin:0 5px;}
+.pager > *:first-child {display:none;}
+.pager > *:first-child + * {margin-left:0px;}
+.pager > span {cursor:no-drop;}
+.pager > span.current {color:#00AC82;border-color:#00AC82;}
+.pager > span.cur {cursor:default;background:#f8f8f8;color:#0168b7;font-weight:bold;}
+.pager > a:hover {background:#fff;}

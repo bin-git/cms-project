@@ -1,0 +1,251 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div id="banner_main">
+  <div id="banner">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+      <ul>
+        <%set DataTable bannerlist=new DTcms.Web.Plugin.Advert.BLL.advert_banner().GetList(5, "is_lock=0 and aid=17","sort_id asc,id desc").Tables[0]%>
+        <%foreach(DataRow dr in bannerlist.Rows)%>
+        <li><a href="javascript:;" title="{dr[title]}"><img _src="{dr[file_path]}"  alt="{dr[title]}"></a></li>
+        <%/foreach%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="dzly_main">
+  <form id="fmMessage" class="nice-validator n-default" novalidate="novalidate">
+
+
+    <div class="box1">
+      <div class="line"></div>
+      <div class="tit clearfix">
+        <i class="icon"></i><span>出游基本信息</span>
+      </div>
+      <div class="li clearfix">
+        <div class="left">出发地</div>
+        <div class="right">
+          <input placeholder="" value="" name="field_Place">
+          <input type="hidden" name="field_Place_name" value="出发地">
+        </div>
+      </div>
+      <div class="li clearfix">
+        <div class="left">目的地</div>
+        <div class="right">
+          <input placeholder="" value="" name="field_destination">
+          <input type="hidden" name="field_destination_name" value="目的地">
+        </div>
+      </div>
+      <div class="li li2 clearfix">
+        <div class="left">出发日期</div>
+        <div class="right">
+          <input class="input_bg" placeholder="最早出发" name="field_firstDate" id="d1">
+          <input type="hidden" name="field_firstDate_name" value="最早出发">
+        </div>
+      </div>
+      <div class="li  clearfix">
+        <div class="left"></div>
+        <div class="right">
+          <input placeholder="最晚出发" class="input_bg" id="d2" name="field_lastDate">
+
+          <input type="hidden" name="field_lastDate_name" value="最晚出发">
+        </div>
+      </div>
+      <div class="li li3 clearfix">
+        <div class="left">游玩天数</div>
+        <div class="right">
+          <a href="javascript:;" id="a1">-</a>
+          <input name="field_datecount" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" value="1" id="input1" type="text">
+          <input type="hidden" name="field_datecount_name" value="游玩天数">
+          <a href="javascript:;" id="a1_2">+</a><input type="checkbox" class="check" checked="checked" name="field_chexk">
+          <input type="hidden" name="field_chexk_name" value="可适当增减天数">可适当增减天数
+        </div>
+      </div>
+      <div class="li li3 clearfix">
+        <div class="left">出行人数</div>
+        <div class="right">
+          <a href="javascript:;" id="a2_1">-</a>
+          <input onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" value="1" name="field_adult" id="input2" type="text">
+          <a href="javascript:;" id="a2_2">+</a><span>成人</span><a href="javascript:;" id="a3_1">-</a>
+          <input type="hidden" name="field_adult_name" value="成人">
+          <input value="1" name="field_chiled" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" id="input3" type="text">
+          <input type="hidden" name="field_chiled_name" value="儿童">
+          <a href="javascript:;" id="a3_2">+</a><span>儿童</span>
+        </div>
+      </div>
+      <div class="li li4 clearfix">
+        <div class="left">人均预算</div>
+        <div class="right"><input placeholder="如没有可不填" name="field_budget"></div>
+        <input type="hidden" name="field_budget_name" value="人均预算">
+      </div>
+    </div>
+    <input type="hidden" name="field_styledemand" value="" id="field_styledemand">
+    <input type="hidden" name="field_styledemand_name" value="需要提供什么" id="field_styledemand_name">
+    <div class="box2">
+      <div class="line"></div>
+      <div class="tit clearfix">
+        <i class="icon"></i><span>定制师</span>
+      </div>
+      <div class="li">
+        <p>需要提供什么（多选）</p>
+        <div class="a clearfix" id="clearfix">
+          <a href="javascript:void(0);">线路设计</a>
+          <a href="javascript:void(0);">机票</a>
+          <a href="javascript:void(0);">用车</a>
+          <a href="javascript:void(0);">导游</a>
+          <a href="javascript:void(0);">酒店</a>
+          <a href="javascript:void(0);">鉴证</a>
+          <a href="javascript:void(0);">门票</a>
+          <a href="javascript:void(0);">用餐</a>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="line"></div>
+      <div class="tit clearfix">
+        <i class="icon"></i><span>特色定制（选填）</span>
+      </div>
+      <div class="li clearfix">
+        <div class="left">酒店星级</div>
+        <div class="right">
+          <select class="select" name="field_stylehotelstar" id="field_stylehotelstar">
+            <option>三星/舒适</option>
+            <option>四星/高档</option>
+            <option>五星/豪华</option>
+            <option>连锁</option>
+            <option>特色客栈</option>
+            <option>不限</option>
+          </select>
+          <input type="hidden" name="field_stylehotelstar_name" value="酒店星级">
+        </div>
+      </div>
+      <div class="li clearfix">
+        <div class="left">用餐需求</div>
+        <div class="right">
+          <select class="select" name="field_stylerequirement" id="field_stylerequirement">
+            <option>自理</option>
+            <option>当地特色</option>
+            <option>定制师推荐</option>
+          </select>
+          <input type="hidden" name="field_stylerequirement_name" value="用餐要求">
+        </div>
+      </div>
+      <div class="li li4 clearfix">
+        <div class="left">其他需求</div>
+      </div>
+      <div class="li li4 clearfix">
+        <textarea placeholder="选填，请输入其他需求，如：希望定制师何时联系您，
+        房间数，导游要求等。" name="field_demand"></textarea>
+        <input type="hidden" name="field_demand_name" value="其他需求">
+      </div>
+
+    </div>
+    <div class="box4">
+      <div class="line"></div>
+      <div class="tit clearfix">
+        <i class="icon"></i><span>联系人信息</span>
+      </div>
+      <div class="li clearfix">
+        <div class="left">姓名</div>
+        <div class="right"><input id="username" name="username" placeholder="" aria-required="true"></div>
+      </div>
+      <div class="li clearfix">
+        <div class="left">性别</div>
+        <div class="right">
+          <select class="select" name="field_stylesex" id="field_stylesex">
+            <option>男</option>
+            <option>女</option>
+          </select>
+          <input type="hidden" name="field_stylesex_name" value="性别">
+        </div>
+      </div>
+      <div class="li clearfix">
+        <div class="left">联系电话</div>
+        <div class="right"><input placeholder="请输入您的联系电话" id="tel" name="tel" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" aria-required="true"></div>
+      </div>
+      <div class="li clearfix">
+        <div class="left">邮箱</div>
+        <div class="right"><input placeholder="请输入您的电子邮箱" name="email" id="email" aria-required="true"></div>
+      </div>
+      <div class="li li4">
+        <input class="btn" type="submit" value="提交订单">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<link rel="stylesheet" href="<%templateskin%>/css/pikaday.css" />
+    <script type="text/javascript" src="<%templateskin%>/js/pikaday.min.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/jquery.validator.js"></script>
+    <script type="text/javascript" src="<%templateskin%>/js/zh-CN.js"></script>
+    <script>
+        var picker = new Pikaday({ field: document.getElementById('d1') });
+        var picker2 = new Pikaday({ field: document.getElementById('d2') });
+        $(".box2 #clearfix a").click(function () {
+            if ($(this).hasClass("hover")) {
+                $(this).removeClass("hover").siblings();
+            } else {
+                $(this).addClass("hover").siblings();
+            }
+        });
+
+        $('#fmMessage').validator({
+            theme: 'alert',
+            timely: 0, //开启实时验证
+            stopOnError: true, //关闭在第一次错误时停止验证
+            rules: { //自定义规则
+                checkcodeRemote: function (element) {
+                    return $.get("/ajax/verifycheckcode", { value: element.value }, function (data) { });
+                }
+            },
+            fields: {
+                username: { rule: '联系人:required;' },
+                tel: { rule: '联系电话:required;mobile;' },
+                email: { rule: '联系邮箱:required;email;' },
+                //  checkcode: { rule: '验证码:required;checkcodeRemote;' }
+            },
+            //验证成功
+            valid: function (form) {
+                //阻止表单重复提交
+
+                ///需要提供什么
+                var style_demand = "";
+                $(".box2 a.hover").each(function () {
+                    style_demand += $(this).attr('data-value') + ",";
+                });
+                document.getElementById("field_styledemand").value = style_demand;
+
+                var me = this;
+                me.holdSubmit();
+
+                $.ajax({
+                    url: '/ajax/message/send',
+                    type: 'POST',
+                    data: $(form).serialize(),
+                    dataType: 'JSON',
+                    success: function (result) {
+                        me.holdSubmit(false);
+
+                        alert(result.msg);
+                        if (result.flag) {
+                            $('#fmMessage')[0].reset();
+                        }
+                    },
+                    error: function (xhr) {
+                        me.holdSubmit(false);
+                        alert(xhr.responseText);
+                    }
+                });
+            }
+        });
+    </script>
+
+<!--主体内容 end-->
+
+<%template src="_bottom.html"%>

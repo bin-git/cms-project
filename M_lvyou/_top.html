@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>{site.seo_title}</title>
+    <meta name="Keywords" content="{site.seo_keyword}" />
+    <meta name="Description" content="{site.seo_description}" />
+    <script type="text/javascript" src="<%templateskin%>/js/jquery-1.8.3.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script type="text/javascript" src="<%templateskin%>/js/autofontsize.min.js"></script>
+    <link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+
+    <div id="logo_main">
+        <div id="logo" class="animated fadeInUp">
+          <a href="<%linkurl("index")%>" title="{site.company}">
+              <img src="{site.logo}" alt="{site.company}" title="{site.company}" /></a>
+          </div>
+
+          <div id="WebTel">
+            导航<i class="icon"></i>
+        </div>
+    </div>
+
+    <div id="ShowChannel">
+        <div class="t"><i class="icon"></i></div>
+        <ul>
+            <li>
+                <a href="<%linkurl("index")%>"><i class="icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+            </li>
+            <%set DataTable category_list1=get_category_child_list("content",0)%>
+            <%foreach(DataRow cdr in category_list1.Rows)%>
+            <li>
+                <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}"><i class="icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;{cdr[title]}&nbsp;&nbsp;</a>
+            </li>
+            <%/foreach%>
+
+        </ul>
+    </div>
+
+
+    <!--网站导航 start-->
+    <div class="gray"></div>
+    <div id="tool">
+        <ul>
+            <li >
+                <a href="<%linkurl("index")%>" title="">
+                    <div><i class="icon"></i></div>
+                    返回首页
+                </a>
+            </li>
+            <li>
+                <a href="<%linkurl("nav_list3",274)%>" title="">
+                    <div><i class="icon"></i></div>
+                    线路推荐
+                </a>
+            </li>
+            <li class="">
+                <a href="tel:{site.mobile}" title="">
+                    <div><i class="icon"></i></div>
+                    拨打电话
+                </a>
+            </li>
+            <li class="">
+                <a href="<%linkurl("contact",293)%>" title="联系我们">
+                    <div><i class="icon"></i></div>
+                    联系我们
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+      <%set DTcms.Model.article_category catemodel=get_category_model({parent_id})%>
+  <%set DTcms.Model.article_category catemodel60=get_category_model({category_id})%>

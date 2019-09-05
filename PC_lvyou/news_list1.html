@@ -1,0 +1,86 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<!----	芙蓉攻略---->
+<div class="body_contact ">
+    <div class="ny_title w1000  animated fadeInUp">
+       <h1>{catemodel.title}</h1>
+       <h2>{catemodel.etitle}</h2>
+       <p>{catemodel.seo_description}</p>
+       <span></span>
+   </div>
+   <!--联系芙蓉-->
+   <div class="con w1000 clearfix">
+    <div class="left contact_left">
+        <div class="tit">{catemodel.title}</div>
+        <ul>
+          <%set DataTable categoryList_left=get_category_child_list(channel,parent_id)%>
+          <%if(categoryList_left!=null && categoryList_left.Rows.Count>0)%>
+          <%foreach(DataRow cdr in categoryList_left.Rows)%>   
+          <%if({cdr[id]}==category_id.ToString())%>
+          <li class="curr">
+            <%else%>
+            <li class="">
+                <%/if%>
+                <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}" nowrap><span>{cdr[title]}</span><i></i></a>
+            </li>
+            <%/foreach%> 
+            <%else%>
+            <%set DTcms.Model.article_category catemodel50=get_category_model(parent_id)%>   
+            <li class="">
+                <a href="<%linkurl({catemodel50.call_index},{catemodel50.id})%>" title="{catemodel50.title}"  nowrap><span>{catemodel50.title}</span><i></i></a>
+            </li>
+            <%/if%> 
+
+        </ul>
+        <dl>
+           <%set DataTable ipro_list4=get_article_list("content", 283,2, "status=0 and is_recycle=0 and is_red=1")%>
+           <%foreach(DataRow dr in ipro_list4.Rows)%>  
+           <dd>
+             <a href="<%linkurl("show",{dr[id]})%>">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+                <h1>{dr[title]}</h1>
+                <p><b>{dr[huafei]}</b>rmb</p>
+            </a>
+        </dd>
+        <%/foreach%>
+    </dl>
+</div>
+<div class="right map_right">
+    <div class="tit">
+     <h1><%=category_name%></h1><span class="right"><a href="<%linkurl("index")%>" class="home">网站首页</a><%=get_category_menu(call_index , category_id)%></span>
+ </div>
+ <div class="news_main">
+    <ul>
+
+
+      <%set DataTable page_list=get_article_list("content", category_id, pagesize, page, "status=0 and is_recycle=0", out totalcount, out pagelist, "nav_list1", category_id, "__id__")%>
+      <%set int category_num=1 %>
+      <%foreach(DataRow dr in page_list.Rows)%>
+      <li>
+          <a href="<%linkurl("show_news2",{dr[id]})%>" title="{dr[title]}">
+            <span class="left">
+                <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}"></span>
+                <span class="right"><h1>{dr[title]}</h1>
+                    <p><%cutstring({dr[zhaiyao]},20)%></p><h2>查看详情<b>&gt;</b></h2></span>
+                    <span class="clear"></span>
+                </a>
+            </li>
+            <%/foreach%>
+        </ul>
+        <div class="clear"></div>
+
+
+       <div class="pager right">{pagelist}</div>
+
+    </div>
+</div>
+</div>
+</div>
+
+<!--主体内容 end-->
+<!--网站底部 start-->
+<!--网站底部 end-->
+
+<%template src="_bottom.html"%>

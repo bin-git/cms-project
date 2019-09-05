@@ -1,0 +1,129 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div id="banner_main">
+  <div id="banner">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+      <ul>
+        <%if(model.albums!=null)%>
+        <%foreach(DTcms.Model.article_albums modelt in model.albums)%>
+        <li><a href="javascript:;" title="{modelt.remark}"><img src="{modelt.original_path}" alt="{modelt.remark}"></a></li>
+        <%/foreach%>
+        <%/if%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="fryp_show">
+  <div class="span clearfix">
+    <span class="ntags">{model.tags}</span>
+  </div>
+  <div class="con">
+    <h1>
+      {model.title}
+    </h1>
+    <p>促销价：<b>{model.fields[huafei]}</b>起</p>
+    <ul class="clearfix">
+      <li><a href="javascript:;" title="天猫预定">
+        <img src="<%templateskin%>/images/tm.jpg" title="天猫预定" alt="天猫预定"><p>天猫预定</p></a></li>
+        <li><a href="javascript:;" title="京东预定"><img src="<%templateskin%>/images/jd.jpg" title="京东预定" alt="京东预定">
+          <p>京东预定</p></a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div id="product">
+        <div class="fryp_tit hover">
+          <ul class="clearfix">
+            <li><a href="#detail_infor_1_achor" class="a1">优惠信息</a></li>
+            <li><a href="#detail_infor_2_achor" class="a1">产品特色</a></li>
+            <li><a href="#detail_infor_3_achor" class="a1">费用说明</a></li>
+            <li><a href="#detail_infor_4_achor" class="a1 cur">预订须知</a></li>
+            <li><a href="#detail_infor_5_achor" class="a1">相关产品</a></li>
+
+          </ul>
+        </div>
+        <div class="tit">
+          <span>优惠信息</span>
+        </div>
+        <div class="con2 clearfix" id="detail_infor_1">
+         {model.fields[cont2]}
+       </div>
+
+       <div class="tit">
+        <span>产品特色</span>
+      </div>
+      <div class="con2 clearfix" id="detail_infor_2">
+       {model.fields[cont3]}
+     </div>
+
+     <div class="tit">
+      <span>费用说明</span>
+    </div>
+    <div class="con2 clearfix" id="detail_infor_3">
+     {model.fields[con4]}
+   </div>
+
+   <div class="tit">
+    <span>预订须知</span>
+  </div>
+  <div class="con2 clearfix" id="detail_infor_4">
+   {model.fields[cont5]}
+ </div>
+
+ <div class="tit">
+  <span>在线解答</span>
+</div>
+<div class="con2 clearfix">
+  {model.fields[cont6]}
+</div>
+
+<div class="tit">
+  <span>相关产品</span>
+</div>
+<div class="con2 clearfix" id="detail_infor_5">
+  <div class="fryp_main">
+    <div class="ul">
+      <ul>
+       <%set DataTable ipro_list4=get_article_list("content", {category_id},4, "status=0 and is_recycle=0 and is_red=1")%>
+       <%foreach(DataRow dr in ipro_list4.Rows)%>  
+       <li>
+        <a href="<%linkurl("show_pro",{dr[id]})%>">
+          <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}">
+          <span class="price">￥{dr[huafei]} 起</span>
+          <div class="text  clearfix">
+            <h1>{dr[title]}</h1>
+            <p>{dr[zhaiyao]}</p>
+            <span class="ntags">{dr[tags]}</span>
+          </div>
+        </a>
+      </li>
+      <%/foreach%>   
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  window.onload = function(){
+
+    $(".ntags").each(function(){
+      console.log($(this).text())
+      if(!$(this).text()){
+        $(this).hide()
+      }
+    })
+    //$(".ntags").text().length?$("#tuozhan").show():$("#tuozhan").hide();
+  }
+</script>
+
+<!--主体内容 end-->
+
+<%template src="_bottom.html"%>

@@ -1,0 +1,77 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div id="banner_main">
+  <div id="banner">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+      <ul>
+        <%set DataTable bannerlist=new DTcms.Web.Plugin.Advert.BLL.advert_banner().GetList(5, "is_lock=0 and aid=17","sort_id asc,id desc").Tables[0]%>
+        <%foreach(DataRow dr in bannerlist.Rows)%>
+        <li><a href="javascript:;" title="{dr[title]}"><img _src="{dr[file_path]}"  alt="{dr[title]}"></a></li>
+        <%/foreach%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <%set DataTable categoryList_left=get_category_child_list(channel,parent_id)%>
+    <%if(categoryList_left!=null && categoryList_left.Rows.Count>0)%>
+    <%foreach(DataRow cdr in categoryList_left.Rows)%>   
+    <%if({cdr[id]}==category_id.ToString())%>
+    <div class="swiper-slide curr">
+     <%else%>
+     <div class="swiper-slide">
+       <%/if%>
+       <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}">{cdr[title]}</a>
+     </div>
+     <%/foreach%>
+     <%else%>
+     <%set DTcms.Model.article_category catemodel50=get_category_model(parent_id)%>
+     <div class="swiper-slide">
+       <a href="<%linkurl({catemodel50.call_index},{catemodel50.id})%>" title="{catemodel50.title}">{catemodel50.title}</a>
+     </div>
+     <%/if%> 
+   </div>
+ </div>
+
+
+
+
+<div class="index_main_2">
+
+  <ul>
+   <%set DataTable page_list=get_article_list("content", category_id, pagesize, page, "status=0 and is_recycle=0", out totalcount, out pagelist, "nav_list3", category_id, "__id__")%>
+    <%foreach(DataRow dr in page_list.Rows)%>
+    <li>
+      <h1><a href="<%linkurl("show",{dr[id]})%>" nowrap>{dr[title]}</a></h1>
+      <a href="<%linkurl("show",{dr[id]})%>"><span class="left">
+       <img src="{dr[img_url]}" title="{dr[title]}" alt="{dr[title]}"></span></a>
+       <a href="<%linkurl("show",{dr[id]})%>">
+        <p class="right">
+          <%cutstring({dr[zhaiyao]},60)%>
+        </p>
+      </a>
+      <span class="clear"></span>
+
+      <div class="b">
+        <div><i class="i1"></i><span>本站</span></div><div><i class="i2"></i><span><%datetostr({dr[add_time]},yyyy-MM-dd)%></span></div><div><i class="i3"></i><span id="zan_174">{dr[click]}</span></div>
+      </div>
+      <a href="javascript:void(alert('点赞成功'))" title="" class="zan"></a>
+    </li>
+<%/foreach%> 
+
+  </ul>
+  <div class="pager right">{pagelist}</div>
+</div>
+
+
+
+<!--主体内容 end-->
+
+<%template src="_bottom.html"%>

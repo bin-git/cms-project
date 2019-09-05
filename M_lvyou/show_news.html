@@ -1,0 +1,106 @@
+<%template src="_top.html"%>
+
+<!--网站导航 end-->
+<!--主体内容 start-->
+<div id="banner_main">
+  <div id="banner">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+      <ul>
+        <%set DataTable bannerlist=new DTcms.Web.Plugin.Advert.BLL.advert_banner().GetList(5, "is_lock=0 and aid=17","sort_id asc,id desc").Tables[0]%>
+        <%foreach(DataRow dr in bannerlist.Rows)%>
+        <li><a href="javascript:;" title="{dr[title]}"><img _src="{dr[file_path]}"  alt="{dr[title]}"></a></li>
+        <%/foreach%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="swiper-container swiper-container-horizontal">
+  <div class="swiper-wrapper">
+    <%set DataTable categoryList_left=get_category_child_list(channel,parent_id)%>
+    <%if(categoryList_left!=null && categoryList_left.Rows.Count>0)%>
+    <%foreach(DataRow cdr in categoryList_left.Rows)%>   
+    <%if({cdr[id]}==category_id.ToString())%>
+    <div class="swiper-slide curr">
+     <%else%>
+     <div class="swiper-slide">
+       <%/if%>
+       <a href="<%linkurl({cdr[call_index]},{cdr[id]})%>" title="{cdr[title]}">{cdr[title]}</a>
+     </div>
+     <%/foreach%>
+     <%else%>
+     <%set DTcms.Model.article_category catemodel50=get_category_model(parent_id)%>
+     <div class="swiper-slide">
+       <a href="<%linkurl({catemodel50.call_index},{catemodel50.id})%>" title="{catemodel50.title}">{catemodel50.title}</a>
+     </div>
+     <%/if%> 
+
+   </div>
+ </div>
+
+
+ <section class="cateContent pageshowNews">
+  <article class="">
+    <h1>{model.title}</h1>
+    <aside class="mark">
+      <span class="time">
+        时间：<%datetostr({model.add_time},yyyy-MM-dd)%>                        &nbsp;&nbsp;
+        来源：<%=get_article_field(channel_id,model.id,"source") %>                   &nbsp;&nbsp;
+        作者：<%=get_article_field(channel_id,model.id,"author") %>
+
+      </span>
+    </aside>
+    <div class="contxt">
+     {model.content}
+   </div>
+   <div id="nativeShare"></div>
+   <div class="fenx clearfix" id="fenxiang" style="display: block;">
+    <div id="bdfx" class="bdsharebuttonbox clearfix bdshare-button-style1-32" data-tag="share_1" data-bd-bind="1567589145879">
+      <a href="#" class="d1" data-cmd="qzone" title="分享到QQ空间"></a>
+    </div>
+    <!-- <span class="tt">分享到:</span> -->
+  </div>
+  <div class="reLink clearFix">
+    <div>上一篇：<%=get_prevandnext_article("show_news", -1, "没有了!", 0)%></div>
+    <div>上一篇：<%=get_prevandnext_article("show_news", 1, "没有了!", 0)%></div>
+  </div>
+
+</article>
+</section>
+
+
+<!--百度分享js开始-->
+<script>
+  window._bd_share_config = {
+    "common": {
+      "bdSnsKey": {},
+      "bdText": "",
+      "bdMini": "2",
+      "bdMiniList": false,
+      "bdPic": "",
+      "bdStyle": "1",
+      "bdSize": "32"
+    },
+    share: [{
+      "tag": "share_1",
+      "bdSize": 32
+    }, {
+      "tag": "share_2",
+      "bdSize": 16
+    }]
+  };
+  with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<!--百度分享js结束-->
+
+
+
+<!--主体内容 end-->
+
+<%template src="_bottom.html"%>
